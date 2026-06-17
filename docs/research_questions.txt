@@ -1,0 +1,23 @@
+
+RQ1 – Main Question:
+How are written parliamentary questions distributed across ministries, topics, and political parties in the 28th term of TBMM, and how does this distribution evolve over time?
+Sub-questions:
+Which ministries receive the highest volume of written questions, and how does this ranking shift across legislative years?
+What are the dominant latent topics (via LDA / FP-Growth co-occurrence) directed at each ministry, and how do they cluster?
+To what extent do parties differ in their topical focus and ministerial targeting, and can a party's identity be predicted from its question portfolio?
+Do duplicate or near-duplicate questions (MinHash/LSH similarity ≥ 0.8) exist across MPs or parties, indicating coordinated agenda-setting?
+RQ2 – Main Question:
+Which provinces of Türkiye receive the most parliamentary attention, on which topics, and can provinces be clustered into latent "attention profiles" based on the issues raised about them?
+Sub-questions:
+What is the geographic distribution of province mentions across parliamentary documents (transcripts, written questions, research motions)?
+Which topics dominate the discourse around each province, and how does this differ between metropolitan vs. rural provinces?
+Using K-Means++ clustering on (province × topic) frequency vectors, can we identify distinct provincial profiles (e.g., earthquake-impacted, agricultural, border-security)?
+How does provincial attention correlate with population, GDP, or political representation (number of MPs)?
+RQ3 – Main Question:
+What is the structure of co-sponsorship and co-signing networks among Turkish MPs, and how do PageRank-based influence and Louvain-based community detection align with formal party boundaries?
+Sub-questions:
+Constructing a co-signing network from legislative proposals and research motions, which MPs emerge as central hubs by PageRank and HITS authority scores?
+Do Louvain communities mirror official party affiliations, or do cross-party factions emerge around specific issues?
+Using Node2Vec + UMAP embeddings, do MPs cluster more by ideology, geography, or seniority?
+Which MPs act as cross-party "bridges" (high betweenness centrality but low intra-party closeness)?
+

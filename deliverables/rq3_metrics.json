@@ -1,0 +1,116 @@
+{
+  "n_vertices": 276,
+  "n_edges": 7720,
+  "community": {
+    "n_communities": 2,
+    "ari": 0.0324,
+    "nmi": 0.0851,
+    "top_communities": [
+      {
+        "size": 272,
+        "top_party": "CHP",
+        "share": 0.555
+      },
+      {
+        "size": 4,
+        "top_party": "AK Parti",
+        "share": 1.0
+      }
+    ]
+  },
+  "louvain": {
+    "n_communities": 3,
+    "ari": 0.4613,
+    "nmi": 0.5509,
+    "top_communities": [
+      {
+        "size": 213,
+        "top_party": "CHP",
+        "share": 0.704
+      },
+      {
+        "size": 59,
+        "top_party": "DEM Parti",
+        "share": 0.983
+      },
+      {
+        "size": 4,
+        "top_party": "AK Parti",
+        "share": 1.0
+      }
+    ]
+  },
+  "top_bridges": [
+    {
+      "mp": "Mustafa Sezgin TANRIKULU",
+      "party": "CHP",
+      "province": "Diyarbakır",
+      "bridge_score": 0.4526,
+      "betweenness": 0.2397
+    },
+    {
+      "mp": "Selçuk ÖZDAĞ",
+      "party": "CHP",
+      "province": "Muğla",
+      "bridge_score": 0.1461,
+      "betweenness": 0.0756
+    },
+    {
+      "mp": "Ömer Fethi GÜRER",
+      "party": "CHP",
+      "province": "Niğde",
+      "bridge_score": 0.1337,
+      "betweenness": 0.0696
+    },
+    {
+      "mp": "Ali KARAOBA",
+      "party": "CHP",
+      "province": "Uşak",
+      "bridge_score": 0.1161,
+      "betweenness": 0.0611
+    },
+    {
+      "mp": "Doğan BEKİN",
+      "party": "Yeniden Refah",
+      "province": "İstanbul",
+      "bridge_score": 0.0784,
+      "betweenness": 0.0394
+    },
+    {
+      "mp": "Mustafa BİLİCİ",
+      "party": "CHP",
+      "province": "İzmir",
+      "bridge_score": 0.0682,
+      "betweenness": 0.0351
+    },
+    {
+      "mp": "Mahmut TANAL",
+      "party": "CHP",
+      "province": "Şanlıurfa",
+      "bridge_score": 0.0611,
+      "betweenness": 0.0316
+    },
+    {
+      "mp": "Selcan TAŞCI",
+      "party": "AK Parti",
+      "province": "Tekirdağ",
+      "bridge_score": 0.0539,
+      "betweenness": 0.0229
+    },
+    {
+      "mp": "Yasin ÖZTÜRK",
+      "party": "İYİ Parti",
+      "province": "Denizli",
+      "bridge_score": 0.0513,
+      "betweenness": 0.0263
+    },
+    {
+      "mp": "Ulaş KARASU",
+      "party": "CHP",
+      "province": "Sivas",
+      "bridge_score": 0.0503,
+      "betweenness": 0.0256
+    }
+  ],
+  "silhouette_party": -0.2231
+}

@@ -1,0 +1,25 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+.env
+
+# Heavy / regenerable data artifacts
+data/bronze/pdf/
+data/bronze/yazili_soru_meta_shards/
+data/silver/
+data/gold/
+_delta_log/
+logs/
+
+# Scrape state (internal, regenerable)
+data/bronze/*.txt
+
+# Ignore parquet by default, but keep the dataset + dashboard snapshots so the
+# repo is clone-and-run (dashboard works without re-running the Spark pipeline).
+*.parquet
+!data/bronze/yazili_soru_meta.parquet
+!data/bronze/mp_index.parquet
+!data/bronze/mp_to_guids.parquet
+!src/dashboard/data/*.parquet

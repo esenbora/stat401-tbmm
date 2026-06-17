@@ -1,0 +1,217 @@
+{
+  "top_pagerank": [
+    {
+      "mp": "Ömer Faruk GERGERLİOĞLU",
+      "party": "DEM Parti",
+      "province": "Kocaeli",
+      "score": 0.019582282419522295
+    },
+    {
+      "mp": "Beritan GÜNEŞ ALTIN",
+      "party": "DEM Parti",
+      "province": "Mardin",
+      "score": 0.013736527376384955
+    },
+    {
+      "mp": "Çiçek OTLU",
+      "party": "DEM Parti",
+      "province": "İstanbul (III)",
+      "score": 0.013729163697721014
+    },
+    {
+      "mp": "Serhat EREN",
+      "party": "DEM Parti",
+      "province": "Diyarbakır",
+      "score": 0.013591979161181798
+    },
+    {
+      "mp": "Meral DANIŞ BEŞTAŞ",
+      "party": "DEM Parti",
+      "province": "Erzurum",
+      "score": 0.013197614491553093
+    },
+    {
+      "mp": "İbrahim AKIN",
+      "party": "DEM Parti",
+      "province": "İzmir (II)",
+      "score": 0.012936174052145923
+    },
+    {
+      "mp": "Nevroz UYSAL ASLAN",
+      "party": "DEM Parti",
+      "province": "Şırnak",
+      "score": 0.012599340707893385
+    },
+    {
+      "mp": "Mustafa Sezgin TANRIKULU",
+      "party": "Cumhuriyet Halk Partisi",
+      "province": "Diyarbakır",
+      "score": 0.01174176165293707
+    },
+    {
+      "mp": "Gülderen VARLİ",
+      "party": "DEM Parti",
+      "province": "Van",
+      "score": 0.011380831203178673
+    },
+    {
+      "mp": "Sümeyye BOZ ÇAKI",
+      "party": "DEM Parti",
+      "province": "Muş",
+      "score": 0.0111932026401458
+    }
+  ],
+  "top_hits": [
+    {
+      "mp": "Ömer Faruk GERGERLİOĞLU",
+      "party": "DEM Parti",
+      "province": "Kocaeli",
+      "score": 0.025617773931675317
+    },
+    {
+      "mp": "Nevroz UYSAL ASLAN",
+      "party": "DEM Parti",
+      "province": "Şırnak",
+      "score": 0.025427827350570607
+    },
+    {
+      "mp": "Beritan GÜNEŞ ALTIN",
+      "party": "DEM Parti",
+      "province": "Mardin",
+      "score": 0.025316752597157807
+    },
+    {
+      "mp": "Serhat EREN",
+      "party": "DEM Parti",
+      "province": "Diyarbakır",
+      "score": 0.025296215135718343
+    },
+    {
+      "mp": "Sümeyye BOZ ÇAKI",
+      "party": "DEM Parti",
+      "province": "Muş",
+      "score": 0.021887245166313546
+    },
+    {
+      "mp": "Gülcan KAÇMAZ SAYYİĞİT",
+      "party": "DEM Parti",
+      "province": "Van",
+      "score": 0.02142109848246859
+    },
+    {
+      "mp": "Gülderen VARLİ",
+      "party": "DEM Parti",
+      "province": "Van",
+      "score": 0.020920673227830134
+    },
+    {
+      "mp": "Kamuran TANHAN",
+      "party": "DEM Parti",
+      "province": "Mardin",
+      "score": 0.02007400093424285
+    },
+    {
+      "mp": "Çiçek OTLU",
+      "party": "DEM Parti",
+      "province": "İstanbul (III)",
+      "score": 0.020009089108881235
+    },
+    {
+      "mp": "Öznur BARTİN",
+      "party": "DEM Parti",
+      "province": "Hakkâri",
+      "score": 0.019984579399889672
+    }
+  ],
+  "top_bridges": [
+    {
+      "mp": "Mustafa Sezgin TANRIKULU",
+      "party": "Cumhuriyet Halk Partisi",
+      "province": "Diyarbakır",
+      "score": 0.5631356449353554,
+      "betweenness": 0.19355135132377185,
+      "intra_party_closeness": 0.01750785835952953
+    },
+    {
+      "mp": "Selçuk ÖZDAĞ",
+      "party": "Cumhuriyet Halk Partisi",
+      "province": "Muğla",
+      "score": 0.17764146616898566,
+      "betweenness": 0.061055751991142534,
+      "intra_party_closeness": 0.017489520255946873
+    },
+    {
+      "mp": "Ömer Fethi GÜRER",
+      "party": "Cumhuriyet Halk Partisi",
+      "province": "Niğde",
+      "score": 0.16347013592034354,
+      "betweenness": 0.056185067834055295,
+      "intra_party_closeness": 0.01749432812446132
+    },
+    {
+      "mp": "Ali KARAOBA",
+      "party": "Cumhuriyet Halk Partisi",
+      "province": "Uşak",
+      "score": 0.1434440886481049,
+      "betweenness": 0.0493021179327833,
+      "intra_party_closeness": 0.017502682823219866
+    },
+    {
+      "mp": "Doğan BEKİN",
+      "party": "Yeniden Refah Partisi",
+      "province": "İstanbul (III)",
+      "score": 0.09271977400044619,
+      "betweenness": 0.03181274331226116,
+      "intra_party_closeness": 0.0029983556636796805
+    },
+    {
+      "mp": "Mustafa BİLİCİ",
+      "party": "Cumhuriyet Halk Partisi",
+      "province": "İzmir (II)",
+      "score": 0.08255140458655744,
+      "betweenness": 0.02837307965080384,
+      "intra_party_closeness": 0.01748518877355628
+    },
+    {
+      "mp": "Mahmut TANAL",
+      "party": "Cumhuriyet Halk Partisi",
+      "province": "Şanlıurfa",
+      "score": 0.07413269396051318,
+      "betweenness": 0.025479557943395934,
+      "intra_party_closeness": 0.017487037663706816
+    },
+    {
+      "mp": "Yasin ÖZTÜRK",
+      "party": "İYİ Parti",
+      "province": "Denizli",
+      "score": 0.061834881832396264,
+      "betweenness": 0.021241115754134076,
+      "intra_party_closeness": 0.012906379241898615
+    },
+    {
+      "mp": "Ulaş KARASU",
+      "party": "Cumhuriyet Halk Partisi",
+      "province": "Sivas",
+      "score": 0.060019091578144494,
+      "betweenness": 0.020628644900583207,
+      "intra_party_closeness": 0.01747119939149289
+    },
+    {
+      "mp": "Adnan Şefik ÇİRKİN",
+      "party": "İYİ Parti",
+      "province": "Hatay",
+      "score": 0.05535446244397827,
+      "betweenness": 0.019014964820172148,
+      "intra_party_closeness": 0.012889040411668617
+    }
+  ],
+  "metrics": {
+    "num_communities": 34,
+    "ari_elected": 0.46282784577308267,
+    "nmi_elected": 0.5362235357708623,
+    "ari_current": 0.36508175420229294,
+    "nmi_current": 0.511464065878497,
+    "silhouette_party": -0.19125846028327942,
+    "silhouette_province": -0.714939296245575
+  }
+}

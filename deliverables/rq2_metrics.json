@@ -1,0 +1,491 @@
+{
+  "total_mentions": 21519,
+  "provinces_mentioned": 81,
+  "top_provinces": [
+    {
+      "il": "Kocaeli",
+      "mentions": 1206
+    },
+    {
+      "il": "Diyarbakır",
+      "mentions": 1110
+    },
+    {
+      "il": "Şanlıurfa",
+      "mentions": 1080
+    },
+    {
+      "il": "İstanbul",
+      "mentions": 952
+    },
+    {
+      "il": "İzmir",
+      "mentions": 928
+    },
+    {
+      "il": "Van",
+      "mentions": 688
+    },
+    {
+      "il": "Ankara",
+      "mentions": 656
+    },
+    {
+      "il": "Bitlis",
+      "mentions": 590
+    },
+    {
+      "il": "Antalya",
+      "mentions": 541
+    },
+    {
+      "il": "Hakkari",
+      "mentions": 534
+    },
+    {
+      "il": "Burdur",
+      "mentions": 517
+    },
+    {
+      "il": "Kahramanmaraş",
+      "mentions": 479
+    },
+    {
+      "il": "Hatay",
+      "mentions": 463
+    },
+    {
+      "il": "Kars",
+      "mentions": 446
+    },
+    {
+      "il": "Mardin",
+      "mentions": 444
+    }
+  ],
+  "lda_topics": [
+    {
+      "topic": 0,
+      "words": [
+        "yaptığı",
+        "yılı",
+        "denetim",
+        "tespitlere",
+        "raporu",
+        "sayıştayın",
+        "sosyal",
+        "genel"
+      ]
+    },
+    {
+      "topic": 1,
+      "words": [
+        "yana",
+        "iddiasına",
+        "yılından",
+        "mücadeleye",
+        "orman",
+        "kadın",
+        "yürütülen",
+        "yapıldığı"
+      ]
+    },
+    {
+      "topic": 2,
+      "words": [
+        "talebine",
+        "kyk",
+        "ülke",
+        "sağlığı",
+        "aile",
+        "kişiye",
+        "genelinde",
+        "istihdamına"
+      ]
+    },
+    {
+      "topic": 3,
+      "words": [
+        "iddialara",
+        "çeşitli",
+        "özel",
+        "verilere",
+        "eğitim",
+        "bitlis",
+        "idaresi",
+        "ilinin"
+      ]
+    },
+    {
+      "topic": 4,
+      "words": [
+        "bağlı",
+        "ilçesine",
+        "sorununa",
+        "talebine",
+        "yaşanan",
+        "kocaeli",
+        "ilçesinde",
+        "mahallesi"
+      ]
+    },
+    {
+      "topic": 5,
+      "words": [
+        "diyarbakır",
+        "bulunan",
+        "ilçesinde",
+        "ilindeki",
+        "iddiasına",
+        "sürecine",
+        "istanbul",
+        "eden"
+      ]
+    },
+    {
+      "topic": 6,
+      "words": [
+        "bulunan",
+        "cezaevinde",
+        "kapalı",
+        "mahkumun",
+        "tipi",
+        "iddiasına",
+        "ilçesinde",
+        "bakanlığın"
+      ]
+    },
+    {
+      "topic": 7,
+      "words": [
+        "akıbetine",
+        "projesi",
+        "çalışmalara",
+        "talebine",
+        "alan",
+        "yer",
+        "önlenmesi",
+        "özlük"
+      ]
+    },
+    {
+      "topic": 8,
+      "words": [
+        "sayısına",
+        "arasında",
+        "kamu",
+        "yılları",
+        "kişilere",
+        "yapan",
+        "devlet",
+        "nedeniyle"
+      ]
+    },
+    {
+      "topic": 9,
+      "words": [
+        "yaşanan",
+        "sorunlara",
+        "gelen",
+        "meydana",
+        "tarihinde",
+        "depremler",
+        "şubat",
+        "sonrasında"
+      ]
+    },
+    {
+      "topic": 10,
+      "words": [
+        "ilçesinde",
+        "alınan",
+        "önlemlere",
+        "karşı",
+        "son",
+        "etkilerine",
+        "yılda",
+        "planlanan"
+      ]
+    },
+    {
+      "topic": 11,
+      "words": [
+        "talebine",
+        "şubat",
+        "engelli",
+        "tarihli",
+        "etkilenen",
+        "tarihinde",
+        "çiftçilerin",
+        "kahramanmaraş"
+      ]
+    }
+  ],
+  "metro_vs_rural": {
+    "metro_top_topics": [
+      10,
+      6,
+      4
+    ],
+    "rural_top_topics": [
+      10,
+      6,
+      4
+    ],
+    "metro_skewed_topics": [
+      {
+        "topic": 5,
+        "delta": 0.0226
+      },
+      {
+        "topic": 7,
+        "delta": 0.0123
+      },
+      {
+        "topic": 8,
+        "delta": 0.0087
+      }
+    ],
+    "rural_skewed_topics": [
+      {
+        "topic": 3,
+        "delta": -0.0301
+      },
+      {
+        "topic": 6,
+        "delta": -0.0147
+      },
+      {
+        "topic": 11,
+        "delta": -0.0122
+      }
+    ]
+  },
+  "kmeans_silhouette": 0.1664,
+  "kmeans_clusters": {
+    "2": {
+      "size": 19,
+      "members": [
+        "Adana",
+        "Adıyaman",
+        "Amasya",
+        "Aydın",
+        "Ağrı",
+        "Bursa",
+        "Diyarbakır",
+        "Giresun",
+        "Gümüşhane",
+        "Kastamonu",
+        "Kilis",
+        "Kırklareli",
+        "Muğla",
+        "Muş",
+        "Ordu",
+        "Sivas",
+        "Çanakkale",
+        "İstanbul",
+        "İzmir"
+      ],
+      "top_topics": [
+        10,
+        5,
+        4
+      ]
+    },
+    "0": {
+      "size": 31,
+      "members": [
+        "Afyonkarahisar",
+        "Ankara",
+        "Balıkesir",
+        "Bilecik",
+        "Burdur",
+        "Düzce",
+        "Edirne",
+        "Elazığ",
+        "Erzincan",
+        "Erzurum",
+        "Eskişehir",
+        "Gaziantep",
+        "Hatay",
+        "Isparta",
+        "Iğdır",
+        "Kahramanmaraş",
+        "Karabük",
+        "Kayseri",
+        "Kütahya",
+        "Kırıkkale",
+        "Kırşehir",
+        "Manisa",
+        "Osmaniye",
+        "Rize",
+        "Sakarya",
+        "Samsun",
+        "Siirt",
+        "Sinop",
+        "Tekirdağ",
+        "Tokat",
+        "Yozgat"
+      ],
+      "top_topics": [
+        6,
+        10,
+        9
+      ]
+    },
+    "4": {
+      "size": 7,
+      "members": [
+        "Aksaray",
+        "Antalya",
+        "Bartın",
+        "Nevşehir",
+        "Trabzon",
+        "Çankırı",
+        "Çorum"
+      ],
+      "top_topics": [
+        7,
+        10,
+        5
+      ]
+    },
+    "1": {
+      "size": 15,
+      "members": [
+        "Ardahan",
+        "Artvin",
+        "Bingöl",
+        "Bitlis",
+        "Hakkari",
+        "Kars",
+        "Kocaeli",
+        "Malatya",
+        "Mardin",
+        "Niğde",
+        "Tunceli",
+        "Van",
+        "Zonguldak",
+        "Şanlıurfa",
+        "Şırnak"
+      ],
+      "top_topics": [
+        4,
+        10,
+        9
+      ]
+    },
+    "3": {
+      "size": 9,
+      "members": [
+        "Batman",
+        "Bayburt",
+        "Bolu",
+        "Denizli",
+        "Karaman",
+        "Konya",
+        "Mersin",
+        "Uşak",
+        "Yalova"
+      ],
+      "top_topics": [
+        8,
+        10,
+        6
+      ]
+    }
+  },
+  "correlation_pearson": {
+    "attention~population": 0.5174,
+    "attention~mp_count": 0.5154,
+    "population~mp_count": 0.999
+  },
+  "correlation_spearman": {
+    "attention~population": 0.5248,
+    "attention~mp_count": 0.5162
+  },
+  "most_over_attended": [
+    {
+      "il": "Tunceli",
+      "attention": 167,
+      "att_per_100k": 199.7
+    },
+    {
+      "il": "Hakkari",
+      "attention": 534,
+      "att_per_100k": 191.9
+    },
+    {
+      "il": "Burdur",
+      "attention": 517,
+      "att_per_100k": 188.9
+    },
+    {
+      "il": "Artvin",
+      "attention": 314,
+      "att_per_100k": 185.2
+    },
+    {
+      "il": "Bitlis",
+      "attention": 590,
+      "att_per_100k": 167.5
+    },
+    {
+      "il": "Kars",
+      "attention": 446,
+      "att_per_100k": 158.7
+    },
+    {
+      "il": "Ardahan",
+      "attention": 122,
+      "att_per_100k": 128.5
+    },
+    {
+      "il": "Bingöl",
+      "attention": 322,
+      "att_per_100k": 113.7
+    }
+  ],
+  "most_under_attended": [
+    {
+      "il": "Gaziantep",
+      "attention": 217,
+      "att_per_100k": 10.2
+    },
+    {
+      "il": "Konya",
+      "attention": 230,
+      "att_per_100k": 10.1
+    },
+    {
+      "il": "Malatya",
+      "attention": 81,
+      "att_per_100k": 10.0
+    },
+    {
+      "il": "Manisa",
+      "attention": 143,
+      "att_per_100k": 9.8
+    },
+    {
+      "il": "Bursa",
+      "attention": 292,
+      "att_per_100k": 9.3
+    },
+    {
+      "il": "Balıkesir",
+      "attention": 115,
+      "att_per_100k": 9.2
+    },
+    {
+      "il": "İstanbul",
+      "attention": 952,
+      "att_per_100k": 6.0
+    },
+    {
+      "il": "Samsun",
+      "attention": 81,
+      "att_per_100k": 5.9
+    }
+  ]
+}

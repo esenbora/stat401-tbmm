@@ -1,0 +1,1820 @@
+{
+  "Rıdvan UZ": {
+    "name": "Rıdvan Uz",
+    "province": "Çanakkale",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Yüksel Mansur KILINÇ": {
+    "name": "Yüksel Mansur Kılınç",
+    "province": "İstanbul (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "İsa Mesih ŞAHİN": {
+    "name": "İsa Mesih Şahin",
+    "province": "İstanbul (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Mahmut DİNDAR": {
+    "name": "Mahmut Dindar",
+    "province": "Van",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Bülent KAYA": {
+    "name": "Bülent Kaya",
+    "province": "İstanbul (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Halil ÖZTÜRK": {
+    "name": "Halil Öztürk",
+    "province": "Kırıkkale",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Tekin BİNGÖL": {
+    "name": "Tekin Bingöl",
+    "province": "Ankara (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Selma Aliye KAVAF": {
+    "name": "Selma Aliye Kavaf",
+    "province": "Manisa",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Gülderen VARLİ": {
+    "name": "Gülderen Varli",
+    "province": "Van",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Tulay HATIMOĞULLARI ORUÇ": {
+    "name": "Tülay Hatimoğulları Oruç",
+    "province": "Adana",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "İbrahim AKIN": {
+    "name": "İbrahim Akın",
+    "province": "İzmir (II)",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Osman Cengiz ÇANDAR": {
+    "name": "Osman Cengiz Çandar",
+    "province": "Diyarbakır",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Faik ÖZTRAK": {
+    "name": "Faik Öztrak",
+    "province": "Tekirdağ",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Cengiz ÇİÇEK": {
+    "name": "Cengiz Çiçek",
+    "province": "İstanbul (II)",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Murat BAKAN": {
+    "name": "Murat Bakan",
+    "province": "İzmir (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ömer KARAKAŞ": {
+    "name": "Ömer Karakaş",
+    "province": "Aydın",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Burhanettin KOCAMAZ": {
+    "name": "Burhanettin Kocamaz",
+    "province": "Mersin",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Ömer Fethi GÜRER": {
+    "name": "Ömer Fethi Gürer",
+    "province": "Niğde",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Asu KAYA": {
+    "name": "Asu Kaya",
+    "province": "Osmaniye",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ayşegül DOĞAN": {
+    "name": "Ayşegül Doğan Dağlı",
+    "province": "Şırnak",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Onur DÜŞÜNMEZ": {
+    "name": "Onur Düşünmez",
+    "province": "Hakkâri",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Suat ÖZÇAĞDAŞ": {
+    "name": "Suat Özçağdaş",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mehmet Salih UZUN": {
+    "name": "Salih Uzun",
+    "province": "İzmir (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mahmut TANAL": {
+    "name": "Mahmut Tanal",
+    "province": "Şanlıurfa",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ahmet Tuncay ÖZKAN": {
+    "name": "Ahmet Tuncay Özkan",
+    "province": "İzmir (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Serap YAZICI ÖZBUDUN": {
+    "name": "Serap Yazıcı Özbudun",
+    "province": "Antalya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Zülküf UÇAR": {
+    "name": "Zülküf Uçar",
+    "province": "Van",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Sema SİLKİN ÜN": {
+    "name": "Sema Silkin Ün",
+    "province": "Denizli",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Dursun Müsavat DERVİŞOĞLU": {
+    "name": "Müsavat Dervişoğlu",
+    "province": "İzmir (I)",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Oğuz Kaan SALICI": {
+    "name": "Oğuz Kaan Salıcı",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ensar AYTEKİN": {
+    "name": "Ensar Aytekin",
+    "province": "Balıkesir",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Tahsin OCAKLI": {
+    "name": "Tahsin Ocaklı",
+    "province": "Rize",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Yücel BULUT": {
+    "name": "Yücel Bulut",
+    "province": "Tokat",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Mehmet AŞILA": {
+    "name": "Mehmet Aşıla",
+    "province": "Kocaeli",
+    "elected_party": "Yeniden Refah Partisi",
+    "current_party": "Yeniden Refah Partisi"
+  },
+  "Heval BOZDAĞ": {
+    "name": "Heval Bozdağ",
+    "province": "Ağrı",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Adalet KAYA": {
+    "name": "Adalet Kaya",
+    "province": "Diyarbakır",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Aysu BANKOĞLU": {
+    "name": "Aysu Bankoğlu",
+    "province": "Bartın",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Necmettin ÇALIŞKAN": {
+    "name": "Necmettin Çalışkan",
+    "province": "Hatay",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Doğan DEMİR": {
+    "name": "Doğan Demir",
+    "province": "İstanbul (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ali Fazıl KASAP": {
+    "name": "Ali Fazıl Kasap",
+    "province": "Kütahya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Müzeyyen ŞEVKİN": {
+    "name": "Müzeyyen Şevkin",
+    "province": "Adana",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Hasan Basri SÖNMEZ": {
+    "name": "Hasan Basri Sönmez",
+    "province": "Isparta",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Bağımsız"
+  },
+  "İskender BAYHAN": {
+    "name": "İskender Bayhan",
+    "province": "İstanbul (III)",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Emek Partisi"
+  },
+  "Şerafettin KILIÇ": {
+    "name": "Şerafettin Kılıç",
+    "province": "Antalya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Serkan RAMANLI": {
+    "name": "Serkan Ramanlı",
+    "province": "Batman",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Hür Dava Partisi"
+  },
+  "Adnan Şefik ÇİRKİN": {
+    "name": "Adnan Şefik Çirkin",
+    "province": "Hatay",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Ali GÖKÇEK": {
+    "name": "Ali Gökçek",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Seyit TORUN": {
+    "name": "Seyit Torun",
+    "province": "Ordu",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ertuğrul KAYA": {
+    "name": "Ertuğrul Kaya",
+    "province": "Gaziantep",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Asuman ERDOĞAN": {
+    "name": "Asuman Erdoğan",
+    "province": "Ankara (III)",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Tamer OSMANAĞAOĞLU": {
+    "name": "Tamer Osmanağaoğlu",
+    "province": "İzmir (II)",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Medeni YILMAZ": {
+    "name": "Medeni Yılmaz",
+    "province": "İstanbul (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Mevlüt KARAKAYA": {
+    "name": "Mevlüt Karakaya",
+    "province": "Ankara (I)",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Lütfü TÜRKKAN": {
+    "name": "Lütfü Türkkan",
+    "province": "Kocaeli",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Ali Mahir BAŞARIR": {
+    "name": "Ali Mahir Başarır",
+    "province": "Mersin",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Birol AYDIN": {
+    "name": "Birol Aydın",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Sururi ÇORABATIR": {
+    "name": "Sururi Çorabatır",
+    "province": "Antalya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Seda KÂYA ÖSEN": {
+    "name": "Seda Kaya Ösen",
+    "province": "İzmir (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Vezir Coşkun PARLAK": {
+    "name": "Vezir Coşkun Parlak",
+    "province": "Hakkâri",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Ömer Faruk HÜLAKÜ": {
+    "name": "Ömer Faruk Hülakü",
+    "province": "Bingöl",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Tuncer BAKIRHAN": {
+    "name": "Tuncer Bakırhan",
+    "province": "Siirt",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "İzzet AKBULUT": {
+    "name": "İzzet Akbulut",
+    "province": "Burdur",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ahmet Vehbi BAKIRLIOĞLU": {
+    "name": "Ahmet Vehbi Bakırlıoğlu",
+    "province": "Manisa",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Hüseyin YILDIZ": {
+    "name": "Hüseyin Yıldız",
+    "province": "Aydın",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Murat ÇAN": {
+    "name": "Murat Çan",
+    "province": "Samsun",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Salihe AYDENİZ": {
+    "name": "Salihe Aydeniz",
+    "province": "Mardin",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Vecdi GÜNDOĞDU": {
+    "name": "Vecdi Gündoğdu",
+    "province": "Kırklareli",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Yavuz AYDIN": {
+    "name": "Yavuz Aydın",
+    "province": "Trabzon",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Nermin YILDIRIM KARA": {
+    "name": "Nermin Yıldırım Kara",
+    "province": "Hatay",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Türkan ELÇİ": {
+    "name": "Türkan Elçi",
+    "province": "İstanbul (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Zeynel EMRE": {
+    "name": "Zeynel Emre",
+    "province": "İstanbul (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Veli AĞBABA": {
+    "name": "Veli Ağbaba",
+    "province": "Malatya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Beritan GÜNEŞ ALTIN": {
+    "name": "Beritan Güneş Altın",
+    "province": "Mardin",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Ahmet ŞIK": {
+    "name": "Ahmet Şık",
+    "province": "İstanbul (II)",
+    "elected_party": "Türkiye İşçi Partisi",
+    "current_party": "Türkiye İşçi Partisi"
+  },
+  "Sadullah KISACIK": {
+    "name": "Sadullah Kısacık",
+    "province": "Adana",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Mustafa ADIGÜZEL": {
+    "name": "Mustafa Adıgüzel",
+    "province": "Ordu",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Abdurrahman BAŞKAN": {
+    "name": "Abdurrahman Başkan",
+    "province": "Antalya",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Ayyüce TÜRKEŞ TAŞ": {
+    "name": "Ayyüce Türkeş Taş",
+    "province": "Adana",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Sevda ERDAN KILIÇ": {
+    "name": "Sevda Erdan Kılıç",
+    "province": "İzmir (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Sevda KARACA DEMİR": {
+    "name": "Sevda Karaca Demir",
+    "province": "Gaziantep",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Emek Partisi"
+  },
+  "Barış KARADENİZ": {
+    "name": "Barış Karadeniz",
+    "province": "Sinop",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mehmet TAHTASIZ": {
+    "name": "Mehmet Tahtasız",
+    "province": "Çorum",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mehmet ATMACA": {
+    "name": "Mehmet Atmaca",
+    "province": "Bursa (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "İsmail AKGÜL": {
+    "name": "İsmail Akgül",
+    "province": "Bolu",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Bağımsız"
+  },
+  "Ahmet Baran YAZGAN": {
+    "name": "Ahmet Baran Yazgan",
+    "province": "Edirne",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ünal KARAMAN": {
+    "name": "Ünal Karaman",
+    "province": "Konya",
+    "elected_party": "İYİ Parti",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Burak AKBURAK": {
+    "name": "Burak Akburak",
+    "province": "İstanbul (I)",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Eylem Ertuğ ERTUĞRUL": {
+    "name": "Eylem Ertuğ Ertuğrul",
+    "province": "Zonguldak",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ertuğrul Gazi KONAL": {
+    "name": "Ertuğrul Gazi Konal",
+    "province": "Giresun",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Semih IŞIKVER": {
+    "name": "Semih Işıkver",
+    "province": "Elazığ",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Umut AKDOĞAN": {
+    "name": "Umut Akdoğan",
+    "province": "Ankara (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Melih MERİÇ": {
+    "name": "Melih Meriç",
+    "province": "Gaziantep",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Erdoğan TOPRAK": {
+    "name": "Erdoğan Toprak",
+    "province": "İstanbul (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mustafa BİLİCİ": {
+    "name": "Mustafa Bilici",
+    "province": "İzmir (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Celal FIRAT": {
+    "name": "Celal Fırat",
+    "province": "İstanbul (III)",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Sermet ATAY": {
+    "name": "Sermet Atay",
+    "province": "Gaziantep",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Semra ÇAĞLAR GÖKALP": {
+    "name": "Semra Çağlar Gökalp",
+    "province": "Bitlis",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Tahsin BECAN": {
+    "name": "Tahsin Becan",
+    "province": "Yalova",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Bekir BAŞEVİRGEN": {
+    "name": "Bekir Başevirgen",
+    "province": "Manisa",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Süreyya ÖNEŞ DERİCİ": {
+    "name": "Süreyya Öneş Derici",
+    "province": "Muğla",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Metin İLHAN": {
+    "name": "Metin İlhan",
+    "province": "Kırşehir",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Cevdet AKAY": {
+    "name": "Cevdet Akay",
+    "province": "Karabük",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "İbrahim Ethem TAŞ": {
+    "name": "İbrahim Ethem Taş",
+    "province": "Antalya",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Ahmet Eşref FAKIBABA": {
+    "name": "Ahmet Eşref Fakıbaba",
+    "province": "Ankara (I)",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Mahir POLAT": {
+    "name": "Mahir Polat",
+    "province": "İzmir (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Elvan IŞIK GEZMİŞ": {
+    "name": "Elvan Işık Gezmiş",
+    "province": "Giresun",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Sibel SUİÇMEZ": {
+    "name": "Sibel Suiçmez",
+    "province": "Trabzon",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Özgür Erdem İNCESU": {
+    "name": "Özgür Erdem İncesu",
+    "province": "Ardahan",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Hilmi DURGUN": {
+    "name": "Hilmi Durgun",
+    "province": "Antalya",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Hasan KARAL": {
+    "name": "Hasan Karal",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Utku ÇAKIRÖZER": {
+    "name": "Utku Çakırözer",
+    "province": "Eskişehir",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Selçuk ÖZDAĞ": {
+    "name": "Selçuk Özdağ",
+    "province": "Muğla",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Ömer ÖCALAN": {
+    "name": "Ömer Öcalan",
+    "province": "Şanlıurfa",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Gülüstan KILIÇ KOÇYİĞİT": {
+    "name": "Gülüstan Kılıç Koçyiğit",
+    "province": "Kars",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Turan YALDIR": {
+    "name": "Turan Yaldır",
+    "province": "Aksaray",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Nurhayat ALTACA KAYIŞOĞLU": {
+    "name": "Nurhayat Altaca Kayışoğlu",
+    "province": "Bursa (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Yaşar TÜZÜN": {
+    "name": "Yaşar Tüzün",
+    "province": "Bilecik",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ayşe Sibel YANIKÖMEROĞLU": {
+    "name": "Ayşe Sibel Yanıkömeroğlu",
+    "province": "İstanbul (III)",
+    "elected_party": "İYİ Parti",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Aşkın GENÇ": {
+    "name": "Aşkın Genç",
+    "province": "Kayseri",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Uğur POYRAZ": {
+    "name": "Uğur Poyraz",
+    "province": "Antalya",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Fahri ÖZKAN": {
+    "name": "Fahri Özkan",
+    "province": "Kırklareli",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Cemal ENGİNYURT": {
+    "name": "Cemal Enginyurt",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Keskin BAYINDIR": {
+    "name": "Keskin Bayındır",
+    "province": "Batman",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Demokratik Bölgeler Partisi"
+  },
+  "Mustafa Baki ERSOY": {
+    "name": "Mustafa Baki Ersoy",
+    "province": "Kayseri",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Sezai TEMELLİ": {
+    "name": "Sezai Temelli",
+    "province": "Muş",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Özgür CEYLAN": {
+    "name": "Özgür Ceylan",
+    "province": "Çanakkale",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ayten KORDU": {
+    "name": "Ayten Kordu",
+    "province": "Tunceli",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "İdris ŞAHİN": {
+    "name": "İdris Şahin",
+    "province": "Ankara (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "İsmet GÜNEŞHAN": {
+    "name": "İsmet Güneşhan",
+    "province": "Çanakkale",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Deniz YAVUZYILMAZ": {
+    "name": "Deniz Yavuzyılmaz",
+    "province": "Zonguldak",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Yüksel TAŞKIN": {
+    "name": "Yüksel Taşkın",
+    "province": "İzmir (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ediz ÜN": {
+    "name": "Ediz Ün",
+    "province": "Edirne",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Bağımsız"
+  },
+  "Konur Alp KOÇAK": {
+    "name": "Konur Alp Koçak",
+    "province": "Konya",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Hüsmen KIRKPINAR": {
+    "name": "Hüsmen Kırkpınar",
+    "province": "İzmir (II)",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "İlhami Özcan AYGUN": {
+    "name": "İlhami Özcan Aygun",
+    "province": "Tekirdağ",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Koray AYDIN": {
+    "name": "Koray Aydın",
+    "province": "Ankara (I)",
+    "elected_party": "İYİ Parti",
+    "current_party": "Bağımsız"
+  },
+  "Hikmet Yalım HALICI": {
+    "name": "Hikmet Yalım Halıcı",
+    "province": "Isparta",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Sümeyye BOZ ÇAKI": {
+    "name": "Sümeyye Boz",
+    "province": "Muş",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Musa KÜÇÜK": {
+    "name": "Musa Küçük",
+    "province": "Gümüşhane",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Levent UYSAL": {
+    "name": "Levent Uysal",
+    "province": "Mersin",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Talih ÖZCAN": {
+    "name": "Talih Özcan",
+    "province": "Düzce",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Rahmi Aşkın TÜRELİ": {
+    "name": "Rahmi Aşkın Türeli",
+    "province": "İzmir (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ali KARAOBA": {
+    "name": "Ali Karaoba",
+    "province": "Uşak",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Faruk DİNÇ": {
+    "name": "Faruk Dinç",
+    "province": "Mersin",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Hür Dava Partisi"
+  },
+  "Mehmet Önder AKSAKAL": {
+    "name": "Önder Aksakal",
+    "province": "İstanbul (II)",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Demokratik Sol Parti"
+  },
+  "Mehmet Sait YAZ": {
+    "name": "Mehmet Sait Yaz",
+    "province": "Diyarbakır",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Hasan ÖZTÜRKMEN": {
+    "name": "Hasan Öztürkmen",
+    "province": "Gaziantep",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Kürşad ZORLU": {
+    "name": "Kürşad Zorlu",
+    "province": "Ankara (III)",
+    "elected_party": "İYİ Parti",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Naci ŞANLITÜRK": {
+    "name": "Naci Şanlıtürk",
+    "province": "Ordu",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Cumali İNCE": {
+    "name": "Cumali İnce",
+    "province": "Niğde",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Orhan SARIBAL": {
+    "name": "Orhan Sarıbal",
+    "province": "Bursa (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "İbrahim ARSLAN": {
+    "name": "İbrahim Arslan",
+    "province": "Eskişehir",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Fevzi ZIRHLIOĞLU": {
+    "name": "Fevzi Zırhlıoğlu",
+    "province": "Bursa (II)",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Yüksel ARSLAN": {
+    "name": "Yüksel Arslan",
+    "province": "Ankara (III)",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Jale Nur SÜLLÜ": {
+    "name": "Jale Nur Süllü",
+    "province": "Eskişehir",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mustafa ERDEM": {
+    "name": "Mustafa Erdem",
+    "province": "Antalya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Hasan TOKTAŞ": {
+    "name": "Hasan Toktaş",
+    "province": "Bursa (II)",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Ulaş KARASU": {
+    "name": "Ulaş Karasu",
+    "province": "Sivas",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ayhan BARUT": {
+    "name": "Ayhan Barut",
+    "province": "Adana",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Cemalettin Kani TORUN": {
+    "name": "Cemalettin Kani Torun",
+    "province": "Bursa (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Hakan Şeref OLGUN": {
+    "name": "Hakan Şeref Olgun",
+    "province": "Afyonkarahisar",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Mustafa DEMİR": {
+    "name": "Mustafa Demir",
+    "province": "Kilis",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Bağımsız"
+  },
+  "Burhanettin BULUT": {
+    "name": "Burhanettin Bulut",
+    "province": "Adana",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "İsmail ÖZDEMİR": {
+    "name": "İsmail Özdemir",
+    "province": "Kayseri",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Haydar ALTINTAŞ": {
+    "name": "Haydar Altıntaş",
+    "province": "İzmir (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Demokrat Parti"
+  },
+  "Filiz KILIÇ": {
+    "name": "Filiz Kılıç",
+    "province": "Nevşehir",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Berdan ÖZTÜRK": {
+    "name": "Berdan Öztürk",
+    "province": "Diyarbakır",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Hasan ÖZTÜRK": {
+    "name": "Hasan Öztürk",
+    "province": "Bursa (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Elif ESEN": {
+    "name": "Elif Esen",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Gökçe GÖKÇEN": {
+    "name": "Gökçe Gökçen",
+    "province": "İzmir (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "İbrahim YURDUNUSEVEN": {
+    "name": "İbrahim Yurdunuseven",
+    "province": "Afyonkarahisar",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Ednan ARSLAN": {
+    "name": "Ednan Arslan",
+    "province": "İzmir (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mustafa Nedim YAMALI": {
+    "name": "Mustafa Nedim Yamalı",
+    "province": "Ankara (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "İsmail Atakan ÜNVER": {
+    "name": "İsmail Atakan Ünver",
+    "province": "Karaman",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Dilan KUNT AYAN": {
+    "name": "Dilan Kunt Ayan",
+    "province": "Şanlıurfa",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Çiğdem KILIÇGÜN UÇAR": {
+    "name": "Çiğdem Kılıçgün Uçar",
+    "province": "İstanbul (III)",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Demokratik Bölgeler Partisi"
+  },
+  "Ceylan AKÇA CUPOLO": {
+    "name": "Ceylan Akça Cupolo",
+    "province": "Diyarbakır",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Ayça TAŞKENT": {
+    "name": "Ayça Taşkent",
+    "province": "Sakarya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Sevilay ÇELENK ÖZEN": {
+    "name": "Sevilay Çelenk Özen",
+    "province": "Diyarbakır",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Kadim DURMAZ": {
+    "name": "Kadim Durmaz",
+    "province": "Tokat",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ali BOZAN": {
+    "name": "Ali Bozan",
+    "province": "Mersin",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Sinan ÇİFTYÜREK": {
+    "name": "Sinan Çiftyürek",
+    "province": "Van",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Aykut KAYA": {
+    "name": "Aykut Kaya",
+    "province": "Antalya",
+    "elected_party": "İYİ Parti",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Nurten YONTAR": {
+    "name": "Nurten Yontar",
+    "province": "Tekirdağ",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "İbrahim Ethem SEDEF": {
+    "name": "İbrahim Ethem Sedef",
+    "province": "Yozgat",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Yüksel Selçuk TÜRKOĞLU": {
+    "name": "Yüksel Selçuk Türkoğlu",
+    "province": "Bursa (I)",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Ferit ŞENYAŞAR": {
+    "name": "Ferit Şenyaşar",
+    "province": "Şanlıurfa",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Osman GÖKÇEK": {
+    "name": "Osman Gökçek",
+    "province": "Ankara (II)",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Yunus EMRE": {
+    "name": "Yunus Emre",
+    "province": "İstanbul (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ersin BEYAZ": {
+    "name": "Ersin Beyaz",
+    "province": "İstanbul (III)",
+    "elected_party": "İYİ Parti",
+    "current_party": "Bağımsız"
+  },
+  "Turhan ÇÖMEZ": {
+    "name": "Turhan Çömez",
+    "province": "Balıkesir",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Meral DANIŞ BEŞTAŞ": {
+    "name": "Meral Danış Beştaş",
+    "province": "Erzurum",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Ahmet Ersagun YÜCEL": {
+    "name": "Ahmet Ersagun Yücel",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Nimet ÖZDEMİR": {
+    "name": "Nimet Özdemir",
+    "province": "İstanbul (I)",
+    "elected_party": "İYİ Parti",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Şenol SUNAT": {
+    "name": "Şenol Sunat",
+    "province": "Manisa",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Metin ERGUN": {
+    "name": "Metin Ergün",
+    "province": "Muğla",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Mehmet AKALIN": {
+    "name": "Mehmet Akalın",
+    "province": "Edirne",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Ahmet Fethan BAYKOÇ": {
+    "name": "Ahmet Fethan Baykoç",
+    "province": "Ankara (III)",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Kamuran TANHAN": {
+    "name": "Kamuran Tanhan",
+    "province": "Mardin",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Semra DİNÇER": {
+    "name": "Semra Dinçer",
+    "province": "Ankara (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Servet MULLAOĞLU": {
+    "name": "Servet Mullaoğlu",
+    "province": "Hatay",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Talat DİNÇER": {
+    "name": "Talat Dinçer",
+    "province": "Mersin",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Gülcan KIŞ": {
+    "name": "Gülcan Kış",
+    "province": "Mersin",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mehmet Rüştü TİRYAKİ": {
+    "name": "Mehmet Rüştü Tiryaki",
+    "province": "Batman",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Erkan BAŞ": {
+    "name": "Erkan Baş",
+    "province": "İstanbul (III)",
+    "elected_party": "Türkiye İşçi Partisi",
+    "current_party": "Türkiye İşçi Partisi"
+  },
+  "İdris Nebi HATİPOĞLU": {
+    "name": "İdris Nebi Hatipoğlu",
+    "province": "Eskişehir",
+    "elected_party": "İYİ Parti",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Ömer Faruk GERGERLİOĞLU": {
+    "name": "Ömer Faruk Gergerlioğlu",
+    "province": "Kocaeli",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Serhat EREN": {
+    "name": "Serhat Eren",
+    "province": "Diyarbakır",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Fethi AÇIKEL": {
+    "name": "Fethi Açıkel",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Gökan ZEYBEK": {
+    "name": "Gökan Zeybek",
+    "province": "İstanbul (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mehmet KAMAÇ": {
+    "name": "Mehmet Kamaç",
+    "province": "Diyarbakır",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Şeref ARPACI": {
+    "name": "Şeref Arpacı",
+    "province": "Denizli",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Evrim KARAKOZ": {
+    "name": "Evrim Karakoz",
+    "province": "Aydın",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Bülent TEZCAN": {
+    "name": "Bülent Tezcan",
+    "province": "Aydın",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Abdurrahim FIRAT": {
+    "name": "Abdurrahim Fırat",
+    "province": "Erzurum",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Rıfat Turuntay NALBANTOĞLU": {
+    "name": "Rıfat Turuntay Nalbantoğlu",
+    "province": "İzmir (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Barış BEKTAŞ": {
+    "name": "Barış Bektaş",
+    "province": "Konya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "İsmail GÜNEŞ": {
+    "name": "İsmail Güneş",
+    "province": "Uşak",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Özgür KARABAT": {
+    "name": "Özgür Karabat",
+    "province": "İstanbul (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mahmut ARIKAN": {
+    "name": "Mahmut Arıkan",
+    "province": "Kayseri",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Saadet Partisi"
+  },
+  "Engin ALTAY": {
+    "name": "Engin Altay",
+    "province": "İstanbul (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Atay USLU": {
+    "name": "Atay Uslu",
+    "province": "Antalya",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Yasin ÖZTÜRK": {
+    "name": "Yasin Öztürk",
+    "province": "Denizli",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Halide TÜRKOĞLU": {
+    "name": "Halide Türkoğlu",
+    "province": "Diyarbakır",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Gamze AKKUŞ İLGEZDİ": {
+    "name": "Gamze Akkuş İlgezdi",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Lütfi KAŞIKÇI": {
+    "name": "Lütfi Kaşıkçı",
+    "province": "Hatay",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Burak DALGIN": {
+    "name": "Burak Dalgın",
+    "province": "Balıkesir",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "İYİ Parti"
+  },
+  "İnan Akgün ALP": {
+    "name": "İnan Akgün Alp",
+    "province": "Kars",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mühip KANKO": {
+    "name": "Mühip Kanko",
+    "province": "Kocaeli",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Nejla DEMİR": {
+    "name": "Nejla Demir",
+    "province": "Ağrı",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Cavit ARI": {
+    "name": "Cavit Arı",
+    "province": "Antalya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Saliha Sera KADIGİL": {
+    "name": "Saliha Sera Kadıgil",
+    "province": "İstanbul (I)",
+    "elected_party": "Türkiye İşçi Partisi",
+    "current_party": "Türkiye İşçi Partisi"
+  },
+  "Mustafa Sezgin TANRIKULU": {
+    "name": "Mustafa Sezgin Tanrıkulu",
+    "province": "Diyarbakır",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Burcugül ÇUBUK": {
+    "name": "Burcugül Çubuk",
+    "province": "İzmir (I)",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Orhan SÜMER": {
+    "name": "Orhan Sümer",
+    "province": "Adana",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ümit DİKBAYIR": {
+    "name": "Ümit Dikbayır",
+    "province": "Sakarya",
+    "elected_party": "İYİ Parti",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Uğur BAYRAKTUTAN": {
+    "name": "Uğur Bayraktutan",
+    "province": "Artvin",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mehmet Emin EKMEN": {
+    "name": "Mehmet Emin Ekmen",
+    "province": "Mersin",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Mesut DOĞAN": {
+    "name": "Mesut Doğan",
+    "province": "Ankara (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Zeynep ODUNCU KUTEVİ": {
+    "name": "Zeynep Oduncu",
+    "province": "Batman",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Sadullah ERGİN": {
+    "name": "Sadullah Ergin",
+    "province": "Ankara (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Adnan BEKER": {
+    "name": "Adnan Beker",
+    "province": "Ankara (II)",
+    "elected_party": "İYİ Parti",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Lütfiye Selva ÇAM": {
+    "name": "Lütfiye Selva Çam",
+    "province": "Ankara (II)",
+    "elected_party": "Adalet ve Kalkınma Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Hasan EKİCİ": {
+    "name": "Hasan Ekici",
+    "province": "Konya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Türker ATEŞ": {
+    "name": "Türker Ateş",
+    "province": "Bolu",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mehmet Zeki İRMEZ": {
+    "name": "Mehmet Zeki İrmez",
+    "province": "Şırnak",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Deniz YÜCEL": {
+    "name": "Deniz Yücel",
+    "province": "İzmir (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mustafa KAYA": {
+    "name": "Mustafa Kaya",
+    "province": "İstanbul (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Aliye COŞAR": {
+    "name": "Aliye Coşar",
+    "province": "Antalya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Murat EMİR": {
+    "name": "Murat Emir",
+    "province": "Ankara (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Doğan BEKİN": {
+    "name": "Doğan Bekin",
+    "province": "İstanbul (III)",
+    "elected_party": "Yeniden Refah Partisi",
+    "current_party": "Yeniden Refah Partisi"
+  },
+  "Reşat KARAGÖZ": {
+    "name": "Reşat Karagöz",
+    "province": "Amasya",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ali ÖZTUNÇ": {
+    "name": "Ali Öztunç",
+    "province": "Kahramanmaraş",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Perihan KOCA DOĞAN": {
+    "name": "Perihan Koca",
+    "province": "Mersin",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "George ASLAN": {
+    "name": "George Aslan",
+    "province": "Mardin",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "İsmet BÜYÜKATAMAN": {
+    "name": "İsmet Büyükataman",
+    "province": "Bursa (I)",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Zuhal KARAKOÇ": {
+    "name": "Zuhal Karakoç Dora",
+    "province": "Kahramanmaraş",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Mithat SANCAR": {
+    "name": "Mithat Sancar",
+    "province": "Şanlıurfa",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Mehmet Satuk Buğra KAVUNCU": {
+    "name": "Mehmet Satuk Buğra Kavuncu",
+    "province": "İstanbul (II)",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Çiçek OTLU": {
+    "name": "Çiçek Otlu",
+    "province": "İstanbul (III)",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Aliye TİMİSİ ERSEVER": {
+    "name": "Aliye Timisi Ersever",
+    "province": "Ankara (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Okan KONURALP": {
+    "name": "Okan Konuralp",
+    "province": "Ankara (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Gökhan GÜNAYDIN": {
+    "name": "Gökhan Günaydın",
+    "province": "İstanbul (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Hüseyin OLAN": {
+    "name": "Hüseyin Olan",
+    "province": "Bitlis",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Yılmaz HUN": {
+    "name": "Yılmaz Hun",
+    "province": "Iğdır",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Sabahat ERDOĞAN SARITAŞ": {
+    "name": "Sabahat Erdoğan Sarıtaş",
+    "province": "Siirt",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Ekrem Gökay YÜKSEL": {
+    "name": "Ekrem Gökay Yüksel",
+    "province": "Balıkesir",
+    "elected_party": "Milliyetçi Hareket Partisi",
+    "current_party": "Milliyetçi Hareket Partisi"
+  },
+  "Gülizar BİÇER KARACA": {
+    "name": "Gülizar Biçer Karaca",
+    "province": "Denizli",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Gizem ÖZCAN": {
+    "name": "Gizem Özcan",
+    "province": "Muğla",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Gülcan KAÇMAZ SAYYİĞİT": {
+    "name": "Gülcan Kaçmaz Sayyiğit",
+    "province": "Van",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Öznur BARTİN": {
+    "name": "Öznur Bartin",
+    "province": "Hakkâri",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Muhammed Ali Fatih ERBAKAN": {
+    "name": "Muhammed Ali Fatih Erbakan",
+    "province": "İstanbul (II)",
+    "elected_party": "Yeniden Refah Partisi",
+    "current_party": "Yeniden Refah Partisi"
+  },
+  "Turan Taşkın ÖZER": {
+    "name": "Turan Taşkın Özer",
+    "province": "İstanbul (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Kayıhan PALA": {
+    "name": "Kayıhan Pala",
+    "province": "Bursa (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Namık TAN": {
+    "name": "Namık Tan",
+    "province": "İstanbul (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Deniz DEMİR": {
+    "name": "Deniz Demir",
+    "province": "Ankara (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Nail ÇİLER": {
+    "name": "Nail Çiler",
+    "province": "Kocaeli",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mehmet Mustafa GÜRBAN": {
+    "name": "Mehmet Mustafa Gürban",
+    "province": "Gaziantep",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Aylin YAMAN": {
+    "name": "Aylin Yaman",
+    "province": "Ankara (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mustafa SARIGÜL": {
+    "name": "Mustafa Sarıgül",
+    "province": "Erzincan",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Özgür ÖZEL": {
+    "name": "Özgür Özel",
+    "province": "Manisa",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Süleyman BÜLBÜL": {
+    "name": "Süleyman Bülbül",
+    "province": "Aydın",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Serkan SARI": {
+    "name": "Serkan Sarı",
+    "province": "Balıkesir",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mehmet KARAMAN": {
+    "name": "Mehmet Karaman",
+    "province": "Samsun",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Yeni Yol"
+  },
+  "Evrim RIZVANOĞLU": {
+    "name": "Evrim Rızvanoğlu",
+    "province": "İstanbul (II)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Harun Özgür YILDIZLI": {
+    "name": "Harun Özgür Yıldızlı",
+    "province": "Kocaeli",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Gürsel EROL": {
+    "name": "Gürsel Erol",
+    "province": "Elazığ",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "İrfan KARATUTLU": {
+    "name": "İrfan Karatutlu",
+    "province": "Kahramanmaraş",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Özgül SAKİ": {
+    "name": "Özgül Saki",
+    "province": "İstanbul (II)",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Pervin BULDAN": {
+    "name": "Pervin Buldan",
+    "province": "Van",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Gamze TAŞCIER": {
+    "name": "Gamze Taşçıer",
+    "province": "Ankara (I)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Erhan USTA": {
+    "name": "Erhan Usta",
+    "province": "Samsun",
+    "elected_party": "İYİ Parti",
+    "current_party": "İYİ Parti"
+  },
+  "Ali YÜKSEL": {
+    "name": "Ali Yüksel",
+    "province": "Konya",
+    "elected_party": "Yeniden Refah Partisi",
+    "current_party": "Yeniden Refah Partisi"
+  },
+  "Nevroz UYSAL ASLAN": {
+    "name": "Nevroz Uysal Aslan",
+    "province": "Şırnak",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Bilal BİLİCİ": {
+    "name": "Bilal Bilici",
+    "province": "Adana",
+    "elected_party": "İYİ Parti",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Mehmet GÜZELMANSUR": {
+    "name": "Mehmet Güzelmansur",
+    "province": "Hatay",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Keziban KONUKCU KOK": {
+    "name": "Keziban Konukcu Kok",
+    "province": "İstanbul (I)",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Cem AVŞAR": {
+    "name": "Cem Avşar",
+    "province": "Tekirdağ",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Ümit ÖZLALE": {
+    "name": "Ümit Özlale",
+    "province": "İzmir (I)",
+    "elected_party": "İYİ Parti",
+    "current_party": "Cumhuriyet Halk Partisi"
+  },
+  "Sırrı SAKİK": {
+    "name": "Sırrı Sakık",
+    "province": "Ağrı",
+    "elected_party": "Halkların Eşitlik ve Demokrasi Partisi",
+    "current_party": "Halkların Eşitlik ve Demokrasi Partisi"
+  },
+  "Dursun ATAŞ": {
+    "name": "Dursun Ataş",
+    "province": "Kayseri",
+    "elected_party": "İYİ Parti",
+    "current_party": "Adalet ve Kalkınma Partisi"
+  },
+  "Mustafa YENEROĞLU": {
+    "name": "Mustafa Yeneroğlu",
+    "province": "İstanbul (III)",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Bağımsız"
+  },
+  "Cumhur UZUN": {
+    "name": "Cumhur Uzun",
+    "province": "Muğla",
+    "elected_party": "Cumhuriyet Halk Partisi",
+    "current_party": "Cumhuriyet Halk Partisi"
+  }
+}

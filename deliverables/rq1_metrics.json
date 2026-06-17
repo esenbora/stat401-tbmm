@@ -1,0 +1,565 @@
+{
+  "top_ministries": [
+    {
+      "bakanlik": "Adalet Bakanlığı",
+      "n": 6140
+    },
+    {
+      "bakanlik": "İçişleri Bakanlığı",
+      "n": 5571
+    },
+    {
+      "bakanlik": "Çevre, Şehircilik Ve İklim Değişikliği Bakanlığı",
+      "n": 4587
+    },
+    {
+      "bakanlik": "Tarım Ve Orman Bakanlığı",
+      "n": 4584
+    },
+    {
+      "bakanlik": "Sağlık Bakanlığı",
+      "n": 3520
+    },
+    {
+      "bakanlik": "Milli Eğitim Bakanlığı",
+      "n": 3508
+    },
+    {
+      "bakanlik": "Ulaştırma Ve Altyapı Bakanlığı",
+      "n": 2685
+    },
+    {
+      "bakanlik": "Çalışma Ve Sosyal Güvenlik Bakanlığı",
+      "n": 2158
+    },
+    {
+      "bakanlik": "Hazine Ve Maliye Bakanlığı",
+      "n": 1722
+    },
+    {
+      "bakanlik": "Aile Ve Sosyal Hizmetler Bakanlığı",
+      "n": 1720
+    }
+  ],
+  "lda_perplexity": 6.575204575281601,
+  "lda_topics": [
+    {
+      "topic": 0,
+      "words": [
+        "şubat",
+        "tarihli",
+        "kahramanmaraş",
+        "sosyal",
+        "depremler",
+        "hatay",
+        "depreme",
+        "merkezli"
+      ]
+    },
+    {
+      "topic": 1,
+      "words": [
+        "yana",
+        "diyarbakır",
+        "orman",
+        "iddiasına",
+        "yılından",
+        "sürecine",
+        "mücadeleye",
+        "bulunan"
+      ]
+    },
+    {
+      "topic": 2,
+      "words": [
+        "arasında",
+        "yılları",
+        "türkiye",
+        "sayısına",
+        "ilindeki",
+        "ülke",
+        "genelinde",
+        "kredi"
+      ]
+    },
+    {
+      "topic": 3,
+      "words": [
+        "yılı",
+        "yaptığı",
+        "çeşitli",
+        "denetim",
+        "iddialara",
+        "tespitlere",
+        "verilere",
+        "raporu"
+      ]
+    },
+    {
+      "topic": 4,
+      "words": [
+        "çalışmalara",
+        "bağlı",
+        "ilçesine",
+        "sorununa",
+        "yönelik",
+        "yürütülen",
+        "yaşanan",
+        "şanlıurfa"
+      ]
+    },
+    {
+      "topic": 5,
+      "words": [
+        "tarım",
+        "artışa",
+        "istanbul",
+        "belediyesinin",
+        "koruma",
+        "iddiasına",
+        "bulunan",
+        "kamu"
+      ]
+    },
+    {
+      "topic": 6,
+      "words": [
+        "bulunan",
+        "cezaevinde",
+        "kapalı",
+        "mahkumun",
+        "tipi",
+        "iddiasına",
+        "ilçesinde",
+        "bakanlığın"
+      ]
+    },
+    {
+      "topic": 7,
+      "words": [
+        "talebine",
+        "akıbetine",
+        "projesi",
+        "sorunlara",
+        "ankara",
+        "yer",
+        "alan",
+        "yaşanan"
+      ]
+    },
+    {
+      "topic": 8,
+      "words": [
+        "sayısına",
+        "bağlı",
+        "devlet",
+        "kamu",
+        "son",
+        "talebine",
+        "yılda",
+        "yapan"
+      ]
+    },
+    {
+      "topic": 9,
+      "words": [
+        "iddiasına",
+        "son",
+        "yılda",
+        "kişinin",
+        "edildiği",
+        "tespit",
+        "istihdamına",
+        "kolluk"
+      ]
+    },
+    {
+      "topic": 10,
+      "words": [
+        "ilçesinde",
+        "bulunan",
+        "kocaeli",
+        "yaşanan",
+        "planlanan",
+        "hayatını",
+        "ilinin",
+        "etkilerine"
+      ]
+    },
+    {
+      "topic": 11,
+      "words": [
+        "tarihinde",
+        "gelen",
+        "meydana",
+        "engelli",
+        "ilinde",
+        "talebine",
+        "yaşanan",
+        "eğitim"
+      ]
+    }
+  ],
+  "fp_top_itemsets": [
+    {
+      "items": [
+        "cezaevinde",
+        "bulunan"
+      ],
+      "freq": 2241
+    },
+    {
+      "items": [
+        "kapalı",
+        "cezaevinde"
+      ],
+      "freq": 2119
+    },
+    {
+      "items": [
+        "mahkumun",
+        "bulunan"
+      ],
+      "freq": 2065
+    },
+    {
+      "items": [
+        "mahkumun",
+        "cezaevinde"
+      ],
+      "freq": 1967
+    },
+    {
+      "items": [
+        "mahkumun",
+        "cezaevinde",
+        "bulunan"
+      ],
+      "freq": 1936
+    },
+    {
+      "items": [
+        "kapalı",
+        "bulunan"
+      ],
+      "freq": 1826
+    },
+    {
+      "items": [
+        "kapalı",
+        "cezaevinde",
+        "bulunan"
+      ],
+      "freq": 1667
+    },
+    {
+      "items": [
+        "tipi",
+        "cezaevinde"
+      ],
+      "freq": 1605
+    },
+    {
+      "items": [
+        "mahkumun",
+        "kapalı"
+      ],
+      "freq": 1602
+    },
+    {
+      "items": [
+        "mahkumun",
+        "kapalı",
+        "bulunan"
+      ],
+      "freq": 1567
+    },
+    {
+      "items": [
+        "tipi",
+        "kapalı"
+      ],
+      "freq": 1557
+    },
+    {
+      "items": [
+        "ilçesine",
+        "bağlı"
+      ],
+      "freq": 1511
+    },
+    {
+      "items": [
+        "mahkumun",
+        "kapalı",
+        "cezaevinde"
+      ],
+      "freq": 1478
+    },
+    {
+      "items": [
+        "mahkumun",
+        "kapalı",
+        "cezaevinde",
+        "bulunan"
+      ],
+      "freq": 1456
+    },
+    {
+      "items": [
+        "tipi",
+        "bulunan"
+      ],
+      "freq": 1386
+    }
+  ],
+  "fp_top_rules": [
+    {
+      "antecedent": [
+        "yüksek",
+        "cezaevinde"
+      ],
+      "consequent": [
+        "güvenlikli"
+      ],
+      "confidence": 1.0,
+      "lift": 65.71
+    },
+    {
+      "antecedent": [
+        "mücadeleye",
+        "ilinin",
+        "ilçesinde"
+      ],
+      "consequent": [
+        "şap"
+      ],
+      "confidence": 1.0,
+      "lift": 113.77
+    },
+    {
+      "antecedent": [
+        "nolu",
+        "mahkumun",
+        "cezaevinde",
+        "iddiasına"
+      ],
+      "consequent": [
+        "bulunan"
+      ],
+      "confidence": 1.0,
+      "lift": 8.55
+    },
+    {
+      "antecedent": [
+        "hizmetlere",
+        "köyüne",
+        "bitlis"
+      ],
+      "consequent": [
+        "özel"
+      ],
+      "confidence": 1.0,
+      "lift": 52.96
+    },
+    {
+      "antecedent": [
+        "hizmetlere",
+        "köyüne",
+        "ilçesinin",
+        "bitlis"
+      ],
+      "consequent": [
+        "özel"
+      ],
+      "confidence": 1.0,
+      "lift": 52.96
+    },
+    {
+      "antecedent": [
+        "mücadeleye",
+        "ilinin",
+        "ilçesinde"
+      ],
+      "consequent": [
+        "hastalığı"
+      ],
+      "confidence": 1.0,
+      "lift": 112.9
+    },
+    {
+      "antecedent": [
+        "köyüne",
+        "idaresi",
+        "ilçesinin",
+        "bitlis",
+        "ilinin"
+      ],
+      "consequent": [
+        "özel"
+      ],
+      "confidence": 1.0,
+      "lift": 52.96
+    },
+    {
+      "antecedent": [
+        "sayıştayın",
+        "raporu",
+        "denetim",
+        "yılı"
+      ],
+      "consequent": [
+        "tespitlere"
+      ],
+      "confidence": 1.0,
+      "lift": 67.2
+    },
+    {
+      "antecedent": [
+        "hizmetlere",
+        "köyüne",
+        "ilçesinin",
+        "bitlis",
+        "ilinin"
+      ],
+      "consequent": [
+        "özel"
+      ],
+      "confidence": 1.0,
+      "lift": 52.96
+    },
+    {
+      "antecedent": [
+        "güvenlikli",
+        "bulunan"
+      ],
+      "consequent": [
+        "yüksek"
+      ],
+      "confidence": 1.0,
+      "lift": 55.26
+    },
+    {
+      "antecedent": [
+        "sayıştayın",
+        "denetim",
+        "yılı"
+      ],
+      "consequent": [
+        "yaptığı"
+      ],
+      "confidence": 1.0,
+      "lift": 20.39
+    },
+    {
+      "antecedent": [
+        "raporu",
+        "tespitlere",
+        "denetim",
+        "yılı"
+      ],
+      "consequent": [
+        "yaptığı"
+      ],
+      "confidence": 1.0,
+      "lift": 20.39
+    },
+    {
+      "antecedent": [
+        "hizmetlere",
+        "köyüne",
+        "idaresi",
+        "ilçesinin",
+        "bitlis"
+      ],
+      "consequent": [
+        "özel"
+      ],
+      "confidence": 1.0,
+      "lift": 52.96
+    },
+    {
+      "antecedent": [
+        "raporu",
+        "yılı",
+        "yaptığı"
+      ],
+      "consequent": [
+        "denetim"
+      ],
+      "confidence": 1.0,
+      "lift": 62.65
+    },
+    {
+      "antecedent": [
+        "köyüne",
+        "idaresi",
+        "ilçesinin",
+        "bitlis",
+        "ilinin"
+      ],
+      "consequent": [
+        "hizmetlere"
+      ],
+      "confidence": 1.0,
+      "lift": 112.62
+    }
+  ],
+  "party_clf": {
+    "classes": [
+      "CHP",
+      "DEM Parti",
+      "İYİ Parti"
+    ],
+    "accuracy": 0.7612,
+    "f1": 0.7536,
+    "baseline_majority": 0.4876
+  },
+  "duplicates": {
+    "near_dup_pairs": 109443,
+    "cross_mp_pairs": 52482,
+    "cross_party_pairs": 14461,
+    "top_cross_party": [
+      {
+        "a": "DEM Parti",
+        "b": "CHP",
+        "n": 4408
+      },
+      {
+        "a": "CHP",
+        "b": "DEM Parti",
+        "n": 3762
+      },
+      {
+        "a": "İYİ Parti",
+        "b": "CHP",
+        "n": 1754
+      },
+      {
+        "a": "CHP",
+        "b": "İYİ Parti",
+        "n": 1415
+      },
+      {
+        "a": "İYİ Parti",
+        "b": "DEM Parti",
+        "n": 640
+      },
+      {
+        "a": "DEM Parti",
+        "b": "İYİ Parti",
+        "n": 529
+      },
+      {
+        "a": "TİP",
+        "b": "DEM Parti",
+        "n": 286
+      },
+      {
+        "a": "DEM Parti",
+        "b": "TİP",
+        "n": 179
+      }
+    ]
+  }
+}
