@@ -41,468 +41,523 @@
       "n": 1720
     }
   ],
-  "lda_perplexity": 6.575204575281601,
+  "lda_perplexity": 6.853995237868495,
   "lda_topics": [
     {
       "topic": 0,
       "words": [
-        "şubat",
-        "tarihli",
-        "kahramanmaraş",
-        "sosyal",
-        "depremler",
-        "hatay",
-        "depreme",
-        "merkezli"
+        "bin",
+        "usak",
+        "egitim",
+        "tarih",
+        "milli",
+        "izmir",
+        "sayi",
+        "turizm"
       ]
     },
     {
       "topic": 1,
       "words": [
-        "yana",
-        "diyarbakır",
-        "orman",
-        "iddiasına",
-        "yılından",
-        "sürecine",
-        "mücadeleye",
-        "bulunan"
+        "cezaevi",
+        "kocaeli",
+        "omer",
+        "ceza",
+        "yilmaz",
+        "tunc",
+        "faruk",
+        "adalet"
       ]
     },
     {
       "topic": 2,
       "words": [
-        "arasında",
-        "yılları",
-        "türkiye",
-        "sayısına",
-        "ilindeki",
-        "ülke",
-        "genelinde",
-        "kredi"
+        "sap",
+        "hayvan",
+        "yapimi",
+        "tarih",
+        "sayi",
+        "kac",
+        "hakan",
+        "iyi"
       ]
     },
     {
       "topic": 3,
       "words": [
-        "yılı",
-        "yaptığı",
-        "çeşitli",
-        "denetim",
-        "iddialara",
-        "tespitlere",
-        "verilere",
-        "raporu"
+        "egitim",
+        "sosyal",
+        "cocuk",
+        "yonelik",
+        "kadin",
+        "okul",
+        "son",
+        "cocuklarin"
       ]
     },
     {
       "topic": 4,
       "words": [
-        "çalışmalara",
-        "bağlı",
-        "ilçesine",
-        "sorununa",
-        "yönelik",
-        "yürütülen",
-        "yaşanan",
-        "şanlıurfa"
+        "tarih",
+        "sayi",
+        "son",
+        "kamu",
+        "incive",
+        "ncive",
+        "tarafindananayasa",
+        "durum"
       ]
     },
     {
       "topic": 5,
       "words": [
-        "tarım",
-        "artışa",
-        "istanbul",
-        "belediyesinin",
-        "koruma",
-        "iddiasına",
-        "bulunan",
-        "kamu"
+        "kac",
+        "sayisi",
+        "son",
+        "maddeleri",
+        "geregince",
+        "van",
+        "belediye",
+        "kisi"
       ]
     },
     {
       "topic": 6,
       "words": [
-        "bulunan",
-        "cezaevinde",
-        "kapalı",
-        "mahkumun",
-        "tipi",
-        "iddiasına",
-        "ilçesinde",
-        "bakanlığın"
+        "ankara",
+        "kat",
+        "bursa",
+        "kamu",
+        "oda",
+        "son",
+        "yer",
+        "bakanliklar"
       ]
     },
     {
       "topic": 7,
       "words": [
-        "talebine",
-        "akıbetine",
-        "projesi",
-        "sorunlara",
-        "ankara",
-        "yer",
+        "orman",
+        "tarim",
+        "deprem",
+        "cevre",
+        "son",
         "alan",
-        "yaşanan"
+        "maden",
+        "nelerdir"
       ]
     },
     {
       "topic": 8,
       "words": [
-        "sayısına",
-        "bağlı",
-        "devlet",
+        "toplam",
+        "kadardir",
         "kamu",
-        "son",
-        "talebine",
-        "yılda",
-        "yapan"
+        "kac",
+        "milyon",
+        "yilinda",
+        "yili",
+        "sayisi"
       ]
     },
     {
       "topic": 9,
       "words": [
-        "iddiasına",
-        "son",
-        "yılda",
-        "kişinin",
-        "edildiği",
-        "tespit",
-        "istihdamına",
-        "kolluk"
+        "kamu",
+        "denetim",
+        "sosyal",
+        "calisma",
+        "engelli",
+        "guvenlik",
+        "gorev",
+        "yabanci"
       ]
     },
     {
       "topic": 10,
       "words": [
-        "ilçesinde",
-        "bulunan",
-        "kocaeli",
-        "yaşanan",
-        "planlanan",
-        "hayatını",
-        "ilinin",
-        "etkilerine"
+        "saglik",
+        "devlet",
+        "hastanesi",
+        "hasta",
+        "nedeniyle",
+        "calisma",
+        "kac",
+        "sayisi"
       ]
     },
     {
       "topic": 11,
       "words": [
-        "tarihinde",
-        "gelen",
-        "meydana",
-        "engelli",
-        "ilinde",
-        "talebine",
-        "yaşanan",
-        "eğitim"
+        "kocaeli",
+        "omer",
+        "yer",
+        "faruk",
+        "ankara",
+        "gergerlioglu",
+        "kat",
+        "oda"
       ]
     }
   ],
   "fp_top_itemsets": [
     {
       "items": [
-        "cezaevinde",
-        "bulunan"
+        "sayi",
+        "tarih"
       ],
-      "freq": 2241
+      "freq": 12377
     },
     {
       "items": [
-        "kapalı",
-        "cezaevinde"
+        "geregince",
+        "maddeleri"
       ],
-      "freq": 2119
+      "freq": 11982
     },
     {
       "items": [
-        "mahkumun",
-        "bulunan"
+        "uncu",
+        "maddeleri"
       ],
-      "freq": 2065
+      "freq": 8455
     },
     {
       "items": [
-        "mahkumun",
-        "cezaevinde"
+        "son",
+        "tarih"
       ],
-      "freq": 1967
+      "freq": 8383
     },
     {
       "items": [
-        "mahkumun",
-        "cezaevinde",
-        "bulunan"
+        "kat",
+        "ankara"
       ],
-      "freq": 1936
+      "freq": 7293
     },
     {
       "items": [
-        "kapalı",
-        "bulunan"
+        "maddeleri",
+        "tarih"
       ],
-      "freq": 1826
+      "freq": 7258
     },
     {
       "items": [
-        "kapalı",
-        "cezaevinde",
-        "bulunan"
+        "inci",
+        "uncu"
       ],
-      "freq": 1667
+      "freq": 7074
     },
     {
       "items": [
-        "tipi",
-        "cezaevinde"
+        "inci",
+        "maddeleri"
       ],
-      "freq": 1605
+      "freq": 7052
     },
     {
       "items": [
-        "mahkumun",
-        "kapalı"
+        "son",
+        "sayi"
       ],
-      "freq": 1602
+      "freq": 6879
     },
     {
       "items": [
-        "mahkumun",
-        "kapalı",
-        "bulunan"
+        "uncu",
+        "geregince"
       ],
-      "freq": 1567
+      "freq": 6709
     },
     {
       "items": [
-        "tipi",
-        "kapalı"
+        "uncu",
+        "geregince",
+        "maddeleri"
       ],
-      "freq": 1557
+      "freq": 6639
     },
     {
       "items": [
-        "ilçesine",
-        "bağlı"
+        "son",
+        "maddeleri"
       ],
-      "freq": 1511
+      "freq": 6475
     },
     {
       "items": [
-        "mahkumun",
-        "kapalı",
-        "cezaevinde"
+        "inci",
+        "geregince"
       ],
-      "freq": 1478
+      "freq": 6474
     },
     {
       "items": [
-        "mahkumun",
-        "kapalı",
-        "cezaevinde",
-        "bulunan"
+        "nci",
+        "maddeleri"
       ],
-      "freq": 1456
+      "freq": 6420
     },
     {
       "items": [
-        "tipi",
-        "bulunan"
+        "saygilarimla",
+        "maddeleri"
       ],
-      "freq": 1386
+      "freq": 6411
     }
   ],
   "fp_top_rules": [
     {
       "antecedent": [
-        "yüksek",
-        "cezaevinde"
+        "iletilen",
+        "tarafima",
+        "oda",
+        "omer",
+        "kat",
+        "saygilarimla",
+        "ankara"
       ],
       "consequent": [
-        "güvenlikli"
+        "faruk"
       ],
       "confidence": 1.0,
-      "lift": 65.71
+      "lift": 8.5
     },
     {
       "antecedent": [
-        "mücadeleye",
-        "ilinin",
-        "ilçesinde"
+        "iletilen",
+        "gergerlioglu",
+        "oda",
+        "nci",
+        "inci",
+        "saygilarimla",
+        "maddeleri"
       ],
       "consequent": [
-        "şap"
+        "faruk"
       ],
       "confidence": 1.0,
-      "lift": 113.77
+      "lift": 8.5
     },
     {
       "antecedent": [
-        "nolu",
-        "mahkumun",
-        "cezaevinde",
-        "iddiasına"
+        "iddialar",
+        "kocaeli",
+        "bakanliklar",
+        "oda",
+        "omer",
+        "ankara"
       ],
       "consequent": [
-        "bulunan"
+        "kat"
       ],
       "confidence": 1.0,
-      "lift": 8.55
+      "lift": 5.42
     },
     {
       "antecedent": [
-        "hizmetlere",
-        "köyüne",
-        "bitlis"
+        "tarafima",
+        "gergerlioglu",
+        "faruk",
+        "kocaeli",
+        "bakanliklar",
+        "oda",
+        "nci",
+        "saygilarimla",
+        "yer",
+        "uncu"
       ],
       "consequent": [
-        "özel"
+        "kat"
       ],
       "confidence": 1.0,
-      "lift": 52.96
+      "lift": 5.42
     },
     {
       "antecedent": [
-        "hizmetlere",
-        "köyüne",
-        "ilçesinin",
-        "bitlis"
+        "banko",
+        "halklailiskilerbinasi",
+        "bakanliklar",
+        "incive",
+        "ankara"
       ],
       "consequent": [
-        "özel"
+        "kat"
       ],
       "confidence": 1.0,
-      "lift": 52.96
+      "lift": 5.42
     },
     {
       "antecedent": [
-        "mücadeleye",
-        "ilinin",
-        "ilçesinde"
+        "farukgergerlioglu",
+        "halklailiskilerbinasi",
+        "oda",
+        "omer",
+        "kat",
+        "tarih"
       ],
       "consequent": [
-        "hastalığı"
+        "kocaeli"
       ],
       "confidence": 1.0,
-      "lift": 112.9
+      "lift": 8.06
     },
     {
       "antecedent": [
-        "köyüne",
-        "idaresi",
-        "ilçesinin",
-        "bitlis",
-        "ilinin"
+        "iletilen",
+        "tarafima",
+        "faruk",
+        "bakanliklar",
+        "saygilarimla",
+        "yer",
+        "uncu",
+        "geregince",
+        "maddeleri"
       ],
       "consequent": [
-        "özel"
+        "gergerlioglu"
       ],
       "confidence": 1.0,
-      "lift": 52.96
+      "lift": 9.3
     },
     {
       "antecedent": [
-        "sayıştayın",
-        "raporu",
-        "denetim",
-        "yılı"
+        "banko",
+        "halklailiskilerbinasi",
+        "gergerlioglu",
+        "faruk",
+        "kocaeli",
+        "ncive",
+        "oda",
+        "incive",
+        "ankara"
       ],
       "consequent": [
-        "tespitlere"
+        "omer"
       ],
       "confidence": 1.0,
-      "lift": 67.2
+      "lift": 6.85
     },
     {
       "antecedent": [
-        "hizmetlere",
-        "köyüne",
-        "ilçesinin",
-        "bitlis",
-        "ilinin"
+        "dogruysa",
+        "iddialar",
+        "gergerlioglu",
+        "kat",
+        "inci",
+        "ankara",
+        "uncu",
+        "maddeleri"
       ],
       "consequent": [
-        "özel"
+        "kocaeli"
       ],
       "confidence": 1.0,
-      "lift": 52.96
+      "lift": 8.06
     },
     {
       "antecedent": [
-        "güvenlikli",
-        "bulunan"
+        "iletilen",
+        "tarafima",
+        "faruk",
+        "kocaeli",
+        "bakanliklar",
+        "nci",
+        "inci",
+        "uncu",
+        "geregince"
       ],
       "consequent": [
-        "yüksek"
+        "kat"
       ],
       "confidence": 1.0,
-      "lift": 55.26
+      "lift": 5.42
     },
     {
       "antecedent": [
-        "sayıştayın",
-        "denetim",
-        "yılı"
+        "tarafima",
+        "iddialar",
+        "gergerlioglu",
+        "faruk",
+        "kocaeli",
+        "oda",
+        "omer",
+        "inci",
+        "uncu"
       ],
       "consequent": [
-        "yaptığı"
+        "kat"
       ],
       "confidence": 1.0,
-      "lift": 20.39
+      "lift": 5.42
     },
     {
       "antecedent": [
-        "raporu",
-        "tespitlere",
-        "denetim",
-        "yılı"
+        "iletilen",
+        "tarafima",
+        "faruk",
+        "kocaeli",
+        "bakanliklar",
+        "nci",
+        "inci",
+        "uncu",
+        "geregince"
       ],
       "consequent": [
-        "yaptığı"
+        "gergerlioglu"
       ],
       "confidence": 1.0,
-      "lift": 20.39
+      "lift": 9.3
     },
     {
       "antecedent": [
-        "hizmetlere",
-        "köyüne",
-        "idaresi",
-        "ilçesinin",
-        "bitlis"
+        "iletilen",
+        "iddialar",
+        "faruk",
+        "oda",
+        "omer",
+        "saygilarimla",
+        "geregince"
       ],
       "consequent": [
-        "özel"
+        "gergerlioglu"
       ],
       "confidence": 1.0,
-      "lift": 52.96
+      "lift": 9.3
     },
     {
       "antecedent": [
-        "raporu",
-        "yılı",
-        "yaptığı"
+        "ifadeleri",
+        "gergerlioglu",
+        "kocaeli",
+        "saygilarimla",
+        "ankara",
+        "uncu",
+        "maddeleri"
       ],
       "consequent": [
-        "denetim"
+        "kat"
       ],
       "confidence": 1.0,
-      "lift": 62.65
+      "lift": 5.42
     },
     {
       "antecedent": [
-        "köyüne",
-        "idaresi",
-        "ilçesinin",
-        "bitlis",
-        "ilinin"
+        "ifadeleriyer",
+        "farukgergerlioglu",
+        "banko",
+        "omer",
+        "incive",
+        "kat",
+        "ankara"
       ],
       "consequent": [
-        "hizmetlere"
+        "kocaeli"
       ],
       "confidence": 1.0,
-      "lift": 112.62
+      "lift": 8.06
     }
   ],
   "party_clf": {
@@ -511,54 +566,24 @@
       "DEM Parti",
       "İYİ Parti"
     ],
-    "accuracy": 0.7612,
-    "f1": 0.7536,
+    "accuracy": 0.9731,
+    "f1": 0.973,
     "baseline_majority": 0.4876
   },
   "duplicates": {
-    "near_dup_pairs": 109443,
-    "cross_mp_pairs": 52482,
-    "cross_party_pairs": 14461,
+    "near_dup_pairs": 8685,
+    "cross_mp_pairs": 4080,
+    "cross_party_pairs": 2,
     "top_cross_party": [
       {
         "a": "DEM Parti",
-        "b": "CHP",
-        "n": 4408
-      },
-      {
-        "a": "CHP",
-        "b": "DEM Parti",
-        "n": 3762
-      },
-      {
-        "a": "İYİ Parti",
-        "b": "CHP",
-        "n": 1754
-      },
-      {
-        "a": "CHP",
-        "b": "İYİ Parti",
-        "n": 1415
-      },
-      {
-        "a": "İYİ Parti",
-        "b": "DEM Parti",
-        "n": 640
-      },
-      {
-        "a": "DEM Parti",
-        "b": "İYİ Parti",
-        "n": 529
-      },
-      {
-        "a": "TİP",
-        "b": "DEM Parti",
-        "n": 286
-      },
-      {
-        "a": "DEM Parti",
         "b": "TİP",
-        "n": 179
+        "n": 1
+      },
+      {
+        "a": "DEM Parti",
+        "b": "CHP",
+        "n": 1
       }
     ]
   }

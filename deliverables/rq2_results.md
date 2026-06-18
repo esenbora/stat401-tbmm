@@ -1,110 +1,68 @@
 # RQ2 — Provincial Attention Map (Results)
 
-Which provinces receive the most parliamentary attention, on which topics, and
-can provinces be clustered into latent "attention profiles"? Computed with
-**Apache Spark MLlib** (LDA, K-Means with parallel k-means++ init, Correlation)
-over the **44,484** written questions. "Attention" = a province being *mentioned*
-in a question summary, detected with an 81-province gazetteer (Turkish
-case-suffix aware; e.g. `Diyarbakır'da → Diyarbakır`, no false hit for `Kars`
-inside `karşılaşılan`). Gold tables: `data/gold/{province_mentions,
-province_topic, province_cluster, province_correlates}`; figures `rq2_*`.
+Computed on the **full OCR'd text** of all 44,484 written questions with Apache
+Spark MLlib (LDA, K-Means++ , Correlation). "Attention" = a province named in the
+question body, detected with a Turkish case-suffix-aware 81-province gazetteer
+(*Diyarbakır'da → Diyarbakır*; "Kars" inside *karşılaşılan* is not matched). Gold
+tables `data/gold/{province_mentions, province_topic, province_cluster,
+province_correlates}`; figures `rq2_*`.
 
-**21,519** province mentions span all **81** provinces.
+**59,761** province mentions; **84%** of questions name ≥1 province (vs. 47% from
+the subject line — full text is far richer).
 
----
-
-## S1 — Geographic distribution of attention
-
-Most-mentioned provinces:
+## S1 — Geographic distribution
 
 | Rank | Province | Mentions |
 |---|---|---|
-| 1 | Kocaeli | 1,206 |
-| 2 | Diyarbakır | 1,110 |
-| 3 | Şanlıurfa | 1,080 |
-| 4 | İstanbul | 952 |
-| 5 | İzmir | 928 |
-| 6 | Van | 688 |
-| 7 | Ankara | 656 |
-| 8 | Bitlis | 590 |
-| 9 | Antalya | 541 |
-| 10 | Hakkari | 534 |
+| 1 | Ankara | 10,971 |
+| 2 | Kocaeli | 5,518 |
+| 3 | İstanbul | 4,013 |
+| 4 | İzmir | 2,832 |
+| 5 | Diyarbakır | 2,182 |
+| 6 | Van | 1,557 |
 
-The raw ranking mixes large metros (İstanbul, İzmir, Ankara) with south-eastern
-provinces (Diyarbakır, Şanlıurfa, Van, Bitlis, Hakkari) that are far smaller —
-already hinting that attention is **not** purely population-driven (quantified in
-S4). Figure: `rq2_s1_province_mentions.png`.
+> **Caveat:** full-text counts are inflated for **Ankara** (ministries/addresses
+> sit in the capital) and for the home provinces of prolific MPs (signature
+> blocks). Raw rank is therefore read together with the per-capita view below.
 
-## S2 — Topics per province; metropolitan vs rural
+## S2 — Topics per province; metro vs. rural
 
-Using the per-question LDA dominant topic exploded over mentioned provinces, the
-generic "local-issue" topics dominate everywhere, so the informative signal is
-the **share difference** between the 14 metropolitan provinces and the rest
-(figure `rq2_s2_metro_rural.png`):
-
-- **Metropolitan-skewed:** infrastructure/regional projects (T05, T07) and
-  public-administration/headcount questions (T08).
-- **Rural / eastern-skewed:** education & service access (T03), **detention /
-  prisons** (T06), and **earthquake / disabled-affected** (T11).
-
-So metros draw project- and service-delivery questions, while smaller eastern
-provinces draw rights-, disaster- and access-focused questions.
+Metropolitan provinces skew toward infrastructure/capital and
+public-administration topics; rural / eastern provinces skew toward education
+access, detention and disaster topics.
 
 ## S3 — Attention profiles (K-Means++)
 
-K-Means++ (parallel `k-means||` init) on standardised (province × 12-topic)
-share vectors, k = 5 (silhouette = **0.166** — modest but positive structure):
+k = 5 on standardised (province × 12-topic) vectors, silhouette = **0.28**
+(improved over the subject-line run): clusters separate a small-eastern
+disaster/service profile, an İstanbul/Ankara metro profile, and agriculture /
+tourism profiles.
 
-| Cluster | n | Dominant topics | Example provinces |
-|---|---|---|---|
-| 0 | 31 | T6, T10, T9 | Ankara, Balıkesir, Edirne, Elazığ, Afyon… |
-| 1 | 15 | T4, T10, T9 | Hakkari, Bitlis, Kars, Ardahan, Artvin, Kocaeli… |
-| 2 | 19 | T10, T5, T4 | Diyarbakır, Adana, Bursa, Aydın, Ağrı… |
-| 3 | 9 | T8, T10, T6 | Konya, Mersin, Denizli, Batman, Karaman… |
-| 4 | 7 | T7, T10, T5 | Antalya, Trabzon, Nevşehir, Çorum, Aksaray… |
-
-Clusters capture distinct discourse signatures (e.g. cluster 1 = small eastern
-provinces with a disaster/service profile; cluster 4 = tourism/agriculture
-provinces with a projects profile). Figure: `rq2_s3_clusters.png`.
-
-## S4 — Attention vs population and political representation
+## S4 — Attention vs. population & representation
 
 | Pair | Pearson | Spearman |
 |---|---|---|
-| attention ~ population | **0.517** | 0.525 |
-| attention ~ MP count | 0.515 | 0.516 |
+| attention ~ population | **0.593** | 0.692 |
+| attention ~ MP count | 0.592 | 0.691 |
 | population ~ MP count | 0.999 | — |
 
-Two clear results:
+Population explains ~35% of attention variance; MP count is collinear with
+population (seats are population-allocated) and adds no independent signal.
+Per 100k inhabitants:
 
-1. **Population only moderately explains attention (r ≈ 0.52, ~27% of variance).**
-   Half the variation in provincial attention is *not* about size — it is
-   political targeting.
-2. **MP count is almost perfectly collinear with population (r = 0.999)** because
-   parliamentary seats are allocated by population; it adds no independent
-   signal beyond population.
+- **Most over-attended:** Tunceli (375), Kars (329), Artvin (280), Bitlis (256),
+  Burdur (222) — small eastern / Black-Sea provinces.
+- **Most under-attended:** İstanbul (~25), Çanakkale, Kastamonu, Sinop — large /
+  western provinces.
 
-Normalising by population (mentions per 100k) makes the targeting explicit
-(figure `rq2_s4_correlation.png`):
-
-- **Over-attended (per capita):** Tunceli (199.7), Hakkari (191.9), Burdur
-  (188.9), Artvin (185.2), Bitlis (167.5), Kars, Ardahan, Bingöl — small
-  eastern/Black-Sea provinces.
-- **Under-attended (per capita):** İstanbul (6.0), Samsun (5.9), Balıkesir,
-  Bursa, Manisa, Konya — the large western metros.
-
-Parliamentary attention in the 28th term is **strongly skewed toward small
-eastern provinces and away from large western metros on a per-capita basis**,
-consistent with the opposition (especially DEM) agenda surfaced in RQ1.
+Parliamentary attention is **politically targeted**, not proportional to size:
+small eastern provinces draw far more attention per capita than the metros.
 
 ---
 
 ### Limitations
-
-- Attention = province *mentions in the summary*; a question with no province in
-  its one-line summary (≈ 53%) contributes no signal even if its full text is
-  local.
-- Population is TÜİK 2022 (via Wikipedia, `data/reference/province_population.json`);
-  GDP was not included — population + MP count already cover "size" and
-  "representation", and the two are collinear.
-- Topic clusters inherit the coarseness of summary-level LDA (S2 caveat).
+- Full-text mentions include capital/ministry and signature-block noise (Ankara,
+  prolific MPs' home provinces); per-capita and clustering views mitigate this.
+- Topic clusters inherit summary-level coarseness and OCR noise.
+- GDP not included; population + MP count cover "size" and "representation" and
+  are mutually collinear.

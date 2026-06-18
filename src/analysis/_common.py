@@ -117,6 +117,26 @@ TURKISH_STOPWORDS = sorted({
     "nin", "nın", "nun", "nün", "nda", "nde", "ndan", "nden", "deki", "daki",
     "den", "dan", "tan", "ten", "lar", "ler", "ları", "leri", "lığı", "liği",
     "nan", "nen", "ında", "inde", "ına", "ine", "nın", "için",
+    # Parliamentary written-question boilerplate — the formal letter opening /
+    # closing repeated in EVERY full-text body ("Türkiye Büyük Millet Meclisi
+    # Başkanlığına … aşağıdaki sorularımın … tarafından yazılı olarak
+    # cevaplandırılmasını arz ederim"). Without these, full-text LDA is drowned.
+    "türkiye", "büyük", "millet", "meclisi", "meclis", "başkanlığına",
+    "başkanlık", "başkanlığı", "milletvekili", "milletvekilleri", "tbmm",
+    "arz", "ederim", "ederiz", "mıdır", "mudur", "müdür", "midir", "nedir",
+    "kaçtır", "sorularımın", "sorularımı", "soruların", "sorum", "sorularım",
+    "soruları", "cevaplandırılması", "cevaplandırılmasını", "cevaplanmasını",
+    "cevaplandırılmak", "sayın", "aşağıdaki", "gereğini", "talep", "ediyorum",
+    "hususunda", "gerekli", "grup", "grubu", "parti", "partisi", "vekili",
+    "ben", "adına", "üzere", "kanunu", "sayılı", "madde", "maddesi", "fıkra",
+    "anayasa", "anayasanın", "içtüzük", "içtüzüğünün", "uyarınca", "gereği",
+    "olmak", "bağlamda", "söz", "konusu", "halkla", "ilişkiler", "devam",
+    "gov", "posta", "tel", "telefon", "adres", "faks", "eposta",
+    # Party / group identifiers in the letterhead + signature block. These leak
+    # the label into the text (full-text party classification jumps to ~99%
+    # otherwise) and dominate FP-Growth; remove so topics reflect content.
+    "cumhuriyet", "halk", "chp", "mhp", "akp", "dem", "hdp", "yeniden", "refah",
+    "grup", "başkanvekili", "genel", "sayın", "vekilleri",
 })
 
 

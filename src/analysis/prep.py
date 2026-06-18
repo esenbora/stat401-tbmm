@@ -61,6 +61,22 @@ def build_silver() -> None:
         "tarih", F.to_date(F.col("tarih_raw"), "dd.MM.yyyy")
     ).withColumn("yil", F.year("tarih"))
 
+    # ---- attach the OCR'd / text-layer FULL TEXT (Colab output) --------
+    # `data/silver/onerge_text.parquet` (guid, method, n_pages, text, n_chars,
+    # avg_conf) is the real analysis corpus; `text` is the full önerge body,
+    # `ozet` is only the one-line subject. NLP runs on `text` (fallback ozet).
+    ft = (spark.read.parquet(str(SILVER / "onerge_text.parquet"))
+          .select(F.col("guid"),
+                  F.col("text").alias("full_text"),
+                  F.col("method").alias("extract_method"),
+                  F.col("avg_conf").alias("ocr_conf"),
+                  F.col("n_chars")))
+    df = df.join(ft, on="guid", how="left")
+    df = df.withColumn(
+        "text",
+        F.when(F.length(F.col("full_text")) > 20, F.col("full_text")).otherwise(F.col("ozet")),
+    )
+
     # ---- attach MP party + electoral province (small broadcast join) ---
     lookup = build_mp_lookup()
     mp_rows = [
@@ -78,14 +94,16 @@ def build_silver() -> None:
         {"party": "Bilinmiyor", "party_current": "Bilinmiyor", "mv_province": "Bilinmiyor"}
     )
 
-    # ---- province mentions from the summary (RQ2) ----------------------
+    # ---- province mentions from the FULL TEXT (RQ2) --------------------
+    # Extract from the full önerge body, not the one-line summary — this is far
+    # richer (the body names the provinces/districts the question is about).
     pattern = build_province_pattern()
 
     @F.udf(returnType=T.ArrayType(T.StringType()))
     def mentions_udf(text):  # noqa: ANN001 - Spark UDF
         return extract_province_mentions(text, pattern)
 
-    df = df.withColumn("mentioned_provinces", mentions_udf(F.col("ozet")))
+    df = df.withColumn("mentioned_provinces", mentions_udf(F.col("text")))
     df = df.withColumn("n_mentions", F.size("mentioned_provinces"))
 
     df = df.cache()

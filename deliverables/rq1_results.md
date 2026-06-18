@@ -1,17 +1,12 @@
 # RQ1 — Ministry × Topic × Party × Time (Results)
 
-How are written parliamentary questions distributed across ministries, topics,
-and parties in the TBMM 28th term, and how does the distribution evolve over
-time? Computed on the full **44,484** written questions with **Apache Spark
-MLlib** (LDA, FP-Growth, CountVectorizer/IDF, multinomial Logistic Regression,
-MinHash/LSH). Gold tables written to `data/gold/{ministry_year, ministry_topic,
-party_ministry, duplicate_pairs}`; figures in `deliverables/figures/rq1_*`.
+Computed on the **full OCR'd text** of all 44,484 written questions (≈108.6 M
+chars; 65% PDF text-layer, 35% PaddleOCR) — not the one-line subject — with
+Apache Spark MLlib (LDA, FP-Growth, CountVectorizer/IDF, multinomial
+LogisticRegression, MinHashLSH). Gold tables in `data/gold/{ministry_year,
+ministry_topic, party_ministry, duplicate_pairs}`; figures `rq1_*`.
 
----
-
-## S1 — Ministry volume and ranking shift over time
-
-Top ministries by written-question volume (28th term):
+## S1 — Ministry volume & ranking over time
 
 | Rank | Ministry | Questions |
 |---|---|---|
@@ -19,87 +14,66 @@ Top ministries by written-question volume (28th term):
 | 2 | İçişleri (Interior) | 5,571 |
 | 3 | Çevre, Şehircilik ve İklim | 4,587 |
 | 4 | Tarım ve Orman | 4,584 |
-| 5 | Sağlık (Health) | 3,520 |
+| 5 | Sağlık | 3,520 |
 | 6 | Milli Eğitim | 3,508 |
-| 7 | Ulaştırma ve Altyapı | 2,685 |
-| 8 | Çalışma ve Sosyal Güvenlik | 2,158 |
 
-Justice and Interior dominate — driven by the opposition's focus on detention
-conditions, rule-of-law and security (see the topic and duplicate findings
-below). The `ministry_year` matrix (figure `rq1_s1_ministry_time.png`) shows the
-top ministries are stable in rank across the four legislative years; total
-volume rises 2023 → 2025 (7,854 → 16,144) before the partial 2026 (6,038).
+Top ministries are stable in rank across all four legislative years; total volume
+rises 2023→2025 (7,854→16,144).
 
-## S2 — Latent topics (LDA) and term co-occurrence (FP-Growth)
+## S2 — Topics (LDA) and co-occurrence (FP-Growth)
 
-A 12-topic LDA over the question summaries (log-perplexity ≈ 6.58) recovers
-coherent themes, e.g.:
+12-topic LDA on full text (after removing parliamentary letter/legal boilerplate
+and ASCII-folding OCR diacritics) yields coherent policy themes:
 
-- **T06 — detention / prisons:** *cezaevinde, kapalı, mahkumun, tipi* (the
-  single most distinctive theme; concentrated in Justice).
-- **T00 — Feb-2023 earthquake:** *şubat, kahramanmaraş, hatay, depremler*.
-- **T05 — agriculture / municipal:** *tarım, istanbul, belediye*.
-- **T07 — infrastructure projects:** *proje, ankara, planlanan*.
+- **Detention / justice** — *cezaevi, ceza, infaz, adalet, mahpus*
+- **Health** — *sağlık, hastane, hasta, devlet*
+- **Environment / energy** — *orman, tarım, çevre, maden, enerji, ÇED, elektrik*
+- **Disaster** — *deprem, Hatay, KYK, yurt*
+- **Child / women / social** — *çocuk, kadın, eğitim, engelli, soruşturma*
 
-FP-Growth on the per-question token sets confirms the prison cluster as the
-strongest co-occurrence (highest-support itemsets all involve
-`cezaevinde / kapalı / mahkumun / bulunan`, support > 1,600). High-confidence
-association rules (confidence = 1.0) include
-`{yüksek, cezaevinde} ⇒ {güvenlikli}` and `{mücadeleye, ilinin, ilçesinde} ⇒ {şap}`
-(animal-disease outbreak), showing tightly templated question wording.
+FP-Growth on full text mostly surfaces **legal-citation templating** (*"… inci
+maddesi gereğince …"*, date/number phrasing) — evidence of formulaic drafting;
+thematic co-occurrence is better captured by LDA above.
 
 ## S3 — Party differences & predicting party from text
 
-Parties differ sharply in ministerial focus (figure `rq1_s3_party_ministry.png`,
-row-normalised). A **multinomial logistic regression** trained on TF-IDF of the
-question text predicts the submitting party among the three high-volume
-opposition parties (CHP / DEM / İYİ):
+A multinomial logistic regression on TF-IDF of the **full text** predicts the
+filing party (CHP/DEM/İYİ):
 
-| Metric | Value |
-|---|---|
-| Accuracy | **0.761** |
-| Weighted F1 | **0.754** |
-| Majority-class baseline | 0.488 |
+| Model | Accuracy | F1 | Baseline |
+|---|---|---|---|
+| Full text | **0.973** | 0.973 | 0.488 |
+| Subject line only (clean) | **0.76** | 0.754 | 0.488 |
 
-The model beats the baseline by +27 points — **a question's party affiliation is
-strongly encoded in its text**, i.e. parties pursue distinguishable agendas. The
-confusion matrix (`rq1_s3_confusion.png`) shows DEM is the most separable (its
-prison/human-rights vocabulary is highly characteristic); CHP↔İYİ is the main
-confusion (overlapping municipal/economic agendas).
+> **Leakage caveat:** full text contains MP names, provinces and
+> signature/letterhead cues that identify the party, inflating accuracy. The
+> **76%** subject-line figure is the honest measure of *topical* distinctiveness
+> (+27 pts over baseline); parties pursue genuinely distinct agendas, and the
+> full text additionally carries strong identity signals.
 
-> Context: 96% of all written questions come from CHP (20,902), DEM (15,416) and
-> İYİ (6,545); the governing AK Parti filed only 254. Written questions are an
-> *opposition* instrument, so RQ1's party axis is effectively an
-> opposition-agenda comparison.
+96% of all questions come from CHP/DEM/İYİ; AK Parti filed only 254 — the party
+axis is effectively an opposition-agenda comparison.
 
 ## S4 — Near-duplicate / coordinated questions (MinHash/LSH)
 
-MinHash/LSH (5 hash tables) over question token sets, retaining pairs with
-**Jaccard ≥ 0.8**:
+MinHashLSH (Jaccard ≥ 0.8) over **full-document** token sets:
 
 | Measure | Pairs |
 |---|---|
-| Near-duplicate pairs | **109,443** |
-| …across different MPs | 52,482 |
-| …across different parties | 14,461 |
+| Near-duplicate pairs | **8,685** |
+| …across different MPs | 4,080 |
+| …across different parties | 2 |
 
-Near-duplication is pervasive — strong evidence of **coordinated, templated
-agenda-setting**, not just within a party but across the opposition. The most
-frequent cross-party near-duplicate coordination is **DEM ↔ CHP** (≈ 8,170
-pairs), then İYİ ↔ CHP and İYİ ↔ DEM. This independently corroborates the RQ3
-network finding that CHP and DEM coordinate closely (and that Sezgin Tanrıkulu
-bridges the two).
+Because these are *whole-document* near-identities (not short subject
+collisions), they are strong, conservative evidence of **within-party templated
+campaigns**; near-identical coordination across parties is essentially absent at
+the full-document level.
 
 ---
 
 ### Limitations
-
-- Topics are modelled on the official one-line *summary* (`özet`, median ~78
-  chars), not the full PDF body, so LDA themes are coarse.
-- The party classifier is restricted to CHP/DEM/İYİ (the only parties with
-  enough volume to learn); MHP/AKP are too sparse for reliable supervised
-  learning.
-- "Near-duplicate" counts pairs, so a single 54-MP campaign contributes
-  C(54,2) ≈ 1,431 pairs; the pair count signals coordination intensity, not the
-  number of distinct campaigns (32,772 distinct summaries exist; 2,060 are exact
-  multi-MP campaigns).
+- FP-Growth on full text is dominated by legal-citation boilerplate; LDA is the
+  better topical lens.
+- The 97% full-text classifier reflects identity leakage; 76% (subject) is the
+  clean topical figure.
+- OCR (35% of docs) adds residual noise despite Turkish ASCII folding.

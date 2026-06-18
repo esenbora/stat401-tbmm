@@ -100,7 +100,7 @@ def sub1_attention(df, metrics: dict):
 def build_province_topic(df, spark):
     """LDA dominant topic per question, exploded over mentioned provinces ->
     (province x topic) count matrix. Returns (matrix_pdf, topic_words)."""
-    toks = tokenize(df.select("guid", "mentioned_provinces", "ozet")) \
+    toks = tokenize(df.select("guid", "mentioned_provinces", "text"), in_col="text") \
         .where(F.size("toks") > 0)
     cv = CountVectorizer(inputCol="toks", outputCol="tf", vocabSize=2000, minDF=10.0).fit(toks)
     vocab = cv.vocabulary

@@ -89,6 +89,9 @@ def attach_sources(spark: SparkSession) -> None:
 
 def write_delta(df, path: str | Path, mode: str = "overwrite", partition_by: list[str] | None = None):
     w = df.write.format("delta").mode(mode)
+    if mode == "overwrite":
+        # allow re-running with an evolved schema / partitioning
+        w = w.option("overwriteSchema", "true")
     if partition_by:
         w = w.partitionBy(*partition_by)
     w.save(str(path))

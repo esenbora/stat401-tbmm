@@ -111,7 +111,7 @@ def sub1_ministry_time(df, metrics: dict) -> None:
 # ==========================================================================
 def sub2_topics(df, spark, metrics: dict):
     print("\n=== S2: LDA topics + FP-Growth co-occurrence ===")
-    toks = _tokenize(df).where(F.size("toks") > 0).cache()
+    toks = _tokenize(df, in_col="text").where(F.size("toks") > 0).cache()
 
     cv = CountVectorizer(inputCol="toks", outputCol="tf", vocabSize=2000, minDF=10.0)
     cv_model = cv.fit(toks)
@@ -155,9 +155,16 @@ def sub2_topics(df, spark, metrics: dict):
     plt.colorbar(im, ax=ax, label="oran")
     plt.tight_layout(); plt.savefig(FIG / "rq1_s2_ministry_topic.png"); plt.close()
 
-    # FP-Growth: co-occurring terms (transactions = unique tokens per question)
-    tx = toks.withColumn("items", F.array_distinct("toks")).select("items")
-    fp = FPGrowth(itemsCol="items", minSupport=0.005, minConfidence=0.3)
+    # FP-Growth: co-occurring terms. Full-text transactions are long (~200
+    # tokens) so we (a) restrict items to the CountVectorizer vocabulary (top
+    # terms) to bound transaction length and (b) use a higher minSupport — both
+    # avoid the combinatorial blow-up that OOMs the FP-tree on long documents.
+    vocab_set = set(vocab)
+    keep_vocab = F.udf(lambda arr: [t for t in set(arr) if t in vocab_set],
+                       T.ArrayType(T.StringType()))
+    tx = (toks.withColumn("items", keep_vocab(F.col("toks")))
+          .where(F.size("items") >= 2).select("items"))
+    fp = FPGrowth(itemsCol="items", minSupport=0.03, minConfidence=0.4)
     fp_model = fp.fit(tx)
     freq = fp_model.freqItemsets.where(F.size("items") >= 2).orderBy(F.desc("freq"))
     rules = fp_model.associationRules.orderBy(F.desc("confidence"))
@@ -205,7 +212,7 @@ def sub3_party_focus(df, metrics: dict):
 
     # classifier: predict party from question text (TF-IDF -> multinomial LR)
     clf_parties = ["CHP", "DEM Parti", "İYİ Parti"]  # enough volume to learn
-    cdf = _tokenize(df.where(F.col("party").isin(clf_parties)))
+    cdf = _tokenize(df.where(F.col("party").isin(clf_parties)), in_col="text")
     cdf = cdf.where(F.size("toks") > 0)
     cv = CountVectorizer(inputCol="toks", outputCol="tf", vocabSize=5000, minDF=5.0).fit(cdf)
     idf = IDF(inputCol="tf", outputCol="features")
@@ -252,7 +259,7 @@ def sub3_party_focus(df, metrics: dict):
 # ==========================================================================
 def sub4_duplicates(df, metrics: dict):
     print("\n=== S4: MinHash/LSH near-duplicate detection ===")
-    toks = _tokenize(df.select("guid", "mv", "party", "ozet"))
+    toks = _tokenize(df.select("guid", "mv", "party", "text"), in_col="text")
     toks = toks.withColumn("items", F.array_distinct("toks")).where(F.size("items") >= 3)
     cv = CountVectorizer(inputCol="items", outputCol="vec", vocabSize=8000, minDF=2.0).fit(toks)
     # A question whose tokens are all rare (below minDF) becomes an all-zero
@@ -298,7 +305,7 @@ def sub4_duplicates(df, metrics: dict):
 # ==========================================================================
 def main():
     FIG.mkdir(parents=True, exist_ok=True)
-    spark = get_spark("tbmm-rq1", memory="6g")
+    spark = get_spark("tbmm-rq1", memory="8g")
     attach_sources(spark)
     df = spark.read.format("delta").load(str(SILVER / "yazili_soru_clean")) \
         .where(F.col("ozet").isNotNull()).cache()
