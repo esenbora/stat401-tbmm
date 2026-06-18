@@ -8,7 +8,7 @@ __pycache__/
 # Heavy / regenerable data artifacts
 data/bronze/pdf/
 data/bronze/yazili_soru_meta_shards/
-data/silver/
+data/silver/*
 data/gold/
 _delta_log/
 logs/
@@ -23,3 +23,5 @@ data/bronze/*.txt
 !data/bronze/mp_index.parquet
 !data/bronze/mp_to_guids.parquet
 !src/dashboard/data/*.parquet
+# the OCR'd full-text corpus (B2: ship the dataset for reproducibility, 67MB)
+!data/silver/onerge_text.parquet

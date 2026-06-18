@@ -1,116 +1,116 @@
 {
-  "n_vertices": 276,
-  "n_edges": 7720,
+  "n_vertices": 304,
+  "n_edges": 14908,
   "community": {
-    "n_communities": 2,
-    "ari": 0.0324,
-    "nmi": 0.0851,
+    "n_communities": 1,
+    "ari": 0.0,
+    "nmi": 0.0,
     "top_communities": [
       {
-        "size": 272,
+        "size": 304,
         "top_party": "CHP",
-        "share": 0.555
-      },
-      {
-        "size": 4,
-        "top_party": "AK Parti",
-        "share": 1.0
+        "share": 0.526
       }
     ]
   },
   "louvain": {
-    "n_communities": 3,
-    "ari": 0.4613,
-    "nmi": 0.5509,
+    "n_communities": 5,
+    "ari": 0.1344,
+    "nmi": 0.2281,
     "top_communities": [
       {
-        "size": 213,
+        "size": 119,
         "top_party": "CHP",
-        "share": 0.704
+        "share": 0.588
       },
       {
-        "size": 59,
+        "size": 58,
         "top_party": "DEM Parti",
-        "share": 0.983
+        "share": 0.828
       },
       {
-        "size": 4,
-        "top_party": "AK Parti",
-        "share": 1.0
+        "size": 54,
+        "top_party": "CHP",
+        "share": 0.667
+      },
+      {
+        "size": 37,
+        "top_party": "CHP",
+        "share": 0.568
       }
     ]
   },
   "top_bridges": [
     {
-      "mp": "Mustafa Sezgin TANRIKULU",
+      "mp": "Mustafa BİLİCİ",
       "party": "CHP",
-      "province": "Diyarbakır",
-      "bridge_score": 0.4526,
-      "betweenness": 0.2397
+      "province": "İzmir",
+      "bridge_score": 0.0964,
+      "betweenness": 0.1339
+    },
+    {
+      "mp": "Mehmet Emin EKMEN",
+      "party": "CHP",
+      "province": "Mersin",
+      "bridge_score": 0.0286,
+      "betweenness": 0.039
+    },
+    {
+      "mp": "Cem AVŞAR",
+      "party": "CHP",
+      "province": "Tekirdağ",
+      "bridge_score": 0.0284,
+      "betweenness": 0.0391
+    },
+    {
+      "mp": "Aykut KAYA",
+      "party": "İYİ Parti",
+      "province": "Antalya",
+      "bridge_score": 0.0247,
+      "betweenness": 0.0329
+    },
+    {
+      "mp": "Necmettin ÇALIŞKAN",
+      "party": "CHP",
+      "province": "Hatay",
+      "bridge_score": 0.0216,
+      "betweenness": 0.0289
+    },
+    {
+      "mp": "Nermin YILDIRIM KARA",
+      "party": "CHP",
+      "province": "Hatay",
+      "bridge_score": 0.0211,
+      "betweenness": 0.0269
+    },
+    {
+      "mp": "Yavuz AYDIN",
+      "party": "İYİ Parti",
+      "province": "Trabzon",
+      "bridge_score": 0.0203,
+      "betweenness": 0.0315
     },
     {
       "mp": "Selçuk ÖZDAĞ",
       "party": "CHP",
       "province": "Muğla",
-      "bridge_score": 0.1461,
-      "betweenness": 0.0756
-    },
-    {
-      "mp": "Ömer Fethi GÜRER",
-      "party": "CHP",
-      "province": "Niğde",
-      "bridge_score": 0.1337,
-      "betweenness": 0.0696
-    },
-    {
-      "mp": "Ali KARAOBA",
-      "party": "CHP",
-      "province": "Uşak",
-      "bridge_score": 0.1161,
-      "betweenness": 0.0611
-    },
-    {
-      "mp": "Doğan BEKİN",
-      "party": "Yeniden Refah",
-      "province": "İstanbul",
-      "bridge_score": 0.0784,
-      "betweenness": 0.0394
-    },
-    {
-      "mp": "Mustafa BİLİCİ",
-      "party": "CHP",
-      "province": "İzmir",
-      "bridge_score": 0.0682,
-      "betweenness": 0.0351
-    },
-    {
-      "mp": "Mahmut TANAL",
-      "party": "CHP",
-      "province": "Şanlıurfa",
-      "bridge_score": 0.0611,
-      "betweenness": 0.0316
-    },
-    {
-      "mp": "Selcan TAŞCI",
-      "party": "AK Parti",
-      "province": "Tekirdağ",
-      "bridge_score": 0.0539,
-      "betweenness": 0.0229
+      "bridge_score": 0.0202,
+      "betweenness": 0.0263
     },
     {
       "mp": "Yasin ÖZTÜRK",
       "party": "İYİ Parti",
       "province": "Denizli",
-      "bridge_score": 0.0513,
-      "betweenness": 0.0263
+      "bridge_score": 0.0177,
+      "betweenness": 0.026
     },
     {
-      "mp": "Ulaş KARASU",
-      "party": "CHP",
-      "province": "Sivas",
-      "bridge_score": 0.0503,
-      "betweenness": 0.0256
+      "mp": "Yüksel Selçuk TÜRKOĞLU",
+      "party": "İYİ Parti",
+      "province": "Bursa",
+      "bridge_score": 0.0134,
+      "betweenness": 0.0202
     }
   ],
-  "silhouette_party": -0.2231
+  "silhouette_party": -0.2605
 }

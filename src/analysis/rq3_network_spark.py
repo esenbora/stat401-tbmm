@@ -1,6 +1,10 @@
-"""RQ3 — MP co-signing network (Spark-first re-implementation).
+"""RQ3 — MP co-attention network (Spark-first re-implementation).
 
-Re-does the 28th-term co-signing network analysis with the same medallion /
+Edges link MPs who target the same (ministry, province, month) — coordination of
+*attention*, deliberately independent of RQ1's text-duplication signal (the old
+"identical-summary" edges measured the same wording overlap as RQ1's MinHash).
+
+Re-does the 28th-term network analysis with the same medallion /
 Spark stack as RQ1 and RQ2, and corrects the interpretation issues found in the
 original `notebooks/rq3_network/analyze_network.py` review:
 
@@ -59,15 +63,24 @@ PARTY_COLORS = {
 
 # ==========================================================================
 def build_graph(spark):
-    """Vertices (MPs + party/province) and undirected weighted co-signing edges.
+    """Vertices (MPs + party/province) and undirected weighted **co-attention** edges.
 
-    Edge (a,b,w): a and b each filed >=w questions sharing an identical summary
-    (a proxy for co-signing, since Turkish written questions are single-author).
+    Edge (a,b,w): a and b both filed a question targeting the SAME ministry, about
+    the SAME province, in the SAME month, on w distinct such (ministry, province,
+    month) buckets. This captures coordination of *attention* and is deliberately
+    independent of RQ1's text-duplication signal (MinHash near-duplicates) — the
+    previous "identical-summary" definition measured the same wording overlap as
+    RQ1, so it was replaced.
     """
     df = spark.read.format("delta").load(str(SILVER / "yazili_soru_clean"))
     mp = spark.read.format("delta").load(str(SILVER / "mp_party"))
 
-    camp = (df.groupBy("ozet").agg(F.collect_set("mv").alias("mvs"))
+    # (ministry, mentioned-province, year-month) attention buckets
+    buckets = (df.where(F.col("bakanlik").isNotNull() & F.col("tarih").isNotNull())
+               .withColumn("ay", F.date_format("tarih", "yyyy-MM"))
+               .select("mv", "bakanlik", "ay", F.explode("mentioned_provinces").alias("il"))
+               .withColumn("key", F.concat_ws("|", "bakanlik", "il", "ay")))
+    camp = (buckets.groupBy("key").agg(F.collect_set("mv").alias("mvs"))
             .withColumn("k", F.size("mvs")).where(F.col("k") > 1))
     pairs = (camp.select(F.explode("mvs").alias("a"), F.col("mvs"))
              .select("a", F.explode("mvs").alias("b")).where(F.col("a") < F.col("b")))
@@ -267,7 +280,7 @@ def figures(pr_pd, comm_metrics, metrics):
     fig, ax = plt.subplots(figsize=(9, 6))
     d = pr_pd.iloc[::-1]
     ax.barh(d["node"], d["pr"], color=[PARTY_COLORS.get(p, "#777") for p in d["party"]])
-    ax.set_title("PageRank Top-10 (Spark) — DEM klik baskınlığı")
+    ax.set_title("PageRank Top-10 (Spark) — co-attention ağı")
     ax.set_xlabel("PageRank")
     plt.tight_layout(); plt.savefig(FIG / "rq3_pagerank_top.png"); plt.close()
 

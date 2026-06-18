@@ -51,7 +51,7 @@ from analysis._text import tokenize
 FIG = ROOT / "deliverables" / "figures"
 DELIV = ROOT / "deliverables"
 REF = ROOT / "data" / "reference"
-N_TOPICS = 12
+N_TOPICS = 15
 N_CLUSTERS = 5
 plt.rcParams.update({"figure.dpi": 130, "font.size": 10, "axes.grid": True, "grid.alpha": 0.25})
 
@@ -102,7 +102,8 @@ def build_province_topic(df, spark):
     (province x topic) count matrix. Returns (matrix_pdf, topic_words)."""
     toks = tokenize(df.select("guid", "mentioned_provinces", "text"), in_col="text") \
         .where(F.size("toks") > 0)
-    cv = CountVectorizer(inputCol="toks", outputCol="tf", vocabSize=2000, minDF=10.0).fit(toks)
+    cv = CountVectorizer(inputCol="toks", outputCol="tf", vocabSize=3000,
+                         minDF=10.0, maxDF=0.4).fit(toks)
     vocab = cv.vocabulary
     feat = cv.transform(toks)
     lda = LDA(k=N_TOPICS, maxIter=30, featuresCol="tf", seed=42)

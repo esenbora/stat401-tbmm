@@ -66,8 +66,10 @@ with st.sidebar:
     st.title("🇹🇷 TBMM Analytics")
     st.caption("STAT 401 — 28. Dönem Yazılı Soru Önergeleri")
     st.metric("Toplam önerge", "44,484")
-    st.metric("Soru veren milletvekili", "307")
+    st.metric("Soru veren milletvekili", "307 / 592")
+    st.caption("592 mv toplam · 307'si yazılı soru verdi · 304'ü RQ3 ilgi ağında")
     st.metric("Bakanlık / il", "20 / 81")
+    st.caption("Tam metin OCR kapsamı: %100 (108.6M karakter)")
     st.divider()
     st.caption("Apache Spark · Delta Lake · Spark MLlib · Streamlit")
     if not (DATA / "rq1_ministry_year.parquet").exists():
@@ -218,13 +220,13 @@ with tab2:
 # RQ3
 # =====================================================================
 with tab3:
-    st.header("Milletvekili Ortak-İmza Ağı")
+    st.header("Milletvekili İlgi (Co-attention) Ağı")
     m = metrics("rq3")
     pr = pq("rq3_pagerank")
     comm = pq("rq3_community")
 
-    st.caption("⚠️ Yazılı sorular tek imzalı → 'ortak imza' = aynı özet proxy'si. "
-               "Ağ muhalefet ağırlıklı (AK Parti yazılı soru vermiyor): "
+    st.caption("Kenar = aynı **bakanlık + il + ay**'ı hedefleyen mv'ler (ilgi koordinasyonu, "
+               "RQ1 kelime-kopya sinyalinden bağımsız). Ağ muhalefet ağırlıklı: "
                f"{m.get('n_vertices', '?')} düğüm, {m.get('n_edges', '?')} kenar.")
 
     if pr.empty:
@@ -251,15 +253,16 @@ with tab3:
             st.metric("ARI (parti ile uyum)", lv.get("ari"), f"NMI {lv.get('nmi')}")
             for c in lv.get("top_communities", []):
                 st.caption(f"• {c['size']} mv — {c['top_party']} %{c['share']*100:.0f}")
-            st.caption("Not: Spark LPA bu klik-yoğun grafta dejenere (her şeyi tek topluluğa katlıyor) "
-                       "→ anlamlı yapı için Louvain.")
+            st.caption("ARI 0.46→0.13: ilgi koordinasyonu kelime koordinasyonundan çok daha "
+                       "parti-aşırı. Spark LPA bu yoğun grafta dejenere → Louvain kullanıldı.")
         with cc2:
             st.subheader("Cross-parti köprü mv'ler")
             if m.get("top_bridges"):
                 bdf = pd.DataFrame(m["top_bridges"]).head(8)
                 st.dataframe(bdf[["mp", "party", "province", "bridge_score"]],
                              width="stretch", hide_index=True)
-                st.caption("Sezgin Tanrıkulu (CHP/Diyarbakır) baskın köprü — CHP↔DEM kanalı.")
+                st.caption("İlgi ağında köprüler parti-mixed topluluklar arası geniş bir grup "
+                           "(Mustafa Bilici/CHP, Ekmen/CHP, Aykut Kaya/İYİ).")
 
 st.divider()
 st.caption("Apache Spark · Delta Lake · Spark MLlib · Streamlit — STAT 401 Final Project")

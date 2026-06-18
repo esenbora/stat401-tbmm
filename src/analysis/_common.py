@@ -137,6 +137,16 @@ TURKISH_STOPWORDS = sorted({
     # otherwise) and dominate FP-Growth; remove so topics reflect content.
     "cumhuriyet", "halk", "chp", "mhp", "akp", "dem", "hdp", "yeniden", "refah",
     "grup", "başkanvekili", "genel", "sayın", "vekilleri",
+    # High-frequency content-free filler that dominates full-text topics
+    # (and their common case-inflected forms). maxDF in the vectoriser catches
+    # the rest automatically.
+    "bulunan", "bulunmaktadır", "iddiasına", "iddiası", "iddialar", "iddialara",
+    "talebine", "talebi", "talep", "yaşanan", "yaşandığı", "yılda", "yıl",
+    "yılında", "arasında", "ilçesinde", "ilçesi", "ilçe", "ilinde", "ili",
+    "ilin", "edildiği", "edilmiş", "edilmesi", "tespit", "tespiti", "çeşitli",
+    "durumu", "durum", "kişinin", "kişi", "kişiye", "sayısı", "sayı", "kaç",
+    "nelerdir", "yapılan", "yapılması", "yönelik", "nedeniyle", "ilgili",
+    "konusunda", "konusu", "söz", "yer", "alan", "devam", "ettiği", "değil",
 })
 
 

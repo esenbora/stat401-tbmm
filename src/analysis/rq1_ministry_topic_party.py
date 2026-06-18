@@ -51,7 +51,7 @@ from analysis._text import tokenize as _tokenize
 
 FIG = ROOT / "deliverables" / "figures"
 DELIV = ROOT / "deliverables"
-N_TOPICS = 12
+N_TOPICS = 15
 plt.rcParams.update({"figure.dpi": 130, "font.size": 10, "axes.grid": True, "grid.alpha": 0.25})
 
 
@@ -113,7 +113,10 @@ def sub2_topics(df, spark, metrics: dict):
     print("\n=== S2: LDA topics + FP-Growth co-occurrence ===")
     toks = _tokenize(df, in_col="text").where(F.size("toks") > 0).cache()
 
-    cv = CountVectorizer(inputCol="toks", outputCol="tf", vocabSize=2000, minDF=10.0)
+    # maxDF drops terms appearing in >40% of docs — auto-removes residual
+    # boilerplate the stop-word list misses (key for full-text topic quality).
+    cv = CountVectorizer(inputCol="toks", outputCol="tf", vocabSize=3000,
+                         minDF=10.0, maxDF=0.4)
     cv_model = cv.fit(toks)
     vocab = cv_model.vocabulary
     feat = cv_model.transform(toks)
