@@ -33,8 +33,10 @@ access, detention and disaster topics.
 
 ## S3 — Attention profiles (K-Means++)
 
-k = 5 on standardised (province × 12-topic) vectors, silhouette = **0.28**
-(improved over the subject-line run): clusters separate a small-eastern
+k = 5 on standardised (province × 12-topic) vectors, silhouette = **0.259**
+(improved over the subject-line run's 0.166; topic k kept at 12 — k=15 raises
+vector dimensionality and lowers separation to 0.17): clusters separate a
+small-eastern
 disaster/service profile, an İstanbul/Ankara metro profile, and agriculture /
 tourism profiles.
 

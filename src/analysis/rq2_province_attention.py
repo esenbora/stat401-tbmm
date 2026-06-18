@@ -51,7 +51,10 @@ from analysis._text import tokenize
 FIG = ROOT / "deliverables" / "figures"
 DELIV = ROOT / "deliverables"
 REF = ROOT / "data" / "reference"
-N_TOPICS = 15
+# RQ2 keeps k=12 for the topic vectors: more topics raise the province-vector
+# dimensionality and hurt K-Means separation (silhouette 0.28 at k=12 vs 0.17 at
+# k=15). RQ1 uses k=15 independently for finer topic words.
+N_TOPICS = 12
 N_CLUSTERS = 5
 plt.rcParams.update({"figure.dpi": 130, "font.size": 10, "axes.grid": True, "grid.alpha": 0.25})
 
