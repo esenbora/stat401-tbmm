@@ -77,6 +77,42 @@ def build_silver() -> None:
         F.when(F.length(F.col("full_text")) > 20, F.col("full_text")).otherwise(F.col("ozet")),
     )
 
+    # ---- strip letterhead + signature -> `govde` (question body) -------
+    # Every document opens with a party letterhead + "<MP> / <il> Milletvekili"
+    # and closes with "… arz ederim" + signature. That header names the MP's own
+    # party AND home province, which (a) poisons province-mention attention and
+    # (b) lets the classifier read the party label off the page. Strip it once
+    # here so ALL analyses (incl. the non-tokenizer ones) see only the body.
+    import re as _re
+
+    # Remove everything up to & including the salutation. The party letterhead,
+    # "<MP> / <il> Milletvekili" and group block all sit BEFORE the salutation,
+    # so this drops the party + home-province leakage while keeping the body.
+    # NB: we deliberately do NOT trim a "arz ederim" tail — in TBMM questions
+    # the "…cevaplandırılmasını arz ederim" request precedes the numbered
+    # questions, so trimming it would delete the actual content.
+    _SALUT = _re.compile(
+        r"(?is)^.*?(türkiye\s+büyük\s+millet\s+meclisi\s+ba[şs]kanl[ıi][ğg][ıi]['’]?n?[ae]?)")
+    # Closing salutation -> end is the trailing signature block (often repeats
+    # "<MP> / <party> Milletvekili"). Safe to trim because "saygılarımla" is a
+    # true letter close — unlike "arz ederim", which precedes the questions.
+    _CLOSE = _re.compile(r"(?is)\bsayg[ıi]lar[ıi]mla\b.*$")
+
+    @F.udf(returnType=T.StringType())
+    def strip_boiler(t):  # noqa: ANN001 - Spark UDF
+        if not t:
+            return t
+        t = _SALUT.sub("", t, count=1)
+        t = _CLOSE.sub("", t)
+        return t.strip()
+
+    df = df.withColumn("govde_raw", strip_boiler(F.col("text")))
+    # fall back to full text if stripping left too little (garbled salutation)
+    df = df.withColumn(
+        "govde",
+        F.when(F.length(F.col("govde_raw")) >= 40, F.col("govde_raw")).otherwise(F.col("text")),
+    ).drop("govde_raw")
+
     # ---- attach MP party + electoral province (small broadcast join) ---
     lookup = build_mp_lookup()
     mp_rows = [
@@ -94,16 +130,21 @@ def build_silver() -> None:
         {"party": "Bilinmiyor", "party_current": "Bilinmiyor", "mv_province": "Bilinmiyor"}
     )
 
-    # ---- province mentions from the FULL TEXT (RQ2) --------------------
-    # Extract from the full önerge body, not the one-line summary — this is far
-    # richer (the body names the provinces/districts the question is about).
+    # ---- province mentions from the BODY (RQ2) ------------------------
+    # From `govde` (header stripped), and with the MP's OWN electoral province
+    # removed: otherwise every question trivially "mentions" the MP's home
+    # province via the signature, making the per-capita map a signature artifact.
     pattern = build_province_pattern()
 
     @F.udf(returnType=T.ArrayType(T.StringType()))
     def mentions_udf(text):  # noqa: ANN001 - Spark UDF
         return extract_province_mentions(text, pattern)
 
-    df = df.withColumn("mentioned_provinces", mentions_udf(F.col("text")))
+    df = df.withColumn("mentioned_provinces", mentions_udf(F.col("govde")))
+    df = df.withColumn(
+        "mentioned_provinces",
+        F.array_except("mentioned_provinces", F.array(F.col("mv_province"))),
+    )
     df = df.withColumn("n_mentions", F.size("mentioned_provinces"))
 
     df = df.cache()

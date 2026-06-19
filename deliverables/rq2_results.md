@@ -1,70 +1,70 @@
 # RQ2 — Provincial Attention Map (Results)
 
-Computed on the **full OCR'd text** of all 44,484 written questions with Apache
-Spark MLlib (LDA, K-Means++ , Correlation). "Attention" = a province named in the
-question body, detected with a Turkish case-suffix-aware 81-province gazetteer
-(*Diyarbakır'da → Diyarbakır*; "Kars" inside *karşılaşılan* is not matched). Gold
-tables `data/gold/{province_mentions, province_topic, province_cluster,
-province_correlates}`; figures `rq2_*`.
+Computed on the question body (`govde`) of all 44,484 questions with Apache Spark
+MLlib (LDA, K-Means++, Correlation). "Attention" = a province named in the body,
+detected with a Turkish case-suffix-aware 81-province gazetteer. **Two
+bias-removal steps** (vs. the earlier full-text run):
 
-**59,761** province mentions; **84%** of questions name ≥1 province (vs. 47% from
-the subject line — full text is far richer).
+1. mentions are read from `govde` (party letterhead + "<MP> / <il> Milletvekili"
+   stripped), and
+2. the MP's **own electoral province is removed** from their mentions —
+   otherwise every question trivially "mentions" the MP's home province via the
+   signature, making the per-capita map a signature artifact.
+
+Result: **19,342** genuine cross-province mentions (down from the inflated 59,761).
 
 ## S1 — Geographic distribution
 
-| Rank | Province | Mentions |
-|---|---|---|
-| 1 | Ankara | 10,971 |
-| 2 | Kocaeli | 5,518 |
-| 3 | İstanbul | 4,013 |
-| 4 | İzmir | 2,832 |
-| 5 | Diyarbakır | 2,182 |
-| 6 | Van | 1,557 |
+Raw top: **Ankara 6,098**, İstanbul 798, Hakkari 556, Van 519, Diyarbakır 437.
 
-> **Caveat:** full-text counts are inflated for **Ankara** (ministries/addresses
-> sit in the capital) and for the home provinces of prolific MPs (signature
-> blocks). Raw rank is therefore read together with the per-capita view below.
+> **Ankara caveat (important):** Ankara's raw count is a *capital/ministry*
+> artifact — question bodies constantly reference ministries located in Ankara
+> ("Ankara'daki … Bakanlığı"), not Ankara-as-subject. Ankara is therefore
+> excluded from the attention interpretation below; the genuine signal is the
+> eastern/Anatolian provinces.
 
 ## S2 — Topics per province; metro vs. rural
 
-Metropolitan provinces skew toward infrastructure/capital and
-public-administration topics; rural / eastern provinces skew toward education
-access, detention and disaster topics.
+Metro-skewed vs rural-skewed topic shares now differ ([3,11,5] vs [7,1,0]):
+metros skew to infrastructure/finance topics, rural/eastern provinces to
+detention, education-access and disaster topics.
 
 ## S3 — Attention profiles (K-Means++)
 
-k = 5 on standardised (province × 12-topic) vectors, silhouette = **0.259**
-(improved over the subject-line run's 0.166; topic k kept at 12 — k=15 raises
-vector dimensionality and lowers separation to 0.17): clusters separate a
-small-eastern
-disaster/service profile, an İstanbul/Ankara metro profile, and agriculture /
-tourism profiles.
+k = 5 on standardised (province × 12-topic) vectors, silhouette = **0.270**
+(> the 0.166 subject-line baseline).
 
 ## S4 — Attention vs. population & representation
 
 | Pair | Pearson | Spearman |
 |---|---|---|
-| attention ~ population | **0.593** | 0.692 |
-| attention ~ MP count | 0.592 | 0.691 |
+| attention ~ population | **0.402** | 0.626 |
 | population ~ MP count | 0.999 | — |
 
-Population explains ~35% of attention variance; MP count is collinear with
-population (seats are population-allocated) and adds no independent signal.
-Per 100k inhabitants:
+After removing the self-province artifact, the population correlation **drops to
+0.40** (it was inflated to 0.59 because home-province self-mentions scale with an
+province's MP count, which scales with population). The honest reading:
+population explains only ~16% of attention variance — attention is largely
+**politically targeted**.
 
-- **Most over-attended:** Tunceli (375), Kars (329), Artvin (280), Bitlis (256),
-  Burdur (222) — small eastern / Black-Sea provinces.
-- **Most under-attended:** İstanbul (~25), Çanakkale, Kastamonu, Sinop — large /
-  western provinces.
+Per 100k inhabitants (Ankara excluded as a ministry artifact):
 
-Parliamentary attention is **politically targeted**, not proportional to size:
-small eastern provinces draw far more attention per capita than the metros.
+- **Most over-attended:** Hakkari (200), Tunceli (110), Kilis (97), Burdur (86),
+  Kars (79), Erzincan (78) — small eastern/Anatolian provinces, now driven by
+  **other** MPs' attention (not the province's own MPs).
+- **Most under-attended:** Çanakkale (10), Tekirdağ (9), **Kocaeli (8)**, İzmir
+  (8), Bursa (8) — western metros.
+
+**Validation of the fix:** Kocaeli — home of the single most prolific MP
+(Gergerlioğlu) — moved from *over-attended* (in the buggy run) to *under-attended*
+(8/100k) once self-mentions were removed, confirming the old ranking was a
+signature artifact.
 
 ---
 
 ### Limitations
-- Full-text mentions include capital/ministry and signature-block noise (Ankara,
-  prolific MPs' home provinces); per-capita and clustering views mitigate this.
-- Topic clusters inherit summary-level coarseness and OCR noise.
-- GDP not included; population + MP count cover "size" and "representation" and
-  are mutually collinear.
+- Ankara raw mentions reflect ministry locations, not subject attention
+  (excluded from interpretation).
+- Mentions read from `govde`; residual closing signatures may leak a few
+  self-province mentions despite the `array_except` removal.
+- GDP not included; population + MP count cover size/representation (collinear).

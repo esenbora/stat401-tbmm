@@ -135,8 +135,15 @@ TURKISH_STOPWORDS = sorted({
     # Party / group identifiers in the letterhead + signature block. These leak
     # the label into the text (full-text party classification jumps to ~99%
     # otherwise) and dominate FP-Growth; remove so topics reflect content.
-    "cumhuriyet", "halk", "chp", "mhp", "akp", "dem", "hdp", "yeniden", "refah",
-    "grup", "başkanvekili", "genel", "sayın", "vekilleri",
+    # party abbreviations only (the full letterhead is stripped into `govde`,
+    # so content words like "halk"/"cumhuriyet"/"genel" are kept — "halk
+    # sağlığı" etc. are legitimate signal).
+    "chp", "mhp", "akp", "dem", "hdp", "yeniden", "refah",
+    "başkanvekili", "sayın", "vekilleri",
+    # "cumhuriyet" kept here (party name) because a minority of closings aren't
+    # "saygılarımla"-terminated so the signature "Cumhuriyet Halk Partisi" can
+    # survive into govde. "halk" is left IN the vocabulary (content: halk sağlığı).
+    "cumhuriyet",
     # High-frequency content-free filler that dominates full-text topics
     # (and their common case-inflected forms). maxDF in the vectoriser catches
     # the rest automatically.
@@ -146,7 +153,7 @@ TURKISH_STOPWORDS = sorted({
     "ilin", "edildiği", "edilmiş", "edilmesi", "tespit", "tespiti", "çeşitli",
     "durumu", "durum", "kişinin", "kişi", "kişiye", "sayısı", "sayı", "kaç",
     "nelerdir", "yapılan", "yapılması", "yönelik", "nedeniyle", "ilgili",
-    "konusunda", "konusu", "söz", "yer", "alan", "devam", "ettiği", "değil",
+    "konusunda", "alan", "devam", "ettiği",
 })
 
 

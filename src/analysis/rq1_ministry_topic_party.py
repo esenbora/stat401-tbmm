@@ -111,7 +111,7 @@ def sub1_ministry_time(df, metrics: dict) -> None:
 # ==========================================================================
 def sub2_topics(df, spark, metrics: dict):
     print("\n=== S2: LDA topics + FP-Growth co-occurrence ===")
-    toks = _tokenize(df, in_col="text").where(F.size("toks") > 0).cache()
+    toks = _tokenize(df, in_col="govde").where(F.size("toks") > 0).cache()
 
     # maxDF drops terms appearing in >40% of docs — auto-removes residual
     # boilerplate the stop-word list misses (key for full-text topic quality).
@@ -215,7 +215,7 @@ def sub3_party_focus(df, metrics: dict):
 
     # classifier: predict party from question text (TF-IDF -> multinomial LR)
     clf_parties = ["CHP", "DEM Parti", "İYİ Parti"]  # enough volume to learn
-    cdf = _tokenize(df.where(F.col("party").isin(clf_parties)), in_col="text")
+    cdf = _tokenize(df.where(F.col("party").isin(clf_parties)), in_col="govde")
     cdf = cdf.where(F.size("toks") > 0)
     cv = CountVectorizer(inputCol="toks", outputCol="tf", vocabSize=5000, minDF=5.0).fit(cdf)
     idf = IDF(inputCol="tf", outputCol="features")
@@ -262,7 +262,7 @@ def sub3_party_focus(df, metrics: dict):
 # ==========================================================================
 def sub4_duplicates(df, metrics: dict):
     print("\n=== S4: MinHash/LSH near-duplicate detection ===")
-    toks = _tokenize(df.select("guid", "mv", "party", "text"), in_col="text")
+    toks = _tokenize(df.select("guid", "mv", "party", "govde"), in_col="govde")
     toks = toks.withColumn("items", F.array_distinct("toks")).where(F.size("items") >= 3)
     cv = CountVectorizer(inputCol="items", outputCol="vec", vocabSize=8000, minDF=2.0).fit(toks)
     # A question whose tokens are all rare (below minDF) becomes an all-zero

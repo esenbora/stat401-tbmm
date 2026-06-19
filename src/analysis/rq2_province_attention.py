@@ -52,8 +52,8 @@ FIG = ROOT / "deliverables" / "figures"
 DELIV = ROOT / "deliverables"
 REF = ROOT / "data" / "reference"
 # RQ2 keeps k=12 for the topic vectors: more topics raise the province-vector
-# dimensionality and hurt K-Means separation (silhouette 0.28 at k=12 vs 0.17 at
-# k=15). RQ1 uses k=15 independently for finer topic words.
+# dimensionality and hurt K-Means separation (silhouette 0.259 at k=12 vs 0.17
+# at k=15). RQ1 uses k=15 independently for finer topic words.
 N_TOPICS = 12
 N_CLUSTERS = 5
 plt.rcParams.update({"figure.dpi": 130, "font.size": 10, "axes.grid": True, "grid.alpha": 0.25})
@@ -103,7 +103,7 @@ def sub1_attention(df, metrics: dict):
 def build_province_topic(df, spark):
     """LDA dominant topic per question, exploded over mentioned provinces ->
     (province x topic) count matrix. Returns (matrix_pdf, topic_words)."""
-    toks = tokenize(df.select("guid", "mentioned_provinces", "text"), in_col="text") \
+    toks = tokenize(df.select("guid", "mentioned_provinces", "govde"), in_col="govde") \
         .where(F.size("toks") > 0)
     cv = CountVectorizer(inputCol="toks", outputCol="tf", vocabSize=3000,
                          minDF=10.0, maxDF=0.4).fit(toks)

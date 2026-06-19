@@ -1,491 +1,491 @@
 {
-  "total_mentions": 59761,
+  "total_mentions": 19342,
   "provinces_mentioned": 81,
   "top_provinces": [
     {
       "il": "Ankara",
-      "mentions": 10971
-    },
-    {
-      "il": "Kocaeli",
-      "mentions": 5518
+      "mentions": 6098
     },
     {
       "il": "İstanbul",
-      "mentions": 4013
+      "mentions": 798
     },
     {
-      "il": "İzmir",
-      "mentions": 2832
-    },
-    {
-      "il": "Diyarbakır",
-      "mentions": 2182
+      "il": "Hakkari",
+      "mentions": 556
     },
     {
       "il": "Van",
-      "mentions": 1557
+      "mentions": 519
     },
     {
-      "il": "Denizli",
-      "mentions": 1244
-    },
-    {
-      "il": "Mersin",
-      "mentions": 1235
-    },
-    {
-      "il": "Antalya",
-      "mentions": 1205
-    },
-    {
-      "il": "Bursa",
-      "mentions": 1201
+      "il": "Diyarbakır",
+      "mentions": 437
     },
     {
       "il": "Hatay",
-      "mentions": 1190
+      "mentions": 393
+    },
+    {
+      "il": "Kahramanmaraş",
+      "mentions": 384
     },
     {
       "il": "Adana",
-      "mentions": 1065
+      "mentions": 370
     },
     {
       "il": "Gaziantep",
-      "mentions": 1064
+      "mentions": 368
+    },
+    {
+      "il": "Aydın",
+      "mentions": 364
+    },
+    {
+      "il": "İzmir",
+      "mentions": 351
     },
     {
       "il": "Mardin",
-      "mentions": 1060
+      "mentions": 336
     },
     {
-      "il": "Şanlıurfa",
-      "mentions": 1033
+      "il": "Antalya",
+      "mentions": 316
+    },
+    {
+      "il": "Batman",
+      "mentions": 312
+    },
+    {
+      "il": "Erzurum",
+      "mentions": 296
     }
   ],
   "lda_topics": [
     {
       "topic": 0,
       "words": [
-        "hayvan",
-        "sap",
+        "deprem",
         "orman",
-        "maden",
-        "tarim",
+        "konut",
+        "sehircilikve",
+        "kurum",
         "son",
-        "tanm",
-        "sulama"
+        "kamu",
+        "depreme"
       ]
     },
     {
       "topic": 1,
       "words": [
-        "kocaeli",
-        "omer",
-        "faruk",
-        "gergerlioglu",
-        "ankara",
-        "kat",
-        "oda",
-        "bakanliklar"
+        "kadardir",
+        "yol",
+        "koy",
+        "zaman",
+        "altyapi",
+        "ictuzugun",
+        "son",
+        "uraloglu"
       ]
     },
     {
       "topic": 2,
       "words": [
-        "van",
-        "kadin",
-        "koruma",
-        "son",
-        "ekonomik",
         "cocuk",
         "sosyal",
-        "kadina"
+        "aile",
+        "koruma",
+        "hizmetler",
+        "son",
+        "ozdemir",
+        "kamu"
       ]
     },
     {
       "topic": 3,
       "words": [
-        "orman",
-        "yapimi",
-        "tarim",
-        "cevre",
-        "proje",
-        "ced",
-        "suyu",
-        "eden"
+        "son",
+        "ankara",
+        "kamu",
+        "halklailiskilerbinasi",
+        "saglik",
+        "kat",
+        "sosyal",
+        "varsa"
       ]
     },
     {
       "topic": 4,
       "words": [
-        "son",
-        "tarim",
-        "usak",
-        "elektrik",
-        "enerji",
+        "sap",
+        "hayvan",
+        "kuday",
+        "vaka",
         "orman",
-        "saygilarimla",
-        "maddeleri"
+        "kurban",
+        "belediye",
+        "bayrami"
       ]
     },
     {
       "topic": 5,
       "words": [
-        "saglik",
-        "hastanesi",
-        "devlet",
         "ankara",
-        "memisoglu",
-        "kemal",
-        "hasta",
-        "hastane"
+        "kocaeli",
+        "oda",
+        "kat",
+        "omer",
+        "halklailiskilerbinasi",
+        "nolu",
+        "bakanliklar"
       ]
     },
     {
       "topic": 6,
       "words": [
-        "sorusturma",
-        "cocuk",
-        "belediye",
-        "idari",
-        "maddeleri",
-        "cocuklarin",
-        "belediyesi",
-        "geregince"
+        "ceza",
+        "kadin",
+        "cezaevi",
+        "son",
+        "infaz",
+        "hasta",
+        "yilmaz",
+        "saglik"
       ]
     },
     {
       "topic": 7,
       "words": [
-        "egitim",
-        "deprem",
-        "okul",
-        "ankara",
+        "tarim",
+        "orman",
+        "son",
         "cevre",
-        "turizm",
-        "yol",
-        "yeni"
+        "milyon",
+        "maden",
+        "van",
+        "uretim"
       ]
     },
     {
       "topic": 8,
       "words": [
-        "kamu",
-        "sosyal",
         "egitim",
-        "calisma",
-        "son",
-        "ozel",
-        "guvenlik",
-        "bin"
+        "kamu",
+        "tekin",
+        "okul",
+        "yusuf",
+        "hakkari",
+        "milli",
+        "saglik"
       ]
     },
     {
       "topic": 9,
       "words": [
-        "engelli",
-        "son",
-        "hasta",
-        "ceza",
-        "diyarbakir",
-        "kamu",
-        "adalet",
-        "yilmaz"
+        "maddeleri",
+        "geregince",
+        "inci",
+        "uncu",
+        "nci",
+        "kanligina",
+        "halk",
+        "kocaeli"
       ]
     },
     {
       "topic": 10,
       "words": [
-        "cezaevi",
-        "ceza",
-        "infaz",
-        "mahpuslarin",
-        "tipi",
-        "yilmaz",
-        "kapali",
-        "gozlem"
+        "kamu",
+        "mehmet",
+        "bin",
+        "halk",
+        "saglik",
+        "turizm",
+        "devlet",
+        "hastanesi"
       ]
     },
     {
       "topic": 11,
       "words": [
-        "kadardir",
-        "toplam",
-        "denizli",
-        "ayri",
-        "kredi",
-        "yardim",
-        "ictuzugun",
-        "geregince"
+        "calisma",
+        "sorusturma",
+        "sosyal",
+        "guvenlik",
+        "kamu",
+        "yer",
+        "engelli",
+        "idari"
       ]
     }
   ],
   "metro_vs_rural": {
     "metro_top_topics": [
-      8,
       7,
-      1
+      6,
+      11
     ],
     "rural_top_topics": [
       7,
-      3,
-      4
+      6,
+      0
     ],
     "metro_skewed_topics": [
       {
-        "topic": 1,
-        "delta": 0.0899
+        "topic": 3,
+        "delta": 0.0344
       },
       {
-        "topic": 8,
-        "delta": 0.063
+        "topic": 11,
+        "delta": 0.0306
       },
       {
-        "topic": 6,
-        "delta": 0.0095
+        "topic": 5,
+        "delta": 0.0278
       }
     ],
     "rural_skewed_topics": [
       {
-        "topic": 3,
-        "delta": -0.0732
-      },
-      {
-        "topic": 11,
-        "delta": -0.0371
-      },
-      {
         "topic": 7,
-        "delta": -0.0235
+        "delta": -0.0585
+      },
+      {
+        "topic": 1,
+        "delta": -0.056
+      },
+      {
+        "topic": 0,
+        "delta": -0.0334
       }
     ]
   },
-  "kmeans_silhouette": 0.2589,
+  "kmeans_silhouette": 0.2697,
   "kmeans_clusters": {
-    "0": {
-      "size": 36,
+    "1": {
+      "size": 15,
       "members": [
         "Adana",
+        "Adıyaman",
+        "Ağrı",
+        "Bartın",
+        "Diyarbakır",
+        "Elazığ",
+        "Gaziantep",
+        "Hakkari",
+        "Hatay",
+        "Kahramanmaraş",
+        "Kilis",
+        "Malatya",
+        "Muş",
+        "Osmaniye",
+        "Şanlıurfa"
+      ],
+      "top_topics": [
+        2,
+        0,
+        7
+      ]
+    },
+    "3": {
+      "size": 55,
+      "members": [
+        "Afyonkarahisar",
         "Aksaray",
+        "Amasya",
+        "Antalya",
+        "Ardahan",
         "Artvin",
         "Aydın",
         "Balıkesir",
+        "Batman",
         "Bilecik",
+        "Bingöl",
         "Bitlis",
+        "Bolu",
         "Bursa",
         "Denizli",
         "Düzce",
         "Edirne",
-        "Eskişehir",
+        "Erzincan",
+        "Erzurum",
         "Giresun",
+        "Gümüşhane",
         "Isparta",
         "Iğdır",
-        "Karabük",
-        "Karaman",
+        "Kars",
+        "Kastamonu",
         "Kayseri",
+        "Kocaeli",
         "Konya",
         "Kırklareli",
+        "Kırıkkale",
+        "Kırşehir",
         "Manisa",
+        "Mardin",
         "Mersin",
         "Muğla",
+        "Nevşehir",
         "Niğde",
         "Ordu",
         "Rize",
         "Sakarya",
         "Samsun",
+        "Siirt",
         "Sinop",
         "Sivas",
-        "Trabzon",
-        "Uşak",
+        "Tokat",
+        "Tunceli",
+        "Van",
+        "Yalova",
+        "Yozgat",
         "Zonguldak",
         "Çanakkale",
+        "Çankırı",
+        "Çorum",
         "İstanbul",
         "İzmir"
       ],
       "top_topics": [
-        8,
-        4,
-        3
-      ]
-    },
-    "1": {
-      "size": 15,
-      "members": [
-        "Adıyaman",
-        "Ardahan",
-        "Bolu",
-        "Elazığ",
-        "Hatay",
-        "Kahramanmaraş",
-        "Kastamonu",
-        "Kilis",
-        "Kırıkkale",
-        "Malatya",
-        "Nevşehir",
-        "Osmaniye",
-        "Yalova",
-        "Çankırı",
-        "Şanlıurfa"
-      ],
-      "top_topics": [
         7,
-        3,
-        4
+        6,
+        0
       ]
     },
-    "2": {
-      "size": 14,
+    "0": {
+      "size": 7,
       "members": [
-        "Afyonkarahisar",
-        "Antalya",
-        "Bayburt",
-        "Bingöl",
+        "Ankara",
         "Burdur",
-        "Erzincan",
-        "Gümüşhane",
-        "Kars",
+        "Eskişehir",
+        "Karabük",
         "Kütahya",
-        "Kırşehir",
         "Tekirdağ",
-        "Tokat",
-        "Yozgat",
-        "Çorum"
+        "Uşak"
       ],
       "top_topics": [
-        3,
+        5,
         7,
-        10
+        6
       ]
     },
     "4": {
-      "size": 14,
+      "size": 3,
       "members": [
-        "Amasya",
-        "Ağrı",
-        "Bartın",
-        "Batman",
-        "Diyarbakır",
-        "Erzurum",
-        "Gaziantep",
-        "Hakkari",
-        "Mardin",
-        "Muş",
-        "Siirt",
-        "Tunceli",
-        "Van",
+        "Bayburt",
+        "Karaman",
+        "Trabzon"
+      ],
+      "top_topics": [
+        7,
+        6,
+        11
+      ]
+    },
+    "2": {
+      "size": 1,
+      "members": [
         "Şırnak"
       ],
       "top_topics": [
-        9,
+        4,
         7,
-        2
-      ]
-    },
-    "3": {
-      "size": 2,
-      "members": [
-        "Ankara",
-        "Kocaeli"
-      ],
-      "top_topics": [
-        1,
-        8,
-        7
+        1
       ]
     }
   },
   "correlation_pearson": {
-    "attention~population": 0.5927,
-    "attention~mp_count": 0.5923,
+    "attention~population": 0.4017,
+    "attention~mp_count": 0.3983,
     "population~mp_count": 0.999
   },
   "correlation_spearman": {
-    "attention~population": 0.6919,
-    "attention~mp_count": 0.6911
+    "attention~population": 0.6258,
+    "attention~mp_count": 0.6233
   },
   "most_over_attended": [
     {
+      "il": "Hakkari",
+      "attention": 556,
+      "att_per_100k": 199.8
+    },
+    {
       "il": "Tunceli",
-      "attention": 314,
-      "att_per_100k": 375.4
+      "attention": 92,
+      "att_per_100k": 110.0
     },
     {
-      "il": "Kars",
-      "attention": 925,
-      "att_per_100k": 329.1
+      "il": "Ankara",
+      "attention": 6098,
+      "att_per_100k": 106.1
     },
     {
-      "il": "Artvin",
-      "attention": 474,
-      "att_per_100k": 279.6
-    },
-    {
-      "il": "Kocaeli",
-      "attention": 5518,
-      "att_per_100k": 271.4
-    },
-    {
-      "il": "Bitlis",
-      "attention": 903,
-      "att_per_100k": 256.3
+      "il": "Kilis",
+      "attention": 142,
+      "att_per_100k": 97.4
     },
     {
       "il": "Burdur",
-      "attention": 607,
-      "att_per_100k": 221.8
+      "attention": 234,
+      "att_per_100k": 85.5
     },
     {
-      "il": "Hakkari",
-      "attention": 616,
-      "att_per_100k": 221.4
+      "il": "Kars",
+      "attention": 223,
+      "att_per_100k": 79.3
     },
     {
-      "il": "Uşak",
-      "attention": 746,
-      "att_per_100k": 199.9
+      "il": "Erzincan",
+      "attention": 186,
+      "att_per_100k": 78.4
+    },
+    {
+      "il": "Ardahan",
+      "attention": 69,
+      "att_per_100k": 72.7
     }
   ],
   "most_under_attended": [
     {
-      "il": "Sinop",
+      "il": "Çanakkale",
       "attention": 57,
-      "att_per_100k": 26.1
+      "att_per_100k": 10.2
     },
     {
-      "il": "Kastamonu",
-      "attention": 97,
-      "att_per_100k": 25.8
+      "il": "Tekirdağ",
+      "attention": 98,
+      "att_per_100k": 8.8
+    },
+    {
+      "il": "Kocaeli",
+      "attention": 173,
+      "att_per_100k": 8.5
+    },
+    {
+      "il": "İzmir",
+      "attention": 351,
+      "att_per_100k": 7.9
+    },
+    {
+      "il": "Bursa",
+      "attention": 237,
+      "att_per_100k": 7.5
+    },
+    {
+      "il": "Denizli",
+      "attention": 70,
+      "att_per_100k": 6.7
     },
     {
       "il": "İstanbul",
-      "attention": 4013,
-      "att_per_100k": 25.3
-    },
-    {
-      "il": "Çanakkale",
-      "attention": 140,
-      "att_per_100k": 25.1
-    },
-    {
-      "il": "Aksaray",
-      "attention": 102,
-      "att_per_100k": 23.8
-    },
-    {
-      "il": "Kırklareli",
-      "attention": 87,
-      "att_per_100k": 23.7
-    },
-    {
-      "il": "Kırşehir",
-      "attention": 57,
-      "att_per_100k": 23.5
+      "attention": 798,
+      "att_per_100k": 5.0
     },
     {
       "il": "Balıkesir",
-      "attention": 282,
-      "att_per_100k": 22.5
+      "attention": 59,
+      "att_per_100k": 4.7
     }
   ]
 }

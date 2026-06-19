@@ -67,7 +67,7 @@ with st.sidebar:
     st.caption("STAT 401 — 28. Dönem Yazılı Soru Önergeleri")
     st.metric("Toplam önerge", "44,484")
     st.metric("Soru veren milletvekili", "307 / 592")
-    st.caption("592 mv toplam · 307'si yazılı soru verdi · 304'ü RQ3 ilgi ağında")
+    st.caption("592 mv toplam · 307'si yazılı soru verdi · 265'i RQ3 ilgi ağında")
     st.metric("Bakanlık / il", "20 / 81")
     st.caption("Tam metin OCR kapsamı: %100 (108.6M karakter)")
     st.divider()
@@ -149,7 +149,7 @@ with tab1:
                                     width="stretch")
 
         if m.get("lda_topics"):
-            with st.expander("LDA konuları (12) — en sık kelimeler"):
+            with st.expander(f"LDA konuları ({len(m['lda_topics'])}) — en sık kelimeler"):
                 st.dataframe(pd.DataFrame([
                     {"Konu": f"T{t['topic']}", "Kelimeler": ", ".join(t["words"])}
                     for t in m["lda_topics"]]), width="stretch", hide_index=True)
@@ -168,11 +168,15 @@ with tab2:
     if men.empty:
         st.warning("RQ2 verisi yok.")
     else:
+        # Ankara raw count is a capital/ministry-address artifact (ministries
+        # sit in Ankara), not subject attention — exclude it from the map/bar.
+        men_disp = men[men["il"] != "Ankara"]
         c1, c2 = st.columns([3, 2])
         with c1:
             st.subheader("İl ilgi haritası (anılma sayısı)")
+            st.caption("Ankara hariç (bakanlık adresleri gövdede şişiriyor — özne ili değil).")
             if gj is not None:
-                fig = px.choropleth(men, geojson=gj, locations="il", featureidkey="properties.name",
+                fig = px.choropleth(men_disp, geojson=gj, locations="il", featureidkey="properties.name",
                                     color="mentions", color_continuous_scale="YlGnBu",
                                     labels={"mentions": "anılma"})
                 fig.update_geos(fitbounds="locations", visible=False)
@@ -181,8 +185,8 @@ with tab2:
             else:
                 st.info("Harita için geojson yok — bar grafiğe bakın.")
         with c2:
-            st.subheader("En çok anılan iller")
-            top = men.sort_values("mentions", ascending=False).head(15)
+            st.subheader("En çok anılan iller (Ankara hariç)")
+            top = men_disp.sort_values("mentions", ascending=False).head(15)
             st.plotly_chart(px.bar(top, x="mentions", y="il", orientation="h")
                             .update_layout(yaxis={"categoryorder": "total ascending"}, height=420),
                             width="stretch")
@@ -196,7 +200,7 @@ with tab2:
                 fig = px.scatter(corr, x="population", y="attention", hover_name="il",
                                  size="att_per_100k", labels={"population": "nüfus", "attention": "anılma"})
                 st.plotly_chart(fig, width="stretch")
-                st.caption(f"Pearson r(ilgi, nüfus) = {r}  ·  nüfus varyansın ~%{r**2*100:.0f}'ini açıklıyor")
+                st.caption(f"Pearson r(ilgi, nüfus) = {r}  ·  ilgi–nüfus ortak varyansı ~%{r**2*100:.0f}")
             with cc2:
                 st.markdown("**100k kişi başına en çok ilgi**")
                 over = corr.sort_values("att_per_100k", ascending=False).head(8)
@@ -253,16 +257,17 @@ with tab3:
             st.metric("ARI (parti ile uyum)", lv.get("ari"), f"NMI {lv.get('nmi')}")
             for c in lv.get("top_communities", []):
                 st.caption(f"• {c['size']} mv — {c['top_party']} %{c['share']*100:.0f}")
-            st.caption("ARI 0.46→0.13: ilgi koordinasyonu kelime koordinasyonundan çok daha "
-                       "parti-aşırı. Spark LPA bu yoğun grafta dejenere → Louvain kullanıldı.")
+            st.caption(f"ARI {lv.get('ari')} (eski özdeş-özet ağında 0.46): ilgi koordinasyonu "
+                       "kelime koordinasyonundan çok daha parti-aşırı. "
+                       "Spark LPA bu yoğun grafta dejenere → Louvain kullanıldı.")
         with cc2:
             st.subheader("Cross-parti köprü mv'ler")
             if m.get("top_bridges"):
                 bdf = pd.DataFrame(m["top_bridges"]).head(8)
                 st.dataframe(bdf[["mp", "party", "province", "bridge_score"]],
                              width="stretch", hide_index=True)
-                st.caption("İlgi ağında köprüler parti-mixed topluluklar arası geniş bir grup "
-                           "(Mustafa Bilici/CHP, Ekmen/CHP, Aykut Kaya/İYİ).")
+                top3 = "; ".join(f"{r.mp} ({r.party})" for r in bdf.head(3).itertuples())
+                st.caption(f"İlgi ağında köprüler parti-mixed topluluklar arası bir grup: {top3}.")
 
 st.divider()
 st.caption("Apache Spark · Delta Lake · Spark MLlib · Streamlit — STAT 401 Final Project")
