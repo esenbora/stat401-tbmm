@@ -268,8 +268,8 @@ def networkx_bridges_embeddings(edges_pd, verts_pd, pr_pd, metrics):
         idx = [i for i, q in enumerate(parties) if q == p]
         ax.scatter(coords[idx, 0], coords[idx, 1], s=55, alpha=0.8,
                    color=PARTY_COLORS.get(p, "#777"), label=p)
-    ax.set_title(f"DeepWalk + UMAP — MP gömme (parti)\n"
-                 f"silhouette={sil_party:.3f} → ayrışma zayıf, parti göreceli baskın")
+    ax.set_title(f"DeepWalk + UMAP — MP embedding (party)\n"
+                 f"silhouette={sil_party:.3f} → weak separation, party relatively dominant")
     ax.legend(fontsize=8)
     plt.tight_layout(); plt.savefig(FIG / "rq3_embedding_party.png"); plt.close()
     return top_bridges
@@ -280,7 +280,7 @@ def figures(pr_pd, comm_metrics, metrics):
     fig, ax = plt.subplots(figsize=(9, 6))
     d = pr_pd.iloc[::-1]
     ax.barh(d["node"], d["pr"], color=[PARTY_COLORS.get(p, "#777") for p in d["party"]])
-    ax.set_title("PageRank Top-10 (Spark) — co-attention ağı")
+    ax.set_title("PageRank Top-10 (Spark) — co-attention network")
     ax.set_xlabel("PageRank")
     plt.tight_layout(); plt.savefig(FIG / "rq3_pagerank_top.png"); plt.close()
 

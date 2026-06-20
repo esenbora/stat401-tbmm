@@ -94,8 +94,8 @@ def sub1_attention(df, metrics: dict):
     top = pdf.head(25).iloc[::-1]
     fig, ax = plt.subplots(figsize=(9, 9))
     ax.barh(top["il"], top["mentions"], color="#2a7f62")
-    ax.set_title("İl bazlı parlamento ilgisi — yazılı soruda anılma (Top 25)")
-    ax.set_xlabel("Anılma sayısı")
+    ax.set_title("Provincial attention — mentions in written questions (Top 25)")
+    ax.set_xlabel("Mentions")
     plt.tight_layout(); plt.savefig(FIG / "rq2_s1_province_mentions.png"); plt.close()
     return pdf
 
@@ -150,11 +150,11 @@ def sub2_topics_by_province(pt_pd, topic_words, metrics: dict):
 
     fig, ax = plt.subplots(figsize=(10, 5))
     x = np.arange(N_TOPICS); w = 0.4
-    ax.bar(x - w / 2, metro_prof.values, w, label="Metropol", color="#c0392b")
-    ax.bar(x + w / 2, rural_prof.values, w, label="Kırsal/diğer", color="#27ae60")
+    ax.bar(x - w / 2, metro_prof.values, w, label="Metropolitan", color="#c0392b")
+    ax.bar(x + w / 2, rural_prof.values, w, label="Rural/other", color="#27ae60")
     ax.set_xticks(x); ax.set_xticklabels([f"T{i}" for i in range(N_TOPICS)])
-    ax.set_xlabel("LDA konu"); ax.set_ylabel("Ortalama pay")
-    ax.set_title("Metropol vs kırsal il — konu profili"); ax.legend()
+    ax.set_xlabel("LDA topic"); ax.set_ylabel("Mean share")
+    ax.set_title("Metropolitan vs rural provinces — topic profile"); ax.legend()
     plt.tight_layout(); plt.savefig(FIG / "rq2_s2_metro_rural.png"); plt.close()
     print("Metro-skewed topics:", metrics["metro_vs_rural"]["metro_skewed_topics"])
     print("Rural-skewed topics:", metrics["metro_vs_rural"]["rural_skewed_topics"])
@@ -206,13 +206,13 @@ def sub3_kmeans(spark, share: pd.DataFrame, metrics: dict):
     for c, members in clusters.items():
         xs = share.loc[members, var_topics[0]]
         ys = share.loc[members, var_topics[1]]
-        ax.scatter(xs, ys, color=cmap(c), label=f"Küme {c} (n={len(members)})", s=60, alpha=0.8)
+        ax.scatter(xs, ys, color=cmap(c), label=f"Cluster {c} (n={len(members)})", s=60, alpha=0.8)
         for il in members:
             if il in METRO or share.loc[il].sum() > 0:
                 ax.annotate(il, (share.loc[il, var_topics[0]], share.loc[il, var_topics[1]]),
                             fontsize=6, alpha=0.6)
-    ax.set_xlabel(f"Konu T{var_topics[0]} payı"); ax.set_ylabel(f"Konu T{var_topics[1]} payı")
-    ax.set_title("İl ilgi profilleri — K-Means++ kümeleri")
+    ax.set_xlabel(f"Topic T{var_topics[0]} share"); ax.set_ylabel(f"Topic T{var_topics[1]} share")
+    ax.set_title("Provincial attention profiles — K-Means++ clusters")
     ax.legend()
     plt.tight_layout(); plt.savefig(FIG / "rq2_s3_clusters.png"); plt.close()
     return assign
@@ -270,11 +270,11 @@ def sub4_correlation(spark, attention_pdf: pd.DataFrame, metrics: dict):
     for _, r in cdf.iterrows():
         if r["attention"] > cdf["attention"].quantile(0.9) or r["population"] > 2e6:
             ax[0].annotate(r["il"], (r["population"], r["attention"]), fontsize=7)
-    ax[0].set_xlabel("Nüfus (2022)"); ax[0].set_ylabel("Anılma sayısı")
-    ax[0].set_title(f"İlgi ~ Nüfus (Pearson r={metrics['correlation_pearson']['attention~population']})")
+    ax[0].set_xlabel("Population (2022)"); ax[0].set_ylabel("Mentions")
+    ax[0].set_title(f"Attention ~ Population (Pearson r={metrics['correlation_pearson']['attention~population']})")
     top_per = cdf.head(15).iloc[::-1]
     ax[1].barh(top_per["il"], top_per["att_per_100k"], color="#8e44ad")
-    ax[1].set_xlabel("100k kişi başına anılma"); ax[1].set_title("En 'aşırı ilgilenilen' iller (nüfusa göre)")
+    ax[1].set_xlabel("Mentions per 100k"); ax[1].set_title("Most over-attended provinces (per capita)")
     plt.tight_layout(); plt.savefig(FIG / "rq2_s4_correlation.png"); plt.close()
 
 

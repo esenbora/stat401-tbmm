@@ -89,19 +89,19 @@ def sub1_ministry_time(df, metrics: dict) -> None:
     fig, ax = plt.subplots(1, 2, figsize=(15, 6))
     top = pdf.head(12).iloc[::-1]
     ax[0].barh(top["label"], top["n"], color="#3b6ea5")
-    ax[0].set_title("Bakanlığa göre toplam yazılı soru (Top 12)")
-    ax[0].set_xlabel("Soru sayısı")
+    ax[0].set_title("Total written questions by ministry (Top 12)")
+    ax[0].set_xlabel("Number of questions")
     rank = pivot.rank(ascending=False, axis=0)  # rank within each year
     im = ax[1].imshow(rank.values, cmap="RdYlGn_r", aspect="auto")
     ax[1].set_xticks(range(len(pivot.columns)))
     ax[1].set_xticklabels([int(c) for c in pivot.columns])
     ax[1].set_yticks(range(len(pivot.index)))
     ax[1].set_yticklabels(pivot.index)
-    ax[1].set_title("Yıllara göre bakanlık sıralaması (1 = en çok)")
+    ax[1].set_title("Ministry rank by year (1 = most)")
     for i in range(len(pivot.index)):
         for j in range(len(pivot.columns)):
             ax[1].text(j, i, int(rank.values[i, j]), ha="center", va="center", fontsize=8)
-    plt.colorbar(im, ax=ax[1], label="sıra")
+    plt.colorbar(im, ax=ax[1], label="rank")
     plt.tight_layout()
     plt.savefig(FIG / "rq1_s1_ministry_time.png")
     plt.close()
@@ -154,8 +154,8 @@ def sub2_topics(df, spark, metrics: dict):
     im = ax.imshow(norm.values, cmap="viridis", aspect="auto")
     ax.set_xticks(range(N_TOPICS)); ax.set_xticklabels([f"T{i}" for i in range(N_TOPICS)])
     ax.set_yticks(range(len(norm.index))); ax.set_yticklabels(norm.index)
-    ax.set_title("Bakanlık × LDA konu dağılımı (satır-normalize)")
-    plt.colorbar(im, ax=ax, label="oran")
+    ax.set_title("Ministry × LDA topic distribution (row-normalised)")
+    plt.colorbar(im, ax=ax, label="share")
     plt.tight_layout(); plt.savefig(FIG / "rq1_s2_ministry_topic.png"); plt.close()
 
     # FP-Growth: co-occurring terms. Full-text transactions are long (~200
@@ -209,8 +209,8 @@ def sub3_party_focus(df, metrics: dict):
     im = ax.imshow(norm.values, cmap="magma", aspect="auto")
     ax.set_xticks(range(len(norm.columns))); ax.set_xticklabels(norm.columns, rotation=40, ha="right")
     ax.set_yticks(range(len(norm.index))); ax.set_yticklabels(norm.index)
-    ax.set_title("Parti × Bakanlık odağı (satır-normalize pay)")
-    plt.colorbar(im, ax=ax, label="pay")
+    ax.set_title("Party × Ministry focus (row-normalised share)")
+    plt.colorbar(im, ax=ax, label="share")
     plt.tight_layout(); plt.savefig(FIG / "rq1_s3_party_ministry.png"); plt.close()
 
     # classifier: predict party from question text (TF-IDF -> multinomial LR)
@@ -249,8 +249,8 @@ def sub3_party_focus(df, metrics: dict):
     im = ax.imshow(Mn, cmap="Blues", vmin=0, vmax=1)
     ax.set_xticks(range(len(labels))); ax.set_xticklabels(labels, rotation=20)
     ax.set_yticks(range(len(labels))); ax.set_yticklabels(labels)
-    ax.set_xlabel("Tahmin"); ax.set_ylabel("Gerçek")
-    ax.set_title(f"Parti tahmini — confusion (acc={acc:.2f})")
+    ax.set_xlabel("Predicted"); ax.set_ylabel("Actual")
+    ax.set_title(f"Party prediction — confusion (acc={acc:.2f})")
     for i in range(len(labels)):
         for j in range(len(labels)):
             ax.text(j, i, f"{Mn[i,j]:.2f}", ha="center", va="center",

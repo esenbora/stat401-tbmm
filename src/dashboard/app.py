@@ -19,6 +19,7 @@ from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import streamlit as st
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -133,6 +134,22 @@ with tab1:
             st.plotly_chart(px.imshow(norm, aspect="auto", color_continuous_scale="Magma",
                             labels={"color": "share"}), width="stretch")
 
+        mt = pq("rq1_ministry_topic")
+        if not mt.empty and m.get("lda_topics"):
+            st.subheader("Ministry × Topic (dominant LDA topic per question, row-normalised)")
+            mt = mt.copy()
+            mt["b"] = mt["bakanlik"].map(short_ministry)
+            keep = mt.groupby("b")["n"].sum().sort_values(ascending=False).head(12).index
+            sub = mt[mt["b"].isin(keep)]
+            piv = sub.pivot_table(index="b", columns="dom_topic", values="n", aggfunc="sum").fillna(0)
+            norm = piv.div(piv.sum(axis=1), axis=0)
+            words = {t["topic"]: " ".join(t["words"][:2]) for t in m["lda_topics"]}
+            norm.columns = [f"T{c}: {words.get(c, '')}" for c in norm.columns]
+            st.plotly_chart(px.imshow(norm, aspect="auto", color_continuous_scale="Viridis",
+                            labels={"color": "share", "x": "topic", "y": ""}), width="stretch")
+            st.caption("Each row sums to 1 — the topic mix of questions sent to that ministry "
+                       "(top 12 ministries by volume).")
+
         cc1, cc2 = st.columns(2)
         with cc1:
             if m.get("party_clf"):
@@ -141,6 +158,8 @@ with tab1:
                 st.metric("Accuracy (LogReg, TF-IDF)", f"{clf['accuracy']*100:.1f}%",
                           f"baseline {clf['baseline_majority']*100:.1f}%")
                 st.caption(f"Classes: {', '.join(clf['classes'])} · F1={clf['f1']:.3f}")
+                st.caption("⚠ Party signal partly survives in closing signatures, so this is "
+                           "an upper bound — not purely content-based prediction.")
                 st.image(str(FIG / "rq1_s3_confusion.png"))
         with cc2:
             if m.get("duplicates"):
@@ -187,6 +206,12 @@ with tab2:
                 fig = px.choropleth(men_disp, geojson=gj, locations="il", featureidkey="properties.name",
                                     color="mentions", color_continuous_scale="YlGnBu",
                                     labels={"mentions": "mentions"})
+                # draw Ankara as an explicit grey 'excluded' patch (no blank hole)
+                fig.add_trace(go.Choropleth(
+                    geojson=gj, locations=["Ankara"], featureidkey="properties.name",
+                    z=[0], showscale=False, colorscale=[[0, "#d9d9d9"], [1, "#d9d9d9"]],
+                    marker_line_color="white",
+                    hovertext=["Ankara — excluded (ministry-address artifact)"], hoverinfo="text"))
                 fig.update_geos(fitbounds="locations", visible=False)
                 fig.update_layout(margin={"r": 0, "t": 0, "l": 0, "b": 0}, height=420)
                 st.plotly_chart(fig, width="stretch")
@@ -217,7 +242,7 @@ with tab2:
                 cap = (f"Pearson r(attention, population) = {r} (Ankara excluded)  ·  "
                        f"shared variance ~{r_full**2*100:.0f}%")
                 if r_with is not None:
-                    cap += f"  ·  with Ankara included r = {r_with} (~{r_with**2*100:.0f}%)"
+                    cap += f"  ·  with Ankara included r = {round(r_with, 2)} (~{r_with**2*100:.0f}%)"
                 st.caption(cap)
             with cc2:
                 st.markdown("**Most attention per 100k (Ankara excluded)**")
@@ -255,6 +280,8 @@ with tab2:
                                    labels={"x": f"Topic T{tx} share", "y": f"Topic T{ty} share"},
                                    title="Province clusters (top-2 variance topic shares)"),
                         width="stretch")
+                    st.caption("Includes Ankara — clustering is by topic profile, "
+                               "not attention volume (so the attention exclusion doesn't apply here).")
 
 # =====================================================================
 # RQ3

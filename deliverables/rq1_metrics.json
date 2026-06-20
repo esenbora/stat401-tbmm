@@ -41,175 +41,175 @@
       "n": 1720
     }
   ],
-  "lda_perplexity": 7.064891889885693,
+  "lda_perplexity": 7.0862551526383015,
   "lda_topics": [
     {
       "topic": 0,
       "words": [
-        "deprem",
-        "elektrik",
-        "konut",
-        "hatay",
+        "orman",
+        "tarim",
+        "maden",
+        "ibrahim",
+        "ced",
         "enerji",
-        "subat",
-        "kaynaklar",
-        "hak"
+        "bolge",
+        "yer"
       ]
     },
     {
       "topic": 1,
       "words": [
-        "maden",
-        "belediyesi",
-        "cevre",
-        "kamu",
-        "belediye",
-        "yol",
-        "yer",
-        "denetim"
+        "kadardir",
+        "yardim",
+        "bitlis",
+        "koyune",
+        "ozel",
+        "koyu",
+        "son",
+        "ictuzugun"
       ]
     },
     {
       "topic": 2,
       "words": [
-        "yapimi",
-        "odenek",
-        "hakan",
-        "tamamlanan",
-        "yapim",
-        "nedeni",
-        "eden",
-        "kaynaklanmaktadir"
+        "cocuk",
+        "sorusturma",
+        "son",
+        "denetim",
+        "kadin",
+        "koruma",
+        "yapan",
+        "cinsel"
       ]
     },
     {
       "topic": 3,
       "words": [
-        "son",
-        "ankara",
+        "sap",
+        "hayvan",
         "orman",
-        "bin",
-        "kars",
-        "halklailiskilerbinasi",
-        "spor",
-        "izmir"
+        "son",
+        "cocuk",
+        "vaka",
+        "koruma",
+        "cem"
       ]
     },
     {
       "topic": 4,
       "words": [
-        "son",
-        "ekonomik",
-        "van",
-        "yuksek",
-        "yuzde",
+        "halk",
+        "belediye",
+        "belediyesi",
+        "saglik",
+        "yol",
+        "yer",
         "kamu",
-        "hakkari",
-        "halk"
+        "son"
       ]
     },
     {
       "topic": 5,
       "words": [
-        "sap",
-        "hayvan",
-        "burdur",
-        "vaka",
-        "kurban",
-        "bayrami",
-        "orman",
-        "olmus"
+        "kamu",
+        "denetim",
+        "izmir",
+        "mali",
+        "suyu",
+        "ankara",
+        "mustafa",
+        "koy"
       ]
     },
     {
       "topic": 6,
       "words": [
-        "son",
-        "cocuk",
-        "kadin",
+        "van",
         "kamu",
-        "ceza",
-        "koruma",
-        "sorusturma",
-        "tarafindananayasa"
+        "konut",
+        "cevre",
+        "sehircilikve",
+        "hak",
+        "deprem",
+        "murat"
       ]
     },
     {
       "topic": 7,
       "words": [
         "tarim",
-        "orman",
-        "ibrahim",
-        "yumakli",
-        "sulama",
-        "halk",
-        "bolge",
-        "mersin"
+        "yapimi",
+        "milyon",
+        "odenek",
+        "uretim",
+        "gida",
+        "mersin",
+        "eden"
       ]
     },
     {
       "topic": 8,
       "words": [
         "egitim",
-        "okul",
-        "tekin",
-        "yusuf",
         "kamu",
-        "milli",
-        "ankara",
-        "son"
+        "ekonomik",
+        "son",
+        "hakkari",
+        "yuksek",
+        "bin",
+        "ankara"
       ]
     },
     {
       "topic": 9,
       "words": [
-        "kamu",
-        "kadardir",
-        "mali",
-        "maliye",
+        "turk",
+        "maddeleri",
+        "abdulkadir",
+        "uraloglu",
+        "yabanci",
         "mehmet",
-        "hazine",
-        "sgk",
-        "turk"
+        "genel",
+        "asagida"
       ]
     },
     {
       "topic": 10,
       "words": [
         "saglik",
+        "turizm",
         "hastanesi",
         "mehmet",
-        "turizm",
-        "hasta",
         "devlet",
         "memisoglu",
-        "cevre"
+        "hasta",
+        "kemal"
       ]
     },
     {
       "topic": 11,
       "words": [
         "sosyal",
-        "saglik",
         "calisma",
+        "saglik",
         "engelli",
+        "guvenlik",
+        "maddeleri",
         "sorusturma",
-        "gorev",
-        "yapan",
-        "cocuklarin"
+        "aile"
       ]
     },
     {
       "topic": 12,
       "words": [
+        "ceza",
         "cezaevi",
         "infaz",
         "mahpuslarin",
-        "ceza",
+        "yilmaz",
+        "son",
         "tipi",
-        "mahpus",
-        "cezaevinde",
-        "kapali"
+        "adalet"
       ]
     },
     {
@@ -222,20 +222,20 @@
         "omer",
         "gergerlioglu",
         "uncu",
-        "inci"
+        "ankara"
       ]
     },
     {
       "topic": 14,
       "words": [
-        "koy",
-        "bitlis",
-        "koyu",
-        "zaman",
-        "kadardir",
-        "koyune",
-        "yardim",
-        "sanliurfa"
+        "egitim",
+        "deprem",
+        "okul",
+        "spor",
+        "ogrenci",
+        "son",
+        "yurt",
+        "elektrik"
       ]
     }
   ],
@@ -356,19 +356,16 @@
     {
       "antecedent": [
         "banko",
-        "bakanliklar",
+        "nolu",
         "oda",
-        "halklailiskilerbinasi",
         "gergerlioglu",
-        "faruk",
-        "kocaeli",
-        "incive"
+        "faruk"
       ],
       "consequent": [
-        "nolu"
+        "kat"
       ],
       "confidence": 1.0,
-      "lift": 15.76
+      "lift": 8.71
     },
     {
       "antecedent": [
@@ -387,6 +384,99 @@
     },
     {
       "antecedent": [
+        "ifadeleriyer",
+        "banko",
+        "halklailiskilerbinasi",
+        "gergerlioglu",
+        "kat",
+        "faruk",
+        "omer",
+        "ankara"
+      ],
+      "consequent": [
+        "oda"
+      ],
+      "confidence": 1.0,
+      "lift": 11.53
+    },
+    {
+      "antecedent": [
+        "banko",
+        "halklailiskilerbinasi",
+        "gergerlioglu",
+        "kat",
+        "ncive",
+        "ankara"
+      ],
+      "consequent": [
+        "oda"
+      ],
+      "confidence": 1.0,
+      "lift": 11.53
+    },
+    {
+      "antecedent": [
+        "banko",
+        "bakanliklar",
+        "oda",
+        "halklailiskilerbinasi",
+        "gergerlioglu",
+        "faruk",
+        "kocaeli",
+        "incive"
+      ],
+      "consequent": [
+        "nolu"
+      ],
+      "confidence": 1.0,
+      "lift": 15.76
+    },
+    {
+      "antecedent": [
+        "nolu",
+        "kocaeli",
+        "ncive",
+        "incive"
+      ],
+      "consequent": [
+        "kat"
+      ],
+      "confidence": 1.0,
+      "lift": 8.71
+    },
+    {
+      "antecedent": [
+        "banko",
+        "nolu",
+        "halklailiskilerbinasi",
+        "omer",
+        "ankara"
+      ],
+      "consequent": [
+        "oda"
+      ],
+      "confidence": 1.0,
+      "lift": 11.53
+    },
+    {
+      "antecedent": [
+        "ifadeleriyer",
+        "nolu",
+        "almaktadir",
+        "oda",
+        "halklailiskilerbinasi",
+        "faruk",
+        "kocaeli",
+        "ankara"
+      ],
+      "consequent": [
+        "kat"
+      ],
+      "confidence": 1.0,
+      "lift": 8.71
+    },
+    {
+      "antecedent": [
         "banko",
         "bakanliklar",
         "oda",
@@ -404,72 +494,7 @@
     {
       "antecedent": [
         "banko",
-        "halklailiskilerbinasi",
-        "gergerlioglu",
-        "kat",
-        "ncive",
-        "ankara"
-      ],
-      "consequent": [
-        "oda"
-      ],
-      "confidence": 1.0,
-      "lift": 11.53
-    },
-    {
-      "antecedent": [
-        "ifadeleriyer",
-        "banko",
-        "nolu",
-        "halklailiskilerbinasi",
-        "gergerlioglu",
-        "kat",
-        "faruk",
-        "kocaeli",
-        "omer",
-        "ankara"
-      ],
-      "consequent": [
-        "oda"
-      ],
-      "confidence": 1.0,
-      "lift": 11.53
-    },
-    {
-      "antecedent": [
-        "nolu",
-        "kocaeli",
-        "ncive",
-        "incive"
-      ],
-      "consequent": [
-        "kat"
-      ],
-      "confidence": 1.0,
-      "lift": 8.71
-    },
-    {
-      "antecedent": [
-        "banko",
-        "nolu",
-        "omer",
-        "ncive",
-        "incive"
-      ],
-      "consequent": [
-        "kat"
-      ],
-      "confidence": 1.0,
-      "lift": 8.71
-    },
-    {
-      "antecedent": [
-        "ifadeleriyer",
-        "nolu",
         "almaktadir",
-        "oda",
-        "halklailiskilerbinasi",
-        "faruk",
         "kocaeli",
         "ankara"
       ],
@@ -481,41 +506,14 @@
     },
     {
       "antecedent": [
+        "banko",
+        "nolu",
         "bakanliklar",
+        "halklailiskilerbinasi",
         "gergerlioglu",
-        "faruk",
         "kocaeli",
-        "omer",
-        "ncive",
         "incive",
         "ankara"
-      ],
-      "consequent": [
-        "kat"
-      ],
-      "confidence": 1.0,
-      "lift": 8.71
-    },
-    {
-      "antecedent": [
-        "banko",
-        "almaktadir",
-        "kocaeli",
-        "ankara"
-      ],
-      "consequent": [
-        "kat"
-      ],
-      "confidence": 1.0,
-      "lift": 8.71
-    },
-    {
-      "antecedent": [
-        "banko",
-        "nolu",
-        "omer",
-        "ncive",
-        "incive"
       ],
       "consequent": [
         "oda"
@@ -543,12 +541,13 @@
     {
       "antecedent": [
         "banko",
-        "nolu",
         "bakanliklar",
+        "almaktadir",
         "gergerlioglu",
+        "kat",
+        "faruk",
         "kocaeli",
         "omer",
-        "incive",
         "ankara"
       ],
       "consequent": [
@@ -572,16 +571,18 @@
     },
     {
       "antecedent": [
-        "banko",
-        "gergerlioglu",
-        "kat",
-        "faruk"
+        "ifadeleriyer",
+        "nolu",
+        "bakanliklar",
+        "oda",
+        "faruk",
+        "omer"
       ],
       "consequent": [
-        "oda"
+        "kat"
       ],
       "confidence": 1.0,
-      "lift": 11.53
+      "lift": 8.71
     }
   ],
   "party_clf": {
@@ -595,8 +596,8 @@
     "baseline_majority": 0.4876
   },
   "duplicates": {
-    "near_dup_pairs": 50812,
-    "cross_mp_pairs": 4608,
+    "near_dup_pairs": 50810,
+    "cross_mp_pairs": 4596,
     "cross_party_pairs": 138,
     "top_cross_party": [
       {

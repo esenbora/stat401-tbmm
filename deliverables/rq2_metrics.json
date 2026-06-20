@@ -67,105 +67,105 @@
     {
       "topic": 0,
       "words": [
-        "deprem",
+        "turk",
+        "elektrik",
+        "diyarbakir",
         "orman",
-        "konut",
-        "sehircilikve",
-        "kurum",
-        "son",
-        "kamu",
-        "depreme"
+        "hatay",
+        "bin",
+        "halk",
+        "kadardir"
       ]
     },
     {
       "topic": 1,
       "words": [
-        "kadardir",
+        "kamu",
+        "orman",
         "yol",
-        "koy",
-        "zaman",
-        "altyapi",
-        "ictuzugun",
         "son",
-        "uraloglu"
+        "yer",
+        "zaman",
+        "kadardir",
+        "mudurlugu"
       ]
     },
     {
       "topic": 2,
       "words": [
-        "cocuk",
-        "sosyal",
-        "aile",
-        "koruma",
-        "hizmetler",
+        "sap",
+        "hayvan",
+        "koyune",
+        "bitlis",
         "son",
-        "ozdemir",
-        "kamu"
+        "yardim",
+        "kadardir",
+        "ozel"
       ]
     },
     {
       "topic": 3,
       "words": [
         "son",
+        "bin",
         "ankara",
+        "cocuk",
+        "sosyal",
         "kamu",
         "halklailiskilerbinasi",
-        "saglik",
-        "kat",
-        "sosyal",
-        "varsa"
+        "orman"
       ]
     },
     {
       "topic": 4,
       "words": [
-        "sap",
-        "hayvan",
-        "kuday",
-        "vaka",
-        "orman",
-        "kurban",
-        "belediye",
-        "bayrami"
+        "saglik",
+        "hasta",
+        "infaz",
+        "mahpuslarin",
+        "ceza",
+        "insan",
+        "tedavi",
+        "cezaevinde"
       ]
     },
     {
       "topic": 5,
       "words": [
         "ankara",
-        "kocaeli",
+        "cezaevi",
         "oda",
-        "kat",
-        "omer",
-        "halklailiskilerbinasi",
+        "kocaeli",
         "nolu",
-        "bakanliklar"
+        "kat",
+        "incive",
+        "halklailiskilerbinasi"
       ]
     },
     {
       "topic": 6,
       "words": [
-        "ceza",
+        "kamu",
+        "van",
         "kadin",
-        "cezaevi",
+        "deprem",
         "son",
-        "infaz",
-        "hasta",
-        "yilmaz",
-        "saglik"
+        "hak",
+        "tarafindananayasa",
+        "konut"
       ]
     },
     {
       "topic": 7,
       "words": [
         "tarim",
-        "orman",
-        "son",
         "cevre",
-        "milyon",
+        "yapimi",
+        "ced",
+        "belediyesi",
         "maden",
-        "van",
-        "uretim"
+        "proje",
+        "odenek"
       ]
     },
     {
@@ -173,12 +173,12 @@
       "words": [
         "egitim",
         "kamu",
+        "saglik",
+        "ekonomik",
         "tekin",
-        "okul",
         "yusuf",
-        "hakkari",
         "milli",
-        "saglik"
+        "okul"
       ]
     },
     {
@@ -190,197 +190,197 @@
         "uncu",
         "nci",
         "kanligina",
-        "halk",
-        "kocaeli"
+        "kocaeli",
+        "faruk"
       ]
     },
     {
       "topic": 10,
       "words": [
-        "kamu",
-        "mehmet",
-        "bin",
         "halk",
-        "saglik",
         "turizm",
-        "devlet",
-        "hastanesi"
+        "maddeleri",
+        "tarih",
+        "mehmet",
+        "geregince",
+        "bursa",
+        "saglik"
       ]
     },
     {
       "topic": 11,
       "words": [
-        "calisma",
         "sorusturma",
         "sosyal",
-        "guvenlik",
-        "kamu",
-        "yer",
+        "calisma",
         "engelli",
-        "idari"
+        "cocuklarin",
+        "cocuk",
+        "guvenlik",
+        "gorev"
       ]
     }
   ],
   "metro_vs_rural": {
     "metro_top_topics": [
-      7,
       6,
-      11
+      3,
+      5
     ],
     "rural_top_topics": [
-      7,
+      1,
       6,
-      0
+      7
     ],
     "metro_skewed_topics": [
       {
+        "topic": 5,
+        "delta": 0.0654
+      },
+      {
         "topic": 3,
-        "delta": 0.0344
+        "delta": 0.0493
       },
       {
         "topic": 11,
-        "delta": 0.0306
-      },
-      {
-        "topic": 5,
-        "delta": 0.0278
+        "delta": 0.0397
       }
     ],
     "rural_skewed_topics": [
       {
         "topic": 7,
-        "delta": -0.0585
+        "delta": -0.0723
       },
       {
         "topic": 1,
-        "delta": -0.056
+        "delta": -0.0475
       },
       {
-        "topic": 0,
-        "delta": -0.0334
+        "topic": 8,
+        "delta": -0.0144
       }
     ]
   },
-  "kmeans_silhouette": 0.2697,
+  "kmeans_silhouette": 0.2412,
   "kmeans_clusters": {
-    "1": {
-      "size": 15,
+    "3": {
+      "size": 19,
       "members": [
         "Adana",
-        "Adıyaman",
-        "Ağrı",
-        "Bartın",
-        "Diyarbakır",
-        "Elazığ",
-        "Gaziantep",
-        "Hakkari",
-        "Hatay",
-        "Kahramanmaraş",
-        "Kilis",
-        "Malatya",
-        "Muş",
-        "Osmaniye",
-        "Şanlıurfa"
-      ],
-      "top_topics": [
-        2,
-        0,
-        7
-      ]
-    },
-    "3": {
-      "size": 55,
-      "members": [
         "Afyonkarahisar",
-        "Aksaray",
-        "Amasya",
+        "Ankara",
         "Antalya",
-        "Ardahan",
-        "Artvin",
-        "Aydın",
-        "Balıkesir",
         "Batman",
-        "Bilecik",
-        "Bingöl",
-        "Bitlis",
         "Bolu",
-        "Bursa",
-        "Denizli",
-        "Düzce",
         "Edirne",
+        "Elazığ",
         "Erzincan",
         "Erzurum",
         "Giresun",
-        "Gümüşhane",
-        "Isparta",
-        "Iğdır",
-        "Kars",
-        "Kastamonu",
         "Kayseri",
+        "Kırşehir",
+        "Mardin",
+        "Samsun",
+        "Tekirdağ",
+        "Tokat",
+        "Yozgat",
+        "İzmir"
+      ],
+      "top_topics": [
+        5,
+        6,
+        1
+      ]
+    },
+    "4": {
+      "size": 31,
+      "members": [
+        "Adıyaman",
+        "Amasya",
+        "Aydın",
+        "Ağrı",
+        "Balıkesir",
+        "Diyarbakır",
+        "Düzce",
+        "Gaziantep",
+        "Hatay",
+        "Kahramanmaraş",
+        "Kastamonu",
+        "Kilis",
         "Kocaeli",
-        "Konya",
         "Kırklareli",
         "Kırıkkale",
-        "Kırşehir",
+        "Malatya",
         "Manisa",
-        "Mardin",
         "Mersin",
-        "Muğla",
+        "Muş",
         "Nevşehir",
         "Niğde",
-        "Ordu",
-        "Rize",
+        "Osmaniye",
         "Sakarya",
-        "Samsun",
-        "Siirt",
         "Sinop",
-        "Sivas",
-        "Tokat",
         "Tunceli",
-        "Van",
         "Yalova",
-        "Yozgat",
-        "Zonguldak",
         "Çanakkale",
         "Çankırı",
         "Çorum",
         "İstanbul",
-        "İzmir"
+        "Şanlıurfa"
       ],
       "top_topics": [
-        7,
         6,
+        3,
         0
       ]
     },
     "0": {
-      "size": 7,
+      "size": 29,
       "members": [
-        "Ankara",
+        "Aksaray",
+        "Ardahan",
+        "Artvin",
+        "Bartın",
+        "Bayburt",
+        "Bilecik",
+        "Bingöl",
+        "Bitlis",
         "Burdur",
+        "Bursa",
+        "Denizli",
         "Eskişehir",
+        "Gümüşhane",
+        "Hakkari",
+        "Isparta",
         "Karabük",
+        "Karaman",
+        "Kars",
+        "Konya",
         "Kütahya",
-        "Tekirdağ",
-        "Uşak"
+        "Muğla",
+        "Ordu",
+        "Rize",
+        "Siirt",
+        "Sivas",
+        "Trabzon",
+        "Uşak",
+        "Van",
+        "Zonguldak"
       ],
       "top_topics": [
-        5,
+        1,
         7,
         6
       ]
     },
-    "4": {
-      "size": 3,
+    "1": {
+      "size": 1,
       "members": [
-        "Bayburt",
-        "Karaman",
-        "Trabzon"
+        "Iğdır"
       ],
       "top_topics": [
-        7,
-        6,
-        11
+        0,
+        10,
+        1
       ]
     },
     "2": {
@@ -389,8 +389,8 @@
         "Şırnak"
       ],
       "top_topics": [
-        4,
-        7,
+        2,
+        6,
         1
       ]
     }
