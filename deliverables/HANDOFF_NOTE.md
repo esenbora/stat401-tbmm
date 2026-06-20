@@ -61,4 +61,4 @@ self-province removed from mentions — this corrected the RQ2 headline.)
 
 ## Re-run order
 `prep.py → rq1_*.py → rq2_*.py → rq3_network_spark.py → export_dashboard.py → streamlit run app.py`
-(seed = 42; JDK 17 + `pip install -r requirements.txt`).
+(seed = 42; JDK 17 + `pip install -r requirements-pipeline.txt`).
