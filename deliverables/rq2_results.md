@@ -38,14 +38,17 @@ k = 5 on standardised (province × 12-topic) vectors, silhouette = **0.270**
 
 | Pair | Pearson | Spearman |
 |---|---|---|
-| attention ~ population | **0.402** | 0.626 |
+| attention ~ population (Ankara excluded) | **0.65** | — |
+| attention ~ population (with Ankara) | 0.40 | 0.63 |
 | population ~ MP count | 0.999 | — |
 
-After removing the self-province artifact, the population correlation **drops to
-0.40** (it was inflated to 0.59 because home-province self-mentions scale with an
-province's MP count, which scales with population). The honest reading:
-population explains only ~16% of attention variance — attention is largely
-**politically targeted**.
+Headline = **Pearson 0.65 with Ankara excluded** (Ankara's mention count is a
+ministry-address artifact, ~1/3 of all mentions, so it's a low-attention/
+high-population outlier that drags the raw correlation down to 0.40). Excluding
+it, population explains ~43% of attention variance — moderate. Either way, after
+removing the self-province artifact the relationship is well below the inflated
+0.59 of the buggy run: attention is **substantially politically targeted**, not
+just population-driven.
 
 Per 100k inhabitants (Ankara excluded as a ministry artifact):
 

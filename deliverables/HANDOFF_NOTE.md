@@ -38,8 +38,10 @@ self-province removed from mentions — this corrected the RQ2 headline.)
   earthquake/energy, environment/mining, agriculture, health, education, finance,
   child/women. MinHash near-duplicate **bodies**: 50,812 pairs (4,608 cross-MP,
   138 cross-party) → coordination overwhelmingly intra-party.
-- **RQ2:** attention~population Pearson **0.40** / Spearman 0.63 (population
-  explains ~16% — attention is politically targeted, not size-driven).
+- **RQ2:** attention~population Pearson **0.65 (Ankara excluded — the headline)**
+  / 0.40 with Ankara (Ankara is a ministry-address outlier). Either way attention
+  is politically targeted, not purely size-driven. The dashboard computes the
+  Ankara-excluded r in-app; `rq2_metrics.json` keeps the raw with-Ankara 0.4017.
 
 ## Verification
 - Dashboard: Streamlit AppTest passes (3 tabs, 0 exceptions). Captions read from

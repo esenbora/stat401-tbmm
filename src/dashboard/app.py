@@ -6,7 +6,7 @@ metrics JSON written by the RQ scripts — no Spark needed at view time, so the
 app starts instantly.
 
 UI text is English; data values (ministry / party / province names) stay in
-Turkish because they are proper nouns.
+Turkish as they are proper nouns.
 
 Run:
     .venv/bin/python -m streamlit run src/dashboard/app.py
@@ -32,8 +32,8 @@ PARTY_COLORS = {
     "MHP": "#ff7f00", "AK Parti": "#f7d000", "Yeniden Refah": "#4daf4a",
     "TİP": "#a65628", "HÜDA PAR": "#999999", "Bilinmiyor": "#cccccc",
 }
-# Fixed colour per ministry so the trend lines keep the same colour regardless
-# of the year-range slider (built once from the full ministry list below).
+# Fixed ministry colours so a ministry keeps the same colour across slider
+# changes (built from the full ministry set, not the filtered view).
 _PAL = px.colors.qualitative.Dark24
 
 st.set_page_config(page_title="TBMM Parliamentary Analytics", page_icon="🇹🇷",
@@ -66,14 +66,16 @@ def short_ministry(s: str) -> str:
 with st.sidebar:
     st.title("🇹🇷 TBMM Analytics")
     st.caption("STAT 401 — 28th Term Written Questions")
-    st.metric("Total questions", "44,484")
+    _my = pq("rq1_ministry_year")
+    _total = int(_my["n"].sum()) if not _my.empty else 0
+    st.metric("Total questions", f"{_total:,}" if _total else "—")
     st.metric("MPs who filed questions", "307 / 592")
     st.caption("592 MPs total · 307 filed written questions · 265 in the RQ3 network")
     st.metric("Ministries / provinces", "20 / 81")
     st.caption("Full-text OCR coverage: 100% (108.6M characters)")
     st.divider()
     st.caption("Apache Spark · Delta Lake · Spark MLlib · Streamlit")
-    if not (DATA / "rq1_ministry_year.parquet").exists():
+    if _my.empty:
         st.error("No data — run `export_dashboard.py` first.")
 
 st.title("TBMM 28th Term — Parliamentary Big-Data Analysis")
@@ -96,8 +98,9 @@ with tab1:
         st.warning("No RQ1 data.")
     else:
         my["b"] = my["bakanlik"].map(short_ministry)
-        ministry_colors = {b: _PAL[i % len(_PAL)]
-                           for i, b in enumerate(sorted(my["b"].unique()))}
+        # stable per-ministry colour map (whole set, not the filtered slice)
+        ministry_colors = {mn: _PAL[i % len(_PAL)]
+                           for i, mn in enumerate(sorted(my["b"].unique()))}
         years = sorted(int(y) for y in my["yil"].dropna().unique())
         yr = st.select_slider("Year range", options=years, value=(years[0], years[-1]), key="rq1yr")
         myf = my[my["yil"].between(yr[0], yr[1])]
@@ -112,6 +115,7 @@ with tab1:
         with c2:
             st.subheader("Trend by year (Top 6)")
             top6 = myf.groupby("b")["n"].sum().sort_values(ascending=False).head(6).index
+            # sort by (ministry, year) so plotly draws each line left→right in time
             tl = myf[myf["b"].isin(top6)].sort_values(["b", "yil"])
             st.plotly_chart(px.line(tl, x="yil", y="n", color="b", markers=True,
                             color_discrete_map=ministry_colors,
@@ -141,7 +145,7 @@ with tab1:
         with cc2:
             if m.get("duplicates"):
                 d = m["duplicates"]
-                st.subheader("Duplicate/coordinated questions (MinHash ≥0.8)")
+                st.subheader("Duplicate / coordinated questions (MinHash ≥0.8)")
                 st.metric("Near-duplicate pairs", f"{d['near_dup_pairs']:,}")
                 st.caption(f"{d['cross_mp_pairs']:,} different MPs · {d['cross_party_pairs']:,} different parties")
                 cp = pq("rq1_dup_cross_party")
@@ -173,7 +177,7 @@ with tab2:
         st.warning("No RQ2 data.")
     else:
         # Ankara raw count is a capital/ministry-address artifact (ministries
-        # sit in Ankara), not subject attention — exclude it everywhere on this tab.
+        # sit in Ankara), not subject attention — exclude it everywhere here.
         men_disp = men[men["il"] != "Ankara"]
         c1, c2 = st.columns([3, 2])
         with c1:
@@ -197,15 +201,14 @@ with tab2:
 
         if not corr.empty:
             st.subheader("Attention vs population — targeting")
-            # Ankara is the capital/ministry artifact (excluded from the map/bar
-            # above too); drop it here so the correlation and per-capita ranking
+            # Ankara is a ministry-address artifact (excluded from the map/bar
+            # above too); drop it here so the correlation + per-capita ranking
             # match the report. r is computed from the Ankara-excluded frame, not
             # read from the JSON (which still carries the with-Ankara 0.40).
             corr_disp = corr[corr["il"] != "Ankara"]
             r_full = corr_disp["population"].corr(corr_disp["attention"])
             r = round(r_full, 2)
-            cp = m.get("correlation_pearson", {})
-            r_with = cp.get("attention~population")
+            r_with = m.get("correlation_pearson", {}).get("attention~population")
             cc1, cc2 = st.columns([3, 2])
             with cc1:
                 fig = px.scatter(corr_disp, x="population", y="attention", hover_name="il",
@@ -226,22 +229,6 @@ with tab2:
             st.subheader("K-Means++ attention profiles")
             sil = m.get("kmeans_silhouette")
             clusters = m.get("kmeans_clusters", {})
-
-            # interactive scatter: province × topic shares coloured by cluster.
-            pt = pq("rq2_province_topic")
-            if not pt.empty:
-                wide = pt.pivot_table(index="il", columns="dom_topic", values="n", aggfunc="sum").fillna(0)
-                share = wide.div(wide.sum(axis=1), axis=0)
-                share.columns = [f"T{c}" for c in share.columns]
-                # two highest-variance topics span the clusters best
-                tx, ty = share.var().sort_values(ascending=False).head(2).index
-                sc = share[[tx, ty]].reset_index().merge(clus, on="il")
-                sc["cluster"] = sc["cluster"].astype(str)
-                st.plotly_chart(
-                    px.scatter(sc, x=tx, y=ty, color="cluster", hover_name="il",
-                               labels={tx: f"{tx} share", ty: f"{ty} share"}),
-                    width="stretch")
-
             cols = st.columns(len(clusters) if clusters else 1)
             for i, (cid, info) in enumerate(sorted(clusters.items())):
                 with cols[i % len(cols)]:
@@ -250,6 +237,24 @@ with tab2:
                     st.caption(", ".join(info["members"][:6]) + ("…" if info["size"] > 6 else ""))
             if sil is not None:
                 st.caption(f"Silhouette = {sil} (weak but positive structure)")
+
+            # interactive cluster scatter on the two highest-variance topic shares
+            pt = pq("rq2_province_topic")
+            if not pt.empty:
+                wide = pt.pivot(index="il", columns="dom_topic", values="n").fillna(0)
+                share = wide.div(wide.sum(axis=1), axis=0)
+                var = share.var().sort_values(ascending=False)
+                if len(var) >= 2:
+                    tx, ty = int(var.index[0]), int(var.index[1])
+                    sc = share[[tx, ty]].copy()
+                    sc.columns = ["x", "y"]
+                    sc = sc.join(clus.set_index("il")).reset_index()
+                    sc["cluster"] = sc["cluster"].astype(str)
+                    st.plotly_chart(
+                        px.scatter(sc, x="x", y="y", color="cluster", hover_name="il",
+                                   labels={"x": f"Topic T{tx} share", "y": f"Topic T{ty} share"},
+                                   title="Province clusters (top-2 variance topic shares)"),
+                        width="stretch")
 
 # =====================================================================
 # RQ3
@@ -261,9 +266,9 @@ with tab3:
     comm = pq("rq3_community")
 
     st.caption("Edge = MPs targeting the same **ministry + province + month** "
-               "(attention coordination, independent of RQ1's wording-duplication "
-               f"signal). The network is opposition-dominated: {m.get('n_vertices', '?')} "
-               f"nodes, {m.get('n_edges', '?')} edges.")
+               "(attention coordination, independent of RQ1's wording-duplication signal). "
+               f"The network is opposition-dominated: {m.get('n_vertices', '?')} nodes, "
+               f"{m.get('n_edges', '?')} edges.")
 
     if pr.empty:
         st.warning("No RQ3 data.")
@@ -289,9 +294,9 @@ with tab3:
             st.metric("ARI (agreement with party)", lv.get("ari"), f"NMI {lv.get('nmi')}")
             for c in lv.get("top_communities", []):
                 st.caption(f"• {c['size']} MPs — {c['top_party']} {c['share']*100:.0f}%")
-            st.caption(f"ARI {lv.get('ari')} (old identical-summary network 0.46): attention "
-                       "coordination is somewhat less party-aligned than wording. "
-                       "Spark LPA degenerates on this dense graph → Louvain used.")
+            st.caption(f"ARI {lv.get('ari')} (0.46 on the old identical-summary network): attention "
+                       "coordination is more cross-party than wording coordination. "
+                       "Spark LPA is degenerate on this dense graph → Louvain used.")
         with cc2:
             st.subheader("Cross-party bridge MPs")
             if m.get("top_bridges"):
@@ -299,7 +304,8 @@ with tab3:
                 st.dataframe(bdf[["mp", "party", "province", "bridge_score"]],
                              width="stretch", hide_index=True)
                 top3 = "; ".join(f"{r.mp} ({r.party})" for r in bdf.head(3).itertuples())
-                st.caption(f"In the attention network the bridges span the party-mixed communities: {top3}.")
+                st.caption(f"In the attention network the bridges are a group spanning the "
+                           f"party-mixed communities: {top3}.")
 
 st.divider()
 st.caption("Apache Spark · Delta Lake · Spark MLlib · Streamlit — STAT 401 Final Project")
